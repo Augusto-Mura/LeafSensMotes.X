@@ -9728,7 +9728,9 @@ extern void (*TMR3_InterruptHandler)(void);
 # 400
 void TMR3ISRClock(void);
 
-# 54 "rn2483APP.h"
+# 58 "rn2483APP.h"
+void enableClockPeripherals (void);
+void disableClockPeripherals (void);
 void GPIOInit(void);
 void GPIOAnalogMode(uint8_t GPIO, uint8_t mode);
 void GPIOSet(uint8_t GPIO, uint8_t mode);

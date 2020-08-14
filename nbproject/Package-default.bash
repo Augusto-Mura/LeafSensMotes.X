@@ -10,9 +10,9 @@ CND_CONF=default
 CND_DISTDIR=dist
 TMPDIR=build/${CND_CONF}/${IMAGE_TYPE}/tmp-packaging
 TMPDIRNAME=tmp-packaging
-OUTPUT_PATH=dist/${CND_CONF}/${IMAGE_TYPE}/LeafSensMotes.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
-OUTPUT_BASENAME=LeafSensMotes.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
-PACKAGE_TOP_DIR=leafsensmotes.x/
+OUTPUT_PATH=dist/${CND_CONF}/${IMAGE_TYPE}/My1_1_21-07_lowPower.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+OUTPUT_BASENAME=My1_1_21-07_lowPower.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+PACKAGE_TOP_DIR=my1121-07lowpower.x/
 
 # Functions
 function checkReturnCode
@@ -57,15 +57,15 @@ mkdir -p ${TMPDIR}
 
 # Copy files and create directories and links
 cd "${TOP}"
-makeDirectory ${TMPDIR}/leafsensmotes.x/bin
+makeDirectory ${TMPDIR}/my1121-07lowpower.x/bin
 copyFileToTmpDir "${OUTPUT_PATH}" "${TMPDIR}/${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}" 0755
 
 
 # Generate tar file
 cd "${TOP}"
-rm -f ${CND_DISTDIR}/${CND_CONF}/package/leafsensmotes.x.tar
+rm -f ${CND_DISTDIR}/${CND_CONF}/package/my1121-07lowpower.x.tar
 cd ${TMPDIR}
-tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/package/leafsensmotes.x.tar *
+tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/package/my1121-07lowpower.x.tar *
 checkReturnCode
 
 # Cleanup

@@ -13,10 +13,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _TMR3_Initialize `(v ~T0 @X0 0 ef ]
 "94 mcc_generated_files/tmr5.h
 [v _TMR5_Initialize `(v ~T0 @X0 0 ef ]
-"95 mcc_generated_files/tmr1.h
-[v _TMR1_Initialize `(v ~T0 @X0 0 ef ]
 "406 mcc_generated_files/ext_int.h
 [v _EXT_INT_Initialize `(v ~T0 @X0 0 ef ]
+"95 mcc_generated_files/tmr1.h
+[v _TMR1_Initialize `(v ~T0 @X0 0 ef ]
 "111 mcc_generated_files/eusart2.h
 [v _EUSART2_Initialize `(v ~T0 @X0 0 ef ]
 "47 mcc_generated_files/LoRaWAN/lorawan_init.h
@@ -7360,12 +7360,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;mcc.c: 59: TMR5_Initialize();
 "59
 [e ( _TMR5_Initialize ..  ]
-[; ;mcc.c: 60: TMR1_Initialize();
+[; ;mcc.c: 60: EXT_INT_Initialize();
 "60
-[e ( _TMR1_Initialize ..  ]
-[; ;mcc.c: 61: EXT_INT_Initialize();
-"61
 [e ( _EXT_INT_Initialize ..  ]
+[; ;mcc.c: 61: TMR1_Initialize();
+"61
+[e ( _TMR1_Initialize ..  ]
 [; ;mcc.c: 62: EUSART2_Initialize();
 "62
 [e ( _EUSART2_Initialize ..  ]

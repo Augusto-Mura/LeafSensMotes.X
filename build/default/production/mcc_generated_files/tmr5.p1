@@ -2,7 +2,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 "37 mcc_generated_files/../tmrAPP.h
 [s S849 `ui 1 `uc 1 `uc 1 `uc 1 `uc 1 ]
 [n S849 timerStruct ms sec min hour day ]
-[v F5917 `(v ~T0 @X0 0 tf ]
+[v F5921 `(v ~T0 @X0 0 tf ]
 "1574 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18lf46k22.h
 [v _T5GCON `Vuc ~T0 @X0 0 e@3917 ]
 "1805
@@ -38,9 +38,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S323 . . . ]
 "6250
 [v _IPR5bits `VS323 ~T0 @X0 0 e@3967 ]
-[v F5914 `(v ~T0 @X0 0 tf ]
+[v F5918 `(v ~T0 @X0 0 tf ]
 "364 mcc_generated_files/tmr5.h
-[v _TMR5_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F5914 ]
+[v _TMR5_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F5918 ]
 "400
 [v _TMR5_InterruptTicker `(v ~T0 @X0 0 ef ]
 "1669 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18lf46k22.h
@@ -79,10 +79,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S71 . . . . . ]
 "1604
 [v _T5GCONbits `VS71 ~T0 @X0 0 e@3917 ]
-"52 mcc_generated_files/../tmrAPP.h
-[v _timerTick16 `(v ~T0 @X0 0 ef ]
-"51
-[v _timerHandler16 `(v ~T0 @X0 0 ef ]
+"50 mcc_generated_files/../tmrAPP.h
+[v _timerTick `(v ~T0 @X0 0 ef ]
+"48
+[v _timerHandler `(v ~T0 @X0 0 ef ]
 [; ;xc.h: 18: extern const char __xc8_OPTIM_SPEED;
 [; ;xc.h: 20: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
@@ -6674,23 +6674,25 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;stdint.h: 282: typedef uint32_t uintmax_t;
 [; ;stdint.h: 289: typedef int16_t intptr_t;
 [; ;stdint.h: 294: typedef uint16_t uintptr_t;
-[; ;rn2483APP.h: 54: void GPIOInit(void);
-[; ;rn2483APP.h: 55: void GPIOAnalogMode(uint8_t GPIO, uint8_t mode);
-[; ;rn2483APP.h: 56: void GPIOSet(uint8_t GPIO, uint8_t mode);
-[; ;rn2483APP.h: 57: uint16_t GPIOAnalogRead(uint8_t GPIO);
-[; ;rn2483APP.h: 58: void GPIODigitalWrite(uint8_t GPIO, uint8_t digOut);
-[; ;rn2483APP.h: 59: uint8_t GPIODigitalRead(uint8_t GPIO);
-[; ;rn2483APP.h: 60: void GPIODigitalToogle(uint8_t GPIO);
-[; ;rn2483APP.h: 61: void acquisitionData(uint8_t GPIO, uint8_t *string);
-[; ;rn2483APP.h: 62: void uint16ToString(uint16_t value, uint8_t *output);
-[; ;rn2483APP.h: 63: void rn2483_delayms(uint16_t length);
-[; ;rn2483APP.h: 64: void rn2483_delaysec(uint16_t length);
-[; ;rn2483APP.h: 65: uint8_t adaptString(uint8_t *string, uint8_t length);
-[; ;rn2483APP.h: 66: uint16_t GPIOAverageRead(uint8_t GPIO);
-[; ;rn2483APP.h: 67: uint8_t isJoined(void);
-[; ;rn2483APP.h: 68: uint8_t rn2483_GoToIdle(void);
-[; ;rn2483APP.h: 69: void rn2483_IdleInitialization(void);
-[; ;rn2483APP.h: 70: void resetAllChannels(void);
+[; ;rn2483APP.h: 58: void enableClockPeripherals (void);
+[; ;rn2483APP.h: 59: void disableClockPeripherals (void);
+[; ;rn2483APP.h: 60: void GPIOInit(void);
+[; ;rn2483APP.h: 61: void GPIOAnalogMode(uint8_t GPIO, uint8_t mode);
+[; ;rn2483APP.h: 62: void GPIOSet(uint8_t GPIO, uint8_t mode);
+[; ;rn2483APP.h: 63: uint16_t GPIOAnalogRead(uint8_t GPIO);
+[; ;rn2483APP.h: 64: void GPIODigitalWrite(uint8_t GPIO, uint8_t digOut);
+[; ;rn2483APP.h: 65: uint8_t GPIODigitalRead(uint8_t GPIO);
+[; ;rn2483APP.h: 66: void GPIODigitalToogle(uint8_t GPIO);
+[; ;rn2483APP.h: 67: void acquisitionData(uint8_t GPIO, uint8_t *string);
+[; ;rn2483APP.h: 68: void uint16ToString(uint16_t value, uint8_t *output);
+[; ;rn2483APP.h: 69: void rn2483_delayms(uint16_t length);
+[; ;rn2483APP.h: 70: void rn2483_delaysec(uint16_t length);
+[; ;rn2483APP.h: 71: uint8_t adaptString(uint8_t *string, uint8_t length);
+[; ;rn2483APP.h: 72: uint16_t GPIOAverageRead(uint8_t GPIO);
+[; ;rn2483APP.h: 73: uint8_t isJoined(void);
+[; ;rn2483APP.h: 74: uint8_t rn2483_GoToIdle(void);
+[; ;rn2483APP.h: 75: void rn2483_IdleInitialization(void);
+[; ;rn2483APP.h: 76: void resetAllChannels(void);
 [; ;stdbool.h: 15: typedef unsigned char bool;
 [; ;tmr5.h: 94: void TMR5_Initialize(void);
 [; ;tmr5.h: 125: void TMR5_StartTimer(void);
@@ -6723,7 +6725,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _timer5ReloadVal `Vui ~T0 @X0 1 e ]
 [; ;tmr5.c: 59: volatile uint16_t timer5ReloadVal;
 "60
-[v _TMR5_InterruptHandler `*F5917 ~T0 @X0 1 e ]
+[v _TMR5_InterruptHandler `*F5921 ~T0 @X0 1 e ]
 [; ;tmr5.c: 60: void (*TMR5_InterruptHandler)(void);
 "66
 [v _TMR5_Initialize `(v ~T0 @X0 1 ef ]
@@ -6736,12 +6738,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;tmr5.c: 71: T5GCON = 0x00;
 "71
 [e = _T5GCON -> -> 0 `i `uc ]
-[; ;tmr5.c: 74: TMR5H = 0x00;
+[; ;tmr5.c: 74: TMR5H = 0xFE;
 "74
-[e = _TMR5H -> -> 0 `i `uc ]
-[; ;tmr5.c: 77: TMR5L = 0x00;
+[e = _TMR5H -> -> 254 `i `uc ]
+[; ;tmr5.c: 77: TMR5L = 0x0C;
 "77
-[e = _TMR5L -> -> 0 `i `uc ]
+[e = _TMR5L -> -> 12 `i `uc ]
 [; ;tmr5.c: 80: timer5ReloadVal=TMR5;
 "80
 [e = _timer5ReloadVal -> _TMR5 `ui ]
@@ -6757,9 +6759,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;tmr5.c: 91: TMR5_SetInterruptHandler(TMR5_InterruptTicker);
 "91
 [e ( _TMR5_SetInterruptHandler (1 &U _TMR5_InterruptTicker ]
-[; ;tmr5.c: 94: T5CON = 0xBD;
+[; ;tmr5.c: 94: T5CON = 0x35;
 "94
-[e = _T5CON -> -> 189 `i `uc ]
+[e = _T5CON -> -> 53 `i `uc ]
 [; ;tmr5.c: 95: }
 "95
 [e :UE 850 ]
@@ -6946,7 +6948,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e ( _TMR5_WriteTimer (1 _timer5ReloadVal ]
 [; ;tmr5.c: 172: if(TMR5_InterruptHandler)
 "172
-[e $ ! != _TMR5_InterruptHandler -> -> 0 `i `*F5917 861  ]
+[e $ ! != _TMR5_InterruptHandler -> -> 0 `i `*F5921 861  ]
 [; ;tmr5.c: 173: {
 "173
 {
@@ -6962,12 +6964,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :UE 860 ]
 }
 "179
-[v _TMR5_SetInterruptHandler `(v ~T0 @X0 1 ef1`*F5914 ]
+[v _TMR5_SetInterruptHandler `(v ~T0 @X0 1 ef1`*F5918 ]
 {
 [; ;tmr5.c: 179: void TMR5_SetInterruptHandler(void (* InterruptHandler)(void)){
 [e :U _TMR5_SetInterruptHandler ]
-[v F5959 `(v ~T0 @X0 0 tf ]
-[v _InterruptHandler `*F5959 ~T0 @X0 1 r1 ]
+[v F5963 `(v ~T0 @X0 0 tf ]
+[v _InterruptHandler `*F5963 ~T0 @X0 1 r1 ]
 [f ]
 [; ;tmr5.c: 180: TMR5_InterruptHandler = InterruptHandler;
 "180
@@ -6982,12 +6984,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;tmr5.c: 183: void TMR5_InterruptTicker(void){
 [e :U _TMR5_InterruptTicker ]
 [f ]
-[; ;tmr5.c: 184: timerTick16();
+[; ;tmr5.c: 184: timerTick();
 "184
-[e ( _timerTick16 ..  ]
-[; ;tmr5.c: 185: timerHandler16();
+[e ( _timerTick ..  ]
+[; ;tmr5.c: 185: timerHandler();
 "185
-[e ( _timerHandler16 ..  ]
+[e ( _timerHandler ..  ]
 [; ;tmr5.c: 186: }
 "186
 [e :UE 863 ]

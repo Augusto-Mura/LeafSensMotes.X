@@ -10920,8 +10920,8 @@ SPI2_Initialize();
 ADC_Initialize();
 TMR3_Initialize();
 TMR5_Initialize();
-TMR1_Initialize();
 EXT_INT_Initialize();
+TMR1_Initialize();
 EUSART2_Initialize();
 LORAWAN_PlatformInit();
 }

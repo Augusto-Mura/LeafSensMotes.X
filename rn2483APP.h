@@ -51,6 +51,12 @@
 #define ANAL 1
 #define DIG 0
 
+
+#define PER_ON      0
+#define PER_OFF     1
+
+void enableClockPeripherals (void);
+void disableClockPeripherals (void);
 void GPIOInit(void);
 void GPIOAnalogMode(uint8_t GPIO, uint8_t mode);
 void GPIOSet(uint8_t GPIO, uint8_t mode);

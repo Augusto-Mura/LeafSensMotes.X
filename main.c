@@ -86,6 +86,8 @@ void RxJoinResponse(bool status) {
 }
 
 
+ 
+
 void main(void) {
     // Initialize the device
     SYSTEM_Initialize();
@@ -131,6 +133,9 @@ void main(void) {
     
 
     
+    /* Select IDLE mode when sleep() is called*/
+    OSCCONbits.IDLEN = 1;
+    
     //sinGeneration();
     
     /* Start timer      */
@@ -165,11 +170,20 @@ void main(void) {
         LORAWAN_Mainloop();
         
        //timer.hour == 1
-        if (isJoined() && (timer.min == 1 || firstSend)){
-//            GPIODigitalWrite(GPIO10, 1);
-            
+        if (isJoined() && (timer.hour >= 1 || firstSend)){
+            GPIODigitalWrite(GPIO10, 0);
+            GPIODigitalWrite(GPIO11, 0);
+
             firstSend = false;
-            acuadoriApp();                    
+            enableClockPeripherals();
+            acuadoriApp();  
+            disableClockPeripherals();
+            GPIOSet(GPIO1, 0);              //for power-saving purpose set all GPIOs as outputs
+            GPIOSet(GPIO2, 0);
+            GPIOSet(GPIO3, 0);
+            GPIODigitalWrite(GPIO1, 0);
+            GPIODigitalWrite(GPIO2, 0);
+            GPIODigitalWrite(GPIO3, 0);
             timerReset();
         }
          
@@ -182,18 +196,13 @@ void main(void) {
                 LORAWAN_SetApplicationEui(appEui);
                 LORAWAN_SetDeviceEui(deviceEui);
                 LORAWAN_Join(OTAA);  
-                //GPIODigitalToogle(GPIO10);
+                GPIODigitalToogle(GPIO10);
                 timerReset();  
         }
-//        else if(isJoined())
-//        {
-////            GPIODigitalWrite(GPIO10, 0);
-////            GPIODigitalToogle(GPIO10);
-//            rn2483_GoToIdle();
-//
-////            LORAWAN_PlatformInit();
-////            LORAWAN_Init(RxData, RxJoinResponse);
-//        }
+        
+        Sleep();
+        Nop();
+        Nop();
         
     }
 }

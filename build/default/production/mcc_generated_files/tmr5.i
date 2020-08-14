@@ -9689,7 +9689,9 @@ typedef int16_t intptr_t;
 
 typedef uint16_t uintptr_t;
 
-# 54 "mcc_generated_files/../rn2483APP.h"
+# 58 "mcc_generated_files/../rn2483APP.h"
+void enableClockPeripherals (void);
+void disableClockPeripherals (void);
 void GPIOInit(void);
 void GPIOAnalogMode(uint8_t GPIO, uint8_t mode);
 void GPIOSet(uint8_t GPIO, uint8_t mode);
@@ -9778,10 +9780,10 @@ void TMR5_Initialize(void)
 T5GCON = 0x00;
 
 
-TMR5H = 0x00;
+TMR5H = 0xFE;
 
 
-TMR5L = 0x00;
+TMR5L = 0x0C;
 
 
 timer5ReloadVal=TMR5;
@@ -9798,7 +9800,7 @@ IPR5bits.TMR5IP = 0;
 TMR5_SetInterruptHandler(TMR5_InterruptTicker);
 
 
-T5CON = 0xBD;
+T5CON = 0x35;
 }
 
 void TMR5_StartTimer(void)
@@ -9888,7 +9890,7 @@ TMR5_InterruptHandler = InterruptHandler;
 }
 
 void TMR5_InterruptTicker(void){
-timerTick16();
-timerHandler16();
+timerTick();
+timerHandler();
 }
 

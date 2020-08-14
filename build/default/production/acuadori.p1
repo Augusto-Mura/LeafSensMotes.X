@@ -4,9 +4,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S882 timerStruct ms sec min hour day ]
 "14 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\c90\string.h
 [v _memcpy `(*v ~T0 @X0 0 ef3`*v`*Cv`ui ]
-"58 rn2483APP.h
+"64 rn2483APP.h
 [v _GPIODigitalWrite `(v ~T0 @X0 0 ef2`uc`uc ]
-"64
+"70
 [v _rn2483_delaysec `(v ~T0 @X0 0 ef1`ui ]
 "41 acuadori.h
 [v _leafSensAcquisition `(v ~T0 @X0 0 ef ]
@@ -81,19 +81,19 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _i2c_stop `(v ~T0 @X0 0 ef ]
 "125 mcc_generated_files/tmr5.h
 [v _TMR5_StartTimer `(v ~T0 @X0 0 ef ]
-"66 rn2483APP.h
+"72 rn2483APP.h
 [v _GPIOAverageRead `(ui ~T0 @X0 0 ef1`uc ]
 "47 acuadori.h
 [v _tempConversion `(ui ~T0 @X0 0 ef1`ui ]
-"62 rn2483APP.h
+"68 rn2483APP.h
 [v _uint16ToString `(v ~T0 @X0 0 ef2`ui`*uc ]
 "48 acuadori.h
 [v _pointAddition `(v ~T0 @X0 0 ef1`*uc ]
-"65 rn2483APP.h
+"71 rn2483APP.h
 [v _adaptString `(uc ~T0 @X0 0 ef2`*uc`uc ]
 "43 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\c90\math.h
 [v _log `(d ~T0 @X0 0 ef1`d ]
-"61 rn2483APP.h
+"67 rn2483APP.h
 [v _acquisitionData `(v ~T0 @X0 0 ef2`uc`*uc ]
 "46 acuadori.h
 [v _averageMeasure `(ui ~T0 @X0 0 ef ]
@@ -102,12 +102,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 "81 mcc_generated_files/LoRaWAN/sw_timer.h
 [v _SwClearAllTimers `(v ~T0 @X0 0 ef ]
 "398 acuadori.c
-[c E6396 0 1 .. ]
-[n E6396 . UNCNF CNF  ]
-[c E6369 0 1 2 3 4 5 6 7 8 9 10 11 12 .. ]
-[n E6369 . OK NETWORK_NOT_JOINED MAC_STATE_NOT_READY_FOR_TRANSMISSION INVALID_PARAMETER KEYS_NOT_INITIALIZED SILENT_IMMEDIATELY_ACTIVE FRAME_COUNTER_ERROR_REJOIN_NEEDED INVALID_BUFFER_LENGTH MAC_PAUSED NO_CHANNELS_FOUND INVALID_CLASS MCAST_PARAM_ERROR MCAST_MSG_ERROR  ]
+[c E6400 0 1 .. ]
+[n E6400 . UNCNF CNF  ]
+[c E6373 0 1 2 3 4 5 6 7 8 9 10 11 12 .. ]
+[n E6373 . OK NETWORK_NOT_JOINED MAC_STATE_NOT_READY_FOR_TRANSMISSION INVALID_PARAMETER KEYS_NOT_INITIALIZED SILENT_IMMEDIATELY_ACTIVE FRAME_COUNTER_ERROR_REJOIN_NEEDED INVALID_BUFFER_LENGTH MAC_PAUSED NO_CHANNELS_FOUND INVALID_CLASS MCAST_PARAM_ERROR MCAST_MSG_ERROR  ]
 "197 mcc_generated_files/LoRaWAN/lorawan.h
-[v _LORAWAN_Send `(E6369 ~T0 @X0 0 ef4`E6396`uc`*v`uc ]
+[v _LORAWAN_Send `(E6373 ~T0 @X0 0 ef4`E6400`uc`*v`uc ]
 "49 tmrAPP.h
 [v _timerReset `(v ~T0 @X0 0 ef ]
 [; ;xc.h: 18: extern const char __xc8_OPTIM_SPEED;
@@ -6727,23 +6727,25 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;stdint.h: 282: typedef uint32_t uintmax_t;
 [; ;stdint.h: 289: typedef int16_t intptr_t;
 [; ;stdint.h: 294: typedef uint16_t uintptr_t;
-[; ;rn2483APP.h: 54: void GPIOInit(void);
-[; ;rn2483APP.h: 55: void GPIOAnalogMode(uint8_t GPIO, uint8_t mode);
-[; ;rn2483APP.h: 56: void GPIOSet(uint8_t GPIO, uint8_t mode);
-[; ;rn2483APP.h: 57: uint16_t GPIOAnalogRead(uint8_t GPIO);
-[; ;rn2483APP.h: 58: void GPIODigitalWrite(uint8_t GPIO, uint8_t digOut);
-[; ;rn2483APP.h: 59: uint8_t GPIODigitalRead(uint8_t GPIO);
-[; ;rn2483APP.h: 60: void GPIODigitalToogle(uint8_t GPIO);
-[; ;rn2483APP.h: 61: void acquisitionData(uint8_t GPIO, uint8_t *string);
-[; ;rn2483APP.h: 62: void uint16ToString(uint16_t value, uint8_t *output);
-[; ;rn2483APP.h: 63: void rn2483_delayms(uint16_t length);
-[; ;rn2483APP.h: 64: void rn2483_delaysec(uint16_t length);
-[; ;rn2483APP.h: 65: uint8_t adaptString(uint8_t *string, uint8_t length);
-[; ;rn2483APP.h: 66: uint16_t GPIOAverageRead(uint8_t GPIO);
-[; ;rn2483APP.h: 67: uint8_t isJoined(void);
-[; ;rn2483APP.h: 68: uint8_t rn2483_GoToIdle(void);
-[; ;rn2483APP.h: 69: void rn2483_IdleInitialization(void);
-[; ;rn2483APP.h: 70: void resetAllChannels(void);
+[; ;rn2483APP.h: 58: void enableClockPeripherals (void);
+[; ;rn2483APP.h: 59: void disableClockPeripherals (void);
+[; ;rn2483APP.h: 60: void GPIOInit(void);
+[; ;rn2483APP.h: 61: void GPIOAnalogMode(uint8_t GPIO, uint8_t mode);
+[; ;rn2483APP.h: 62: void GPIOSet(uint8_t GPIO, uint8_t mode);
+[; ;rn2483APP.h: 63: uint16_t GPIOAnalogRead(uint8_t GPIO);
+[; ;rn2483APP.h: 64: void GPIODigitalWrite(uint8_t GPIO, uint8_t digOut);
+[; ;rn2483APP.h: 65: uint8_t GPIODigitalRead(uint8_t GPIO);
+[; ;rn2483APP.h: 66: void GPIODigitalToogle(uint8_t GPIO);
+[; ;rn2483APP.h: 67: void acquisitionData(uint8_t GPIO, uint8_t *string);
+[; ;rn2483APP.h: 68: void uint16ToString(uint16_t value, uint8_t *output);
+[; ;rn2483APP.h: 69: void rn2483_delayms(uint16_t length);
+[; ;rn2483APP.h: 70: void rn2483_delaysec(uint16_t length);
+[; ;rn2483APP.h: 71: uint8_t adaptString(uint8_t *string, uint8_t length);
+[; ;rn2483APP.h: 72: uint16_t GPIOAverageRead(uint8_t GPIO);
+[; ;rn2483APP.h: 73: uint8_t isJoined(void);
+[; ;rn2483APP.h: 74: uint8_t rn2483_GoToIdle(void);
+[; ;rn2483APP.h: 75: void rn2483_IdleInitialization(void);
+[; ;rn2483APP.h: 76: void resetAllChannels(void);
 [; ;pin_manager.h: 204: void PIN_MANAGER_Initialize (void);
 [; ;pin_manager.h: 216: void PIN_MANAGER_IOC(void);
 [; ;pin_manager.h: 229: void IOCB4_ISR(void);
@@ -7703,54 +7705,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;acuadori.c: 83: sensorsStringLength += 1 + stringValueLength;
 "83
 [e =+ _sensorsStringLength -> + -> 1 `i -> _stringValueLength `i `uc ]
-[; ;acuadori.c: 86: GPIODigitalWrite(0x04, 1);
-"86
-[e ( _GPIODigitalWrite (2 , -> -> 4 `i `uc -> -> 1 `i `uc ]
-[; ;acuadori.c: 87: GPIODigitalWrite(0x00, 1);
-"87
-[e ( _GPIODigitalWrite (2 , -> -> 0 `i `uc -> -> 1 `i `uc ]
-[; ;acuadori.c: 88: clip = 2;
-"88
-[e = _clip -> -> 2 `i `uc ]
-[; ;acuadori.c: 89: rn2483_delaysec(10);
-"89
-[e ( _rn2483_delaysec (1 -> -> 10 `i `ui ]
-[; ;acuadori.c: 90: tempSensAcquisition();
-"90
-[e ( _tempSensAcquisition ..  ]
-[; ;acuadori.c: 91: strncat(sensorsString, "T", 1);
-"91
-[e ( _strncat (3 , , &U _sensorsString :s 6C -> -> 1 `i `ui ]
-[; ;acuadori.c: 92: strncat(sensorsString, stringValue, stringValueLength);
-"92
-[e ( _strncat (3 , , &U _sensorsString -> &U _stringValue `*Cuc -> _stringValueLength `ui ]
-[; ;acuadori.c: 93: sensorsStringLength += 1 + stringValueLength;
-"93
-[e =+ _sensorsStringLength -> + -> 1 `i -> _stringValueLength `i `uc ]
-[; ;acuadori.c: 96: lightSensAcquisition();
-"96
-[e ( _lightSensAcquisition ..  ]
-[; ;acuadori.c: 97: strncat(sensorsString, "L", 1);
-"97
-[e ( _strncat (3 , , &U _sensorsString :s 7C -> -> 1 `i `ui ]
-[; ;acuadori.c: 98: strncat(sensorsString, stringValue, stringValueLength);
-"98
-[e ( _strncat (3 , , &U _sensorsString -> &U _stringValue `*Cuc -> _stringValueLength `ui ]
-[; ;acuadori.c: 99: sensorsStringLength += 1 + stringValueLength;
-"99
-[e =+ _sensorsStringLength -> + -> 1 `i -> _stringValueLength `i `uc ]
-[; ;acuadori.c: 102: impedenceAcquisition();
-"102
-[e ( _impedenceAcquisition ..  ]
-[; ;acuadori.c: 104: strncat(sensorsString, "C", 1);
-"104
-[e ( _strncat (3 , , &U _sensorsString :s 8C -> -> 1 `i `ui ]
-[; ;acuadori.c: 105: strncat(sensorsString, stringValue, stringValueLength);
-"105
-[e ( _strncat (3 , , &U _sensorsString -> &U _stringValue `*Cuc -> _stringValueLength `ui ]
-[; ;acuadori.c: 106: sensorsStringLength += 1 + stringValueLength;
-"106
-[e =+ _sensorsStringLength -> + -> 1 `i -> _stringValueLength `i `uc ]
 [; ;acuadori.c: 109: GPIODigitalWrite(0x16, 1);
 "109
 [e ( _GPIODigitalWrite (2 , -> -> 22 `i `uc -> -> 1 `i `uc ]
@@ -8268,10 +8222,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e ( _LORAWAN_Mainloop ..  ]
 [; ;acuadori.c: 398: status = LORAWAN_Send(CNF, 200, sensorsString, sensorsStringLength);
 "398
-[e = _status -> ( _LORAWAN_Send (4 , , , . `E6396 1 -> -> 200 `i `uc -> &U _sensorsString `*v _sensorsStringLength `uc ]
+[e = _status -> ( _LORAWAN_Send (4 , , , . `E6400 1 -> -> 200 `i `uc -> &U _sensorsString `*v _sensorsStringLength `uc ]
 [; ;acuadori.c: 410: if(status == NETWORK_NOT_JOINED){
 "410
-[e $ ! == -> _status `i -> . `E6369 1 `i 937  ]
+[e $ ! == -> _status `i -> . `E6373 1 `i 937  ]
 {
 [; ;acuadori.c: 411: break;
 "411
@@ -8392,10 +8346,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :UE 944 ]
 }
 [a 3C 84 0 ]
-[a 6C 84 0 ]
 [a 4C 76 0 ]
-[a 7C 76 0 ]
 [a 5C 67 0 ]
-[a 8C 67 0 ]
 [a 2C 66 0 ]
 [a 1C 65 0 ]

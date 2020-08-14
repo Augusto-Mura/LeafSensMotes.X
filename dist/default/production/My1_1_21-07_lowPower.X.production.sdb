@@ -3,7 +3,7 @@
 [d edition pro ]
 [d chip 18LF46K22 ]
 [d frameptr 4065 ]
-"103 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/radio_driver_SX1276.c
+"103 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/radio_driver_SX1276.c
 [e E5853 . `uc
 MODULATION_FSK 0
 MODULATION_LORA 1
@@ -94,7 +94,7 @@ INVALID_CLASS 10
 MCAST_PARAM_ERROR 11
 MCAST_MSG_ERROR 12
 ]
-"62 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
+"62 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
 [e E6623 . `uc
 BW_125KHZ 7
 BW_250KHZ 8
@@ -175,7 +175,7 @@ SF_10 10
 SF_11 11
 SF_12 12
 ]
-"54 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan.c
+"54 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan.c
 [e E6094 . `uc
 CLASS_A 0
 CLASS_B 1
@@ -262,13 +262,13 @@ FRAME_TYPE_DATA_CONFIRMED_DOWN 5
 FRAME_TYPE_RFU 6
 FRAME_TYPE_PROPRIETARY 7
 ]
-"84 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/adc.c
+"84 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/adc.c
 [e E5859 . `uc
 channel_CTMU 29
 channel_DAC 30
 channel_FVRBuf2 31
 ]
-"73 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\main.c
+"73 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\main.c
 [e E6285 . `uc
 MAC_NOT_OK 0
 MAC_OK 1
@@ -277,7 +277,7 @@ RADIO_OK 3
 INVALID_BUFFER_LEN 4
 MCAST_RE_KEYING_NEEDED 5
 ]
-"130
+"132
 [e E6293 . `uc
 OTAA 0
 ABP 1
@@ -297,19 +297,19 @@ INVALID_CLASS 10
 MCAST_PARAM_ERROR 11
 MCAST_MSG_ERROR 12
 ]
-"180
+"194
 [e E6301 . `uc
 ISM_EU868 0
 ISM_EU433 1
 ]
-"312 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\rn2483APP.c
-[e E5899 . `uc
+"325 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\rn2483APP.c
+[e E5903 . `uc
 channel_CTMU 29
 channel_DAC 30
 channel_FVRBuf2 31
 ]
-"440
-[e E6310 . `uc
+"453
+[e E6314 . `uc
 OK 0
 NETWORK_NOT_JOINED 1
 MAC_STATE_NOT_READY_FOR_TRANSMISSION 2
@@ -324,12 +324,12 @@ INVALID_CLASS 10
 MCAST_PARAM_ERROR 11
 MCAST_MSG_ERROR 12
 ]
-"398 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\acuadori.c
-[e E6396 . `uc
+"398 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\acuadori.c
+[e E6400 . `uc
 UNCNF 0
 CNF 1
 ]
-[e E6369 . `uc
+[e E6373 . `uc
 OK 0
 NETWORK_NOT_JOINED 1
 MAC_STATE_NOT_READY_FOR_TRANSMISSION 2
@@ -437,7 +437,7 @@ MCAST_MSG_ERROR 12
 [v ___omul __omul `(ul  1 e 4 0 ]
 "10 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
-"38 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\I2C.c
+"38 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\I2C.c
 [v _i2c_stop i2c_stop `(v  1 e 1 0 ]
 "53
 [v _i2c_sdaWrite i2c_sdaWrite `(uc  1 e 1 0 ]
@@ -451,19 +451,19 @@ MCAST_MSG_ERROR 12
 [v _setSDA setSDA `(v  1 e 1 0 ]
 "168
 [v _resetSDA resetSDA `(v  1 e 1 0 ]
-"73 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\main.c
+"73 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\main.c
 [v _RxData RxData `(v  1 e 1 0 ]
 "76
 [v _RxJoinResponse RxJoinResponse `(v  1 e 1 0 ]
-"89
+"91
 [v _main main `(v  1 e 1 0 ]
-"60 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/adc.c
+"60 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/adc.c
 [v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
 "110
 [v _ADC_GetConversion ADC_GetConversion `(ui  1 e 2 0 ]
 "136
 [v _ADC_ISR ADC_ISR `(v  1 e 1 0 ]
-"65 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/eusart2.c
+"65 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/eusart2.c
 [v _EUSART2_Initialize EUSART2_Initialize `(v  1 e 1 0 ]
 "143
 [v _EUSART2_DefaultFramingErrorHandler EUSART2_DefaultFramingErrorHandler `(v  1 e 1 0 ]
@@ -477,7 +477,7 @@ MCAST_MSG_ERROR 12
 [v _EUSART2_SetOverrunErrorHandler EUSART2_SetOverrunErrorHandler `(v  1 e 1 0 ]
 "164
 [v _EUSART2_SetErrorHandler EUSART2_SetErrorHandler `(v  1 e 1 0 ]
-"33 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/ext_int.c
+"33 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/ext_int.c
 [v _INT1_ISR INT1_ISR `(v  1 e 1 0 ]
 "42
 [v _INT1_CallBack INT1_CallBack `(v  1 e 1 0 ]
@@ -495,17 +495,17 @@ MCAST_MSG_ERROR 12
 [v _INT2_DefaultInterruptHandler INT2_DefaultInterruptHandler `(v  1 e 1 0 ]
 "86
 [v _EXT_INT_Initialize EXT_INT_Initialize `(v  1 e 1 0 ]
-"52 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/interrupt_manager.c
+"52 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
 "63
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
-"248 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/AES.c
+"248 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/AES.c
 [v _AESEncode AESEncode `(v  1 e 1 0 ]
 "337
 [v _EncKeySchedule EncKeySchedule `(v  1 e 1 0 ]
 "385
 [v _EncodeShiftRow EncodeShiftRow `(v  1 e 1 0 ]
-"48 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/interrupt_manager_lora_addons.c
+"48 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/interrupt_manager_lora_addons.c
 [v _INTERRUPT_GetDioStatus INTERRUPT_GetDioStatus `(uc  1 e 1 0 ]
 "63
 [v _DIO0_ISR_Lora DIO0_ISR_Lora `(v  1 e 1 0 ]
@@ -513,7 +513,7 @@ MCAST_MSG_ERROR 12
 [v _DIO1_ISR_Lora DIO1_ISR_Lora `(v  1 e 1 0 ]
 "73
 [v _DIO2_ISR_Lora DIO2_ISR_Lora `(v  1 e 1 0 ]
-"115 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan.c
+"115 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan.c
 [v _LORAWAN_Join LORAWAN_Join `(E6059  1 e 1 0 ]
 "185
 [v _LORAWAN_Send LORAWAN_Send `(E6059  1 e 1 0 ]
@@ -611,15 +611,15 @@ MCAST_MSG_ERROR 12
 [v _EncryptFRMPayload EncryptFRMPayload `(v  1 s 1 EncryptFRMPayload ]
 "2238
 [v _LORAWAN_Mainloop LORAWAN_Mainloop `(v  1 e 1 0 ]
-"34 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan_aes.c
+"34 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan_aes.c
 [v _AESEncodeLoRa AESEncodeLoRa `(v  1 e 1 0 ]
-"41 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan_aes_cmac.c
+"41 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan_aes_cmac.c
 [v _AESCmac AESCmac `(v  1 e 1 0 ]
 "124
 [v _GenerateSubkey GenerateSubkey `(v  1 s 1 GenerateSubkey ]
 "167
 [v _FillSubKey FillSubKey `(v  1 s 1 FillSubKey ]
-"124 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
+"124 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
 [v _LORAWAN_Init LORAWAN_Init `(v  1 e 1 0 ]
 "149
 [v _LORAWAN_Reset LORAWAN_Reset `(v  1 e 1 0 ]
@@ -695,7 +695,7 @@ MCAST_MSG_ERROR 12
 [v _DutyCycleCallback DutyCycleCallback `R(v  1 s 1 DutyCycleCallback ]
 "1256
 [v _ConfigureRadioTx ConfigureRadioTx `(v  1 s 1 ConfigureRadioTx ]
-"44 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan_init.c
+"44 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan_init.c
 [v _DIO0_ISR_Lora_Init DIO0_ISR_Lora_Init `(v  1 e 1 0 ]
 "49
 [v _DIO1_ISR_Lora_Init DIO1_ISR_Lora_Init `(v  1 e 1 0 ]
@@ -709,7 +709,7 @@ MCAST_MSG_ERROR 12
 [v _DIO5_ISR_Lora_Init DIO5_ISR_Lora_Init `(v  1 e 1 0 ]
 "72
 [v _LORAWAN_PlatformInit LORAWAN_PlatformInit `(v  1 e 1 0 ]
-"45 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/radio_driver_hal.c
+"45 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/radio_driver_hal.c
 [v _HALResetPinMakeOutput HALResetPinMakeOutput `(v  1 e 1 0 ]
 "50
 [v _HALResetPinMakeInput HALResetPinMakeInput `(v  1 e 1 0 ]
@@ -723,7 +723,7 @@ MCAST_MSG_ERROR 12
 [v _HALSPISend HALSPISend `(uc  1 e 1 0 ]
 "95
 [v _HALDIO5PinValue HALDIO5PinValue `(uc  1 e 1 0 ]
-"126 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/radio_driver_SX1276.c
+"126 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/radio_driver_SX1276.c
 [v _RADIO_RegisterWrite RADIO_RegisterWrite `(v  1 e 1 0 ]
 "134
 [v _RADIO_RegisterRead RADIO_RegisterRead `(uc  1 e 1 0 ]
@@ -809,7 +809,7 @@ MCAST_MSG_ERROR 12
 [v _RADIO_SetWatchdogTimeout RADIO_SetWatchdogTimeout `(v  1 e 1 0 ]
 "1624
 [v _RADIO_SetFSKSyncWord RADIO_SetFSKSyncWord `(v  1 e 1 0 ]
-"65 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/sw_timer.c
+"65 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/sw_timer.c
 [v _TMR_OverrideRemaining TMR_OverrideRemaining `(v  1 e 1 0 ]
 "88
 [v _TMR_GetDeltaTime TMR_GetDeltaTime `(ul  1 e 4 0 ]
@@ -842,15 +842,15 @@ MCAST_MSG_ERROR 12
 [v i2_SwTimersInterrupt SwTimersInterrupt `(ul  1 e 4 0 ]
 "328
 [v _SwClearAllTimers SwClearAllTimers `(v  1 e 1 0 ]
-"54 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/tmr_lora_addons.c
+"54 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/tmr_lora_addons.c
 [v _TMR_ISR_Lora_Init TMR_ISR_Lora_Init `(v  1 e 1 0 ]
 "59
 [v _TMR_ISR_lora TMR_ISR_lora `(v  1 e 1 0 ]
-"50 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/mcc.c
+"50 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 "66
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
-"57 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/pin_manager.c
+"57 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 "111
 [v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
@@ -860,11 +860,11 @@ MCAST_MSG_ERROR 12
 [v _IOCB4_SetInterruptHandler IOCB4_SetInterruptHandler `(v  1 e 1 0 ]
 "146
 [v _IOCB4_DefaultInterruptHandler IOCB4_DefaultInterruptHandler `(v  1 e 1 0 ]
-"65 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/spi2.c
+"65 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/spi2.c
 [v _SPI2_Initialize SPI2_Initialize `(v  1 e 1 0 ]
 "79
 [v _SPI2_Exchange8bit SPI2_Exchange8bit `(uc  1 e 1 0 ]
-"64 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/tmr1.c
+"64 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/tmr1.c
 [v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
 "108
 [v _TMR1_ReadTimer TMR1_ReadTimer `(ui  1 e 2 0 ]
@@ -880,7 +880,7 @@ MCAST_MSG_ERROR 12
 [v _TMR1_SetInterruptHandler TMR1_SetInterruptHandler `(v  1 e 1 0 ]
 "186
 [v _TMR1_DefaultInterruptHandler TMR1_DefaultInterruptHandler `(v  1 e 1 0 ]
-"64 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/tmr3.c
+"64 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/tmr3.c
 [v _TMR3_Initialize TMR3_Initialize `(v  1 e 1 0 ]
 "95
 [v _TMR3_StartTimer TMR3_StartTimer `(v  1 e 1 0 ]
@@ -896,7 +896,7 @@ MCAST_MSG_ERROR 12
 [v _TMR3_SetInterruptHandler TMR3_SetInterruptHandler `(v  1 e 1 0 ]
 "178
 [v _TMR3ISRClock TMR3ISRClock `(v  1 e 1 0 ]
-"66 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/tmr5.c
+"66 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/tmr5.c
 [v _TMR5_Initialize TMR5_Initialize `(v  1 e 1 0 ]
 "97
 [v _TMR5_StartTimer TMR5_StartTimer `(v  1 e 1 0 ]
@@ -910,39 +910,43 @@ MCAST_MSG_ERROR 12
 [v _TMR5_SetInterruptHandler TMR5_SetInterruptHandler `(v  1 e 1 0 ]
 "183
 [v _TMR5_InterruptTicker TMR5_InterruptTicker `(v  1 e 1 0 ]
-"24 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\rn2483APP.c
+"16 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\rn2483APP.c
+[v _enableClockPeripherals enableClockPeripherals `(v  1 e 1 0 ]
+"24
+[v _disableClockPeripherals disableClockPeripherals `(v  1 e 1 0 ]
+"37
 [v _rn2483_delaysec rn2483_delaysec `(v  1 e 1 0 ]
-"41
+"54
 [v _GPIOAnalogMode GPIOAnalogMode `(v  1 e 1 0 ]
-"85
+"98
 [v _GPIOSet GPIOSet `(v  1 e 1 0 ]
-"132
+"145
 [v _GPIODigitalWrite GPIODigitalWrite `(v  1 e 1 0 ]
-"173
+"186
 [v _GPIODigitalRead GPIODigitalRead `(uc  1 e 1 0 ]
-"214
+"227
 [v _GPIODigitalToogle GPIODigitalToogle `(v  1 e 1 0 ]
-"257
+"270
 [v _uint16ToString uint16ToString `(v  1 e 1 0 ]
-"287
-[v _GPIOAverageRead GPIOAverageRead `(ui  1 e 2 0 ]
 "300
+[v _GPIOAverageRead GPIOAverageRead `(ui  1 e 2 0 ]
+"313
 [v _acquisitionData acquisitionData `(v  1 e 1 0 ]
-"308
+"321
 [v _GPIOAnalogRead GPIOAnalogRead `(ui  1 e 2 0 ]
-"319
+"332
 [v _GPIOInit GPIOInit `(v  1 e 1 0 ]
-"363
+"376
 [v _adaptString adaptString `(uc  1 e 1 0 ]
-"383
+"396
 [v _isJoined isJoined `(uc  1 e 1 0 ]
-"17 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\tmrAPP.c
+"17 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\tmrAPP.c
 [v _timerTick timerTick `(v  1 e 1 0 ]
 "25
 [v _timerHandler timerHandler `(v  1 e 1 0 ]
 "68
 [v _timerReset timerReset `(v  1 e 1 0 ]
-"23 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\acuadori.c
+"23 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\acuadori.c
 [v _stringValue stringValue `[5]uc  1 s 5 stringValue ]
 "24
 [v _sensorsString sensorsString `[40]uc  1 s 40 sensorsString ]
@@ -976,13 +980,37 @@ MCAST_MSG_ERROR 12
 [v _ANSELD ANSELD `VEuc  1 e 1 @3899 ]
 "260
 [v _ANSELE ANSELE `VEuc  1 e 1 @3900 ]
+[s S5018 . 1 `uc 1 ADCMD 1 0 :1:0 
+`uc 1 CMP1MD 1 0 :1:1 
+`uc 1 CMP2MD 1 0 :1:2 
+`uc 1 CTMUMD 1 0 :1:3 
+]
+"305
+[u S5023 . 1 `S5018 1 . 1 0 ]
+[v _PMD2bits PMD2bits `VES5023  1 e 1 @3901 ]
+[s S4988 . 1 `uc 1 TMR1MD 1 0 :1:0 
+`uc 1 TMR2MD 1 0 :1:1 
+`uc 1 TMR3MD 1 0 :1:2 
+`uc 1 TMR4MD 1 0 :1:3 
+`uc 1 TMR5MD 1 0 :1:4 
+`uc 1 TMR6MD 1 0 :1:5 
+`uc 1 UART1MD 1 0 :1:6 
+`uc 1 UART2MD 1 0 :1:7 
+]
+"417
+[s S4997 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 SPI1MD 1 0 :1:1 
+`uc 1 SPI2MD 1 0 :1:2 
+]
+[u S5001 . 1 `S4988 1 . 1 0 `S4997 1 . 1 0 ]
+[v _PMD0bits PMD0bits `VES5001  1 e 1 @3903 ]
 "1574
 [v _T5GCON T5GCON `VEuc  1 e 1 @3917 ]
-[s S4832 . 1 `uc 1 . 1 0 :3:0 
+[s S4887 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 T5GGO_NOT_DONE 1 0 :1:3 
 ]
 "1604
-[s S4835 . 1 `uc 1 T5GSS 1 0 :2:0 
+[s S4890 . 1 `uc 1 T5GSS 1 0 :2:0 
 `uc 1 T5GVAL 1 0 :1:2 
 `uc 1 T5GGO_nDONE 1 0 :1:3 
 `uc 1 T5GSPM 1 0 :1:4 
@@ -990,30 +1018,30 @@ MCAST_MSG_ERROR 12
 `uc 1 T5GPOL 1 0 :1:6 
 `uc 1 TMR5GE 1 0 :1:7 
 ]
-[s S4843 . 1 `uc 1 T5GSS0 1 0 :1:0 
+[s S4898 . 1 `uc 1 T5GSS0 1 0 :1:0 
 `uc 1 T5GSS1 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 T5GGO 1 0 :1:3 
 ]
-[s S4848 . 1 `uc 1 . 1 0 :3:0 
+[s S4903 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 T5G_DONE 1 0 :1:3 
 ]
-[u S4851 . 1 `S4832 1 . 1 0 `S4835 1 . 1 0 `S4843 1 . 1 0 `S4848 1 . 1 0 ]
-[v _T5GCONbits T5GCONbits `VES4851  1 e 1 @3917 ]
+[u S4906 . 1 `S4887 1 . 1 0 `S4890 1 . 1 0 `S4898 1 . 1 0 `S4903 1 . 1 0 ]
+[v _T5GCONbits T5GCONbits `VES4906  1 e 1 @3917 ]
 "1669
 [v _T5CON T5CON `VEuc  1 e 1 @3918 ]
-[s S4780 . 1 `uc 1 . 1 0 :2:0 
+[s S4835 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 NOT_T5SYNC 1 0 :1:2 
 ]
 "1703
-[s S4783 . 1 `uc 1 TMR5ON 1 0 :1:0 
+[s S4838 . 1 `uc 1 TMR5ON 1 0 :1:0 
 `uc 1 T5RD16 1 0 :1:1 
 `uc 1 nT5SYNC 1 0 :1:2 
 `uc 1 T5SOSCEN 1 0 :1:3 
 `uc 1 T5CKPS 1 0 :2:4 
 `uc 1 TMR5CS 1 0 :2:6 
 ]
-[s S4790 . 1 `uc 1 . 1 0 :2:0 
+[s S4845 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 T5SYNC 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
 `uc 1 T5CKPS0 1 0 :1:4 
@@ -1021,13 +1049,13 @@ MCAST_MSG_ERROR 12
 `uc 1 TMR5CS0 1 0 :1:6 
 `uc 1 TMR5CS1 1 0 :1:7 
 ]
-[s S4798 . 1 `uc 1 . 1 0 :1:0 
+[s S4853 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 RD165 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 SOSCEN5 1 0 :1:3 
 ]
-[u S4803 . 1 `S4780 1 . 1 0 `S4783 1 . 1 0 `S4790 1 . 1 0 `S4798 1 . 1 0 ]
-[v _T5CONbits T5CONbits `VES4803  1 e 1 @3918 ]
+[u S4858 . 1 `S4835 1 . 1 0 `S4838 1 . 1 0 `S4845 1 . 1 0 `S4853 1 . 1 0 ]
+[v _T5CONbits T5CONbits `VES4858  1 e 1 @3918 ]
 "1778
 [v _TMR5 TMR5 `VEus  1 e 2 @3919 ]
 "1785
@@ -1268,16 +1296,16 @@ MCAST_MSG_ERROR 12
 "6214
 [u S3458 . 1 `S3454 1 . 1 0 ]
 [v _PIR5bits PIR5bits `VES3458  1 e 1 @3966 ]
-[s S4751 . 1 `uc 1 TMR4IP 1 0 :1:0 
+[s S4806 . 1 `uc 1 TMR4IP 1 0 :1:0 
 `uc 1 TMR5IP 1 0 :1:1 
 `uc 1 TMR6IP 1 0 :1:2 
 ]
 "6250
-[s S4755 . 1 `uc 1 CCH05 1 0 :1:0 
+[s S4810 . 1 `uc 1 CCH05 1 0 :1:0 
 `uc 1 CCH15 1 0 :1:1 
 ]
-[u S4758 . 1 `S4751 1 . 1 0 `S4755 1 . 1 0 ]
-[v _IPR5bits IPR5bits `VES4758  1 e 1 @3967 ]
+[u S4813 . 1 `S4806 1 . 1 0 `S4810 1 . 1 0 ]
+[v _IPR5bits IPR5bits `VES4813  1 e 1 @3967 ]
 "6280
 [v _PORTA PORTA `VEuc  1 e 1 @3968 ]
 [s S207 . 1 `uc 1 RB0 1 0 :1:0 
@@ -1452,7 +1480,7 @@ MCAST_MSG_ERROR 12
 ]
 [u S3522 . 1 `S3506 1 . 1 0 `S3515 1 . 1 0 `S3519 1 . 1 0 ]
 [v _PIR2bits PIR2bits `VES3522  1 e 1 @4001 ]
-[s S4539 . 1 `uc 1 CCP2IP 1 0 :1:0 
+[s S4594 . 1 `uc 1 CCP2IP 1 0 :1:0 
 `uc 1 TMR3IP 1 0 :1:1 
 `uc 1 HLVDIP 1 0 :1:2 
 `uc 1 BCL1IP 1 0 :1:3 
@@ -1462,15 +1490,15 @@ MCAST_MSG_ERROR 12
 `uc 1 OSCFIP 1 0 :1:7 
 ]
 "9843
-[s S4548 . 1 `uc 1 . 1 0 :2:0 
+[s S4603 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 LVDIP 1 0 :1:2 
 `uc 1 BCLIP 1 0 :1:3 
 ]
-[s S4552 . 1 `uc 1 . 1 0 :6:0 
+[s S4607 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 CMIP 1 0 :1:6 
 ]
-[u S4555 . 1 `S4539 1 . 1 0 `S4548 1 . 1 0 `S4552 1 . 1 0 ]
-[v _IPR2bits IPR2bits `VES4555  1 e 1 @4002 ]
+[u S4610 . 1 `S4594 1 . 1 0 `S4603 1 . 1 0 `S4607 1 . 1 0 ]
+[v _IPR2bits IPR2bits `VES4610  1 e 1 @4002 ]
 [s S4157 . 1 `uc 1 TMR1GIF 1 0 :1:0 
 `uc 1 TMR3GIF 1 0 :1:1 
 `uc 1 TMR5GIF 1 0 :1:2 
@@ -1490,31 +1518,31 @@ MCAST_MSG_ERROR 12
 [v _PIR3bits PIR3bits `VES4171  1 e 1 @4004 ]
 "11522
 [v _T3CON T3CON `VEuc  1 e 1 @4017 ]
-[s S4587 . 1 `uc 1 . 1 0 :2:0 
+[s S4642 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 NOT_T3SYNC 1 0 :1:2 
 ]
 "11555
-[s S4590 . 1 `uc 1 TMR3ON 1 0 :1:0 
+[s S4645 . 1 `uc 1 TMR3ON 1 0 :1:0 
 `uc 1 T3RD16 1 0 :1:1 
 `uc 1 nT3SYNC 1 0 :1:2 
 `uc 1 T3SOSCEN 1 0 :1:3 
 `uc 1 T3CKPS 1 0 :2:4 
 `uc 1 TMR3CS 1 0 :2:6 
 ]
-[s S4597 . 1 `uc 1 . 1 0 :3:0 
+[s S4652 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 T3OSCEN 1 0 :1:3 
 `uc 1 T3CKPS0 1 0 :1:4 
 `uc 1 T3CKPS1 1 0 :1:5 
 `uc 1 TMR3CS0 1 0 :1:6 
 `uc 1 TMR3CS1 1 0 :1:7 
 ]
-[s S4604 . 1 `uc 1 . 1 0 :3:0 
+[s S4659 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 SOSCEN3 1 0 :1:3 
 `uc 1 . 1 0 :3:4 
 `uc 1 RD163 1 0 :1:7 
 ]
-[u S4609 . 1 `S4587 1 . 1 0 `S4590 1 . 1 0 `S4597 1 . 1 0 `S4604 1 . 1 0 ]
-[v _T3CONbits T3CONbits `VES4609  1 e 1 @4017 ]
+[u S4664 . 1 `S4642 1 . 1 0 `S4645 1 . 1 0 `S4652 1 . 1 0 `S4659 1 . 1 0 ]
+[v _T3CONbits T3CONbits `VES4664  1 e 1 @4017 ]
 "11630
 [v _TMR3 TMR3 `VEus  1 e 2 @4018 ]
 "11637
@@ -1523,11 +1551,11 @@ MCAST_MSG_ERROR 12
 [v _TMR3H TMR3H `VEuc  1 e 1 @4019 ]
 "11677
 [v _T3GCON T3GCON `VEuc  1 e 1 @4020 ]
-[s S4637 . 1 `uc 1 . 1 0 :3:0 
+[s S4692 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 T3GGO_NOT_DONE 1 0 :1:3 
 ]
 "11707
-[s S4640 . 1 `uc 1 T3GSS 1 0 :2:0 
+[s S4695 . 1 `uc 1 T3GSS 1 0 :2:0 
 `uc 1 T3GVAL 1 0 :1:2 
 `uc 1 T3GGO_nDONE 1 0 :1:3 
 `uc 1 T3GSPM 1 0 :1:4 
@@ -1535,16 +1563,16 @@ MCAST_MSG_ERROR 12
 `uc 1 T3GPOL 1 0 :1:6 
 `uc 1 TMR3GE 1 0 :1:7 
 ]
-[s S4648 . 1 `uc 1 T3GSS0 1 0 :1:0 
+[s S4703 . 1 `uc 1 T3GSS0 1 0 :1:0 
 `uc 1 T3GSS1 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 T3G_DONE 1 0 :1:3 
 ]
-[s S4653 . 1 `uc 1 . 1 0 :3:0 
+[s S4708 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 T3GGO 1 0 :1:3 
 ]
-[u S4656 . 1 `S4637 1 . 1 0 `S4640 1 . 1 0 `S4648 1 . 1 0 `S4653 1 . 1 0 ]
-[v _T3GCONbits T3GCONbits `VES4656  1 e 1 @4020 ]
+[u S4711 . 1 `S4692 1 . 1 0 `S4695 1 . 1 0 `S4703 1 . 1 0 `S4708 1 . 1 0 ]
+[v _T3GCONbits T3GCONbits `VES4711  1 e 1 @4020 ]
 "13472
 [v _ADCON2 ADCON2 `VEuc  1 e 1 @4032 ]
 "13543
@@ -1683,6 +1711,23 @@ MCAST_MSG_ERROR 12
 [v _OSCCON2 OSCCON2 `VEuc  1 e 1 @4050 ]
 "16046
 [v _OSCCON OSCCON `VEuc  1 e 1 @4051 ]
+[s S4433 . 1 `uc 1 SCS 1 0 :2:0 
+`uc 1 HFIOFS 1 0 :1:2 
+`uc 1 OSTS 1 0 :1:3 
+`uc 1 IRCF 1 0 :3:4 
+`uc 1 IDLEN 1 0 :1:7 
+]
+"16069
+[s S4439 . 1 `uc 1 SCS0 1 0 :1:0 
+`uc 1 SCS1 1 0 :1:1 
+`uc 1 IOFS 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 IRCF0 1 0 :1:4 
+`uc 1 IRCF1 1 0 :1:5 
+`uc 1 IRCF2 1 0 :1:6 
+]
+[u S4447 . 1 `S4433 1 . 1 0 `S4439 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES4447  1 e 1 @4051 ]
 [s S3139 . 1 `uc 1 INT1IF 1 0 :1:0 
 `uc 1 INT2IF 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
@@ -1757,7 +1802,7 @@ MCAST_MSG_ERROR 12
 [v _errno errno `i  1 e 2 0 ]
 "3 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\rand.c
 [v _randx randx `l  1 s 4 randx ]
-"18 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\I2C.c
+"18 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\I2C.c
 [v _high high `uc  1 s 1 high ]
 "19
 [v _low low `uc  1 s 1 low ]
@@ -1765,9 +1810,9 @@ MCAST_MSG_ERROR 12
 [v I2C@flag flag `uc  1 s 1 flag ]
 "21
 [v _nACK nACK `uc  1 s 1 nACK ]
-"23 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\main.c
+"33 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\main.c
 [v _appKey appKey `[16]uc  1 e 16 0 ]
-"25
+"35
 [v _deviceEui deviceEui `[8]uc  1 e 8 0 ]
 "62
 [v _appEui appEui `[8]uc  1 e 8 0 ]
@@ -1780,7 +1825,7 @@ MCAST_MSG_ERROR 12
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
-"52 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/eusart2.c
+"52 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/eusart2.c
 [u S4116 . 1 `S4111 1 . 1 0 `uc 1 status 1 0 ]
 [v _eusart2RxLastError eusart2RxLastError `VES4116  1 e 1 0 ]
 "57
@@ -1789,19 +1834,19 @@ MCAST_MSG_ERROR 12
 [v _EUSART2_OverrunErrorHandler EUSART2_OverrunErrorHandler `*.37(v  1 e 2 0 ]
 "59
 [v _EUSART2_ErrorHandler EUSART2_ErrorHandler `*.37(v  1 e 2 0 ]
-"30 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/ext_int.c
+"30 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/ext_int.c
 [v _INT1_InterruptHandler INT1_InterruptHandler `*.37(v  1 e 2 0 ]
 "31
 [v _INT2_InterruptHandler INT2_InterruptHandler `*.37(v  1 e 2 0 ]
-"63 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/AES.c
+"63 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/AES.c
 [v _STable STable `C[256]uc  1 e 256 0 ]
 "213
 [v __roundCounter _roundCounter `uc  1 s 1 _roundCounter ]
 "214
 [v __rcon _rcon `uc  1 s 1 _rcon ]
-"58 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/interrupt_manager_lora_addons.h
+"58 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/interrupt_manager_lora_addons.h
 [v _dioStatus dioStatus `VEuc  1 e 1 0 ]
-"52 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan.c
+"52 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan.c
 [v _macEndDevCmdReplyLen macEndDevCmdReplyLen `C[7]uc  1 s 7 macEndDevCmdReplyLen ]
 [s S930 . 1 `uc 1 ackRequiredFromNextDownlinkMessage 1 0 :1:0 
 `uc 1 ackRequiredFromNextUplinkMessage 1 0 :1:1 
@@ -1876,7 +1921,7 @@ MCAST_MSG_ERROR 12
 [v _rxPayload rxPayload `S1243  1 e 4 0 ]
 "111
 [v _localDioStatus localDioStatus `uc  1 e 1 0 ]
-"43 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
+"43 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
 [v _rxWindowSize rxWindowSize `C[8]uc  1 e 8 0 ]
 "46
 [v _maxPayloadSize maxPayloadSize `C[8]uc  1 e 8 0 ]
@@ -1899,16 +1944,16 @@ MCAST_MSG_ERROR 12
 "80
 [v _FskSyncWordBuff FskSyncWordBuff `C[3]uc  1 s 3 FskSyncWordBuff ]
 [s S574 . 54 `ul 1 frequency 4 0 `ul 1 frequencyDeviation 4 4 `ul 1 bitRate 4 8 `ui 1 preambleLen 2 12 `uc 1 syncWordLoRa 1 14 `[8]uc 1 syncWord 8 15 `uc 1 syncWordLen 1 23 `E5853 1 modulation 1 24 `E5863 1 dataRate 1 25 `E5871 1 bandWidth 1 26 `c 1 outputPower 1 27 `uc 1 crcOn 1 28 `uc 1 paBoost 1 29 `ui 1 frequencyHopPeriod 2 30 `uc 1 iqInverted 1 32 `E5857 1 errorCodingRate 1 33 `uc 1 implicitHeaderMode 1 34 `uc 1 flags 1 35 `uc 1 dataBufferLen 1 36 `*.39uc 1 dataBuffer 2 37 `uc 1 timeOnAirTimerId 1 39 `uc 1 fskRxWindowTimerId 1 40 `uc 1 watchdogTimerId 1 41 `ul 1 watchdogTimerTimeout 4 42 `uc 1 initialized 1 46 `*.37(ul 1 fhssNextFrequency 2 47 `uc 1 regVersion 1 49 `c 1 packetSNR 1 50 `E5876 1 fskDataShaping 1 51 `E5882 1 rxBw 1 52 `E5882 1 afcBw 1 53 ]
-"103 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/radio_driver_SX1276.c
+"103 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/radio_driver_SX1276.c
 [v _RadioConfiguration RadioConfiguration `S574  1 s 54 RadioConfiguration ]
 [s S348 . 8 `ul 1 ticksRemaining 4 0 `uc 1 running 1 4 `uc 1 callbackParameter 1 5 `*.37R(v 1 callback 2 6 ]
-"58 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/sw_timer.c
+"58 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/sw_timer.c
 [v _swTimers swTimers `VE[20]S348  1 s 160 swTimers ]
 "59
 [v _allocatedTimers allocatedTimers `VEuc  1 s 1 allocatedTimers ]
 "60
 [v _ticksAccounted ticksAccounted `VEul  1 s 4 ticksAccounted ]
-"49 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/tmr_lora_addons.c
+"49 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/tmr_lora_addons.c
 [v _timerOverflow timerOverflow `VEuc  1 e 1 0 ]
 "50
 [v _ticksToScheduledInterrupt ticksToScheduledInterrupt `VEul  1 e 4 0 ]
@@ -1916,49 +1961,59 @@ MCAST_MSG_ERROR 12
 [v _reloadVal reloadVal `VEui  1 e 2 0 ]
 "52
 [v _ticksAdded ticksAdded `VEul  1 e 4 0 ]
-"54 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/pin_manager.c
+"54 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/pin_manager.c
 [v _IOCB4_InterruptHandler IOCB4_InterruptHandler `*.37(v  1 e 2 0 ]
-"57 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/tmr1.c
+"57 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/tmr1.c
 [v _timer1ReloadVal timer1ReloadVal `VEui  1 e 2 0 ]
 "58
 [v _TMR1_InterruptHandler TMR1_InterruptHandler `*.37(v  1 e 2 0 ]
-"57 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/tmr3.c
+"57 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/tmr3.c
 [v _timer3ReloadVal timer3ReloadVal `VEui  1 e 2 0 ]
 "58
 [v _TMR3_InterruptHandler TMR3_InterruptHandler `*.37(v  1 e 2 0 ]
-"59 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/tmr5.c
+"59 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/tmr5.c
 [v _timer5ReloadVal timer5ReloadVal `VEui  1 e 2 0 ]
 "60
 [v _TMR5_InterruptHandler TMR5_InterruptHandler `*.37(v  1 e 2 0 ]
-"13 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\tmrAPP.c
+"13 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\tmrAPP.c
 [v _msCounter msCounter `ui  1 s 2 msCounter ]
 "14
 [v _sCounter sCounter `ui  1 s 2 sCounter ]
 [s S4358 timerStruct 6 `ui 1 ms 2 0 `uc 1 sec 1 2 `uc 1 min 1 3 `uc 1 hour 1 4 `uc 1 day 1 5 ]
-"45 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\tmrAPP.h
+"45 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\tmrAPP.h
 [v _timer timer `S4358  1 e 6 0 ]
-"89 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\main.c
+"91 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"199
+"208
 } 0
-"383 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\rn2483APP.c
+"396 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\rn2483APP.c
 [v _isJoined isJoined `(uc  1 e 1 0 ]
 {
-"384
+"397
 [v isJoined@value value `ul  1 a 4 8 ]
-"385
+"398
 [v isJoined@joined joined `uc  1 a 1 12 ]
-"389
+"402
 } 0
-"658 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan.c
+"658 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan.c
 [v _LORAWAN_GetStatus LORAWAN_GetStatus `(ul  1 e 4 0 ]
 {
 "660
 [v LORAWAN_GetStatus@status status `ul  1 a 4 4 ]
 "670
 } 0
-"34 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\acuadori.c
+"16 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\rn2483APP.c
+[v _enableClockPeripherals enableClockPeripherals `(v  1 e 1 0 ]
+{
+"21
+} 0
+"24
+[v _disableClockPeripherals disableClockPeripherals `(v  1 e 1 0 ]
+{
+"27
+} 0
+"34 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\acuadori.c
 [v _acuadoriApp acuadoriApp `(v  1 e 1 0 ]
 {
 "115
@@ -2022,17 +2077,17 @@ MCAST_MSG_ERROR 12
 "8 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
 {
-[s S5688 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[s S5795 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[s S5693 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
-[u S5696 . 4 `l 1 i 4 0 `d 1 f 4 0 `S5688 1 fAsBytes 4 0 `S5693 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S5696  1 a 4 55 ]
+[s S5800 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
+[u S5803 . 4 `l 1 i 4 0 `d 1 f 4 0 `S5795 1 fAsBytes 4 0 `S5800 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S5803  1 a 4 55 ]
 "12
 [v ___flmul@grs grs `ul  1 a 4 49 ]
-[s S5764 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+[s S5871 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
-[u S5767 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S5764 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S5767  1 a 2 59 ]
+[u S5874 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S5871 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S5874  1 a 2 59 ]
 "10
 [v ___flmul@bexp bexp `uc  1 a 1 54 ]
 "11
@@ -2112,7 +2167,7 @@ MCAST_MSG_ERROR 12
 [v ___fldiv@a a `d  1 p 4 65 ]
 "185
 } 0
-"427 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\acuadori.c
+"427 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\acuadori.c
 [v _pointAddition pointAddition `(v  1 e 1 0 ]
 {
 "428
@@ -2132,7 +2187,7 @@ MCAST_MSG_ERROR 12
 [v strncat@size size `ui  1 p 2 4 ]
 "31
 } 0
-"378 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\acuadori.c
+"378 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\acuadori.c
 [v _sendValue sendValue `(v  1 e 1 0 ]
 {
 "380
@@ -2141,31 +2196,31 @@ MCAST_MSG_ERROR 12
 [v sendValue@firstSend firstSend `uc  1 a 1 154 ]
 "425
 } 0
-"68 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\tmrAPP.c
+"68 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\tmrAPP.c
 [v _timerReset timerReset `(v  1 e 1 0 ]
 {
 "76
 } 0
-"328 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/sw_timer.c
+"328 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/sw_timer.c
 [v _SwClearAllTimers SwClearAllTimers `(v  1 e 1 0 ]
 {
 "329
 [v SwClearAllTimers@i i `uc  1 a 1 0 ]
 "333
 } 0
-"2238 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan.c
+"2238 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan.c
 [v _LORAWAN_Mainloop LORAWAN_Mainloop `(v  1 e 1 0 ]
 {
 "2269
 } 0
-"260 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/sw_timer.c
+"260 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/sw_timer.c
 [v _SwTimersExecute SwTimersExecute `(v  1 e 1 0 ]
 {
 "262
 [v SwTimersExecute@i i `uc  1 a 1 127 ]
 "284
 } 0
-"1222 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
+"1222 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
 [v _DutyCycleCallback DutyCycleCallback `R(v  1 s 1 DutyCycleCallback ]
 {
 "1224
@@ -2176,7 +2231,7 @@ MCAST_MSG_ERROR 12
 [v DutyCycleCallback@found found `uc  1 a 1 9 ]
 "1254
 } 10
-"1041 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan.c
+"1041 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan.c
 [v _UpdateJoinSuccessState UpdateJoinSuccessState `R(v  1 e 1 0 ]
 {
 "1061
@@ -2212,7 +2267,7 @@ MCAST_MSG_ERROR 12
 {
 "879
 } 0
-"1408 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/radio_driver_SX1276.c
+"1408 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/radio_driver_SX1276.c
 [v _RADIO_WatchdogTimeout RADIO_WatchdogTimeout `R(v  1 s 1 RADIO_WatchdogTimeout ]
 {
 "1427
@@ -2224,17 +2279,17 @@ MCAST_MSG_ERROR 12
 [v RADIO_RxFSKTimeout@irqFlags irqFlags `uc  1 a 1 0 ]
 "1405
 } 1
-"997 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan.c
+"997 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan.c
 [v _UnconfirmedTransmissionCallback UnconfirmedTransmissionCallback `R(v  1 e 1 0 ]
 {
 "1015
 } 0
-"884 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
+"884 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
 [v _GetRx1Freq GetRx1Freq `(ul  1 e 4 0 ]
 {
 "887
 } 0
-"1344 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/radio_driver_SX1276.c
+"1344 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/radio_driver_SX1276.c
 [v _RADIO_DIO5 RADIO_DIO5 `(v  1 e 1 0 ]
 {
 "1365
@@ -2322,7 +2377,7 @@ MCAST_MSG_ERROR 12
 [v ___abdiv@dividend dividend `c  1 a 1 6 ]
 "37
 } 0
-"1010 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/radio_driver_SX1276.c
+"1010 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/radio_driver_SX1276.c
 [v _RADIO_FSKPayloadReady RADIO_FSKPayloadReady `(v  1 s 1 RADIO_FSKPayloadReady ]
 {
 "1013
@@ -2331,7 +2386,7 @@ MCAST_MSG_ERROR 12
 [v RADIO_FSKPayloadReady@irqFlags irqFlags `uc  1 a 1 148 ]
 "1064
 } 0
-"465 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
+"465 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
 [v _LORAWAN_RxTimeout LORAWAN_RxTimeout `(v  1 e 1 0 ]
 {
 "468
@@ -2340,7 +2395,7 @@ MCAST_MSG_ERROR 12
 [v LORAWAN_RxTimeout@i i `uc  1 a 1 98 ]
 "569
 } 0
-"1121 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan.c
+"1121 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan.c
 [v _LORAWAN_RxDone LORAWAN_RxDone `(E6295  1 e 1 0 ]
 {
 [s S1459 . 1 `uc 1 major 1 0 :2:0 
@@ -2400,7 +2455,7 @@ MCAST_MSG_ERROR 12
 {
 "1039
 } 0
-"889 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
+"889 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
 [v _UpdateDLSettings UpdateDLSettings `(v  1 e 1 0 ]
 {
 [v UpdateDLSettings@dlRx2Dr dlRx2Dr `uc  1 a 1 wreg ]
@@ -2449,7 +2504,7 @@ MCAST_MSG_ERROR 12
 [v StartReTxTimer@i i `uc  1 a 1 58 ]
 "918
 } 0
-"1997 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan.c
+"1997 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan.c
 [v _SetReceptionNotOkState SetReceptionNotOkState `(v  1 s 1 SetReceptionNotOkState ]
 {
 "2017
@@ -2459,7 +2514,7 @@ MCAST_MSG_ERROR 12
 {
 "1113
 } 0
-"76 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\main.c
+"76 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\main.c
 [v _RxJoinResponse RxJoinResponse `(v  1 e 1 0 ]
 {
 [v RxJoinResponse@status status `uc  1 a 1 wreg ]
@@ -2468,7 +2523,7 @@ MCAST_MSG_ERROR 12
 [v RxJoinResponse@status status `uc  1 a 1 0 ]
 "86
 } 0
-"1575 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan.c
+"1575 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan.c
 [v _MacExecuteCommands MacExecuteCommands `(*.39uc  1 s 2 MacExecuteCommands ]
 {
 "1578
@@ -2508,7 +2563,7 @@ MCAST_MSG_ERROR 12
 [v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
 "53
 } 0
-"741 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
+"741 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
 [v _ExecuteRxParamSetupReq ExecuteRxParamSetupReq `(*.39uc  1 e 2 0 ]
 {
 "744
@@ -2536,14 +2591,14 @@ MCAST_MSG_ERROR 12
 [v ValidateRxOffset@rxOffset rxOffset `uc  1 a 1 0 ]
 "1087
 } 0
-"1084 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan.c
+"1084 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan.c
 [v _UpdateReceiveWindow2Parameters UpdateReceiveWindow2Parameters `(v  1 e 1 0 ]
 {
 [v UpdateReceiveWindow2Parameters@frequency frequency `ul  1 p 4 0 ]
 [v UpdateReceiveWindow2Parameters@dataRate dataRate `uc  1 p 1 4 ]
 "1088
 } 0
-"678 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
+"678 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
 [v _ExecuteNewChannel ExecuteNewChannel `(*.39uc  1 e 2 0 ]
 {
 "682
@@ -2639,13 +2694,13 @@ MCAST_MSG_ERROR 12
 [v ValidateChannelId@channelId channelId `uc  1 a 1 2 ]
 "1136
 } 0
-"1652 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan.c
+"1652 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan.c
 [v _ExecuteLinkCheck ExecuteLinkCheck `(*.39uc  1 s 2 ExecuteLinkCheck ]
 {
 [v ExecuteLinkCheck@ptr ptr `*.39uc  1 p 2 0 ]
 "1657
 } 0
-"614 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
+"614 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
 [v _ExecuteLinkAdr ExecuteLinkAdr `(*.39uc  1 e 2 0 ]
 {
 [s S1409 . 1 `uc 1 nbRep 1 0 :4:0 
@@ -2709,7 +2764,7 @@ MCAST_MSG_ERROR 12
 [v ValidateChannelMask@channelMask channelMask `ui  1 p 2 0 ]
 "1192
 } 0
-"1029 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan.c
+"1029 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan.c
 [v _UpdateTxPower UpdateTxPower `(v  1 e 1 0 ]
 {
 [v UpdateTxPower@txPowerNew txPowerNew `uc  1 a 1 wreg ]
@@ -2727,7 +2782,7 @@ MCAST_MSG_ERROR 12
 [v UpdateCurrentDataRate@valueNew valueNew `uc  1 a 1 0 ]
 "1027
 } 0
-"1150 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
+"1150 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
 [v _EnableChannels EnableChannels `(v  1 s 1 EnableChannels ]
 {
 [v EnableChannels@channelMask channelMask `ui  1 p 2 12 ]
@@ -2774,7 +2829,7 @@ MCAST_MSG_ERROR 12
 [v ExecuteDevStatus@ptr ptr `*.39uc  1 p 2 0 ]
 "676
 } 0
-"185 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan.c
+"185 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan.c
 [v _LORAWAN_Send LORAWAN_Send `(E6059  1 e 1 0 ]
 {
 [v LORAWAN_Send@confirmed confirmed `E6086  1 a 1 wreg ]
@@ -2845,12 +2900,12 @@ MCAST_MSG_ERROR 12
 [v IncludeMacCommandsResponse@bIncludeInFopts bIncludeInFopts `uc  1 p 1 4 ]
 "1960
 } 0
-"1429 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/radio_driver_SX1276.c
+"1429 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/radio_driver_SX1276.c
 [v _RADIO_GetPacketSnr RADIO_GetPacketSnr `(c  1 e 1 0 ]
 {
 "1432
 } 0
-"1963 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan.c
+"1963 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan.c
 [v _FindSmallestDataRate FindSmallestDataRate `(uc  1 s 1 FindSmallestDataRate ]
 {
 "1965
@@ -2891,7 +2946,7 @@ MCAST_MSG_ERROR 12
 [v ___awdiv@divisor divisor `i  1 p 2 2 ]
 "41
 } 0
-"2156 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan.c
+"2156 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan.c
 [v _AssembleEncryptionBlock AssembleEncryptionBlock `(v  1 s 1 AssembleEncryptionBlock ]
 {
 [v AssembleEncryptionBlock@dir dir `uc  1 a 1 wreg ]
@@ -2997,7 +3052,7 @@ MCAST_MSG_ERROR 12
 [v CheckFlags@hdr hdr `*.39S2261  1 p 2 0 ]
 "2095
 } 0
-"1093 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/radio_driver_SX1276.c
+"1093 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/radio_driver_SX1276.c
 [v _RADIO_FSKPacketSent RADIO_FSKPacketSent `(v  1 s 1 RADIO_FSKPacketSent ]
 {
 "1096
@@ -3006,7 +3061,7 @@ MCAST_MSG_ERROR 12
 [v RADIO_FSKPacketSent@irqFlags irqFlags `uc  1 a 1 127 ]
 "1113
 } 0
-"366 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
+"366 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
 [v _LORAWAN_TxDone LORAWAN_TxDone `(v  1 e 1 0 ]
 {
 "372
@@ -3021,7 +3076,7 @@ MCAST_MSG_ERROR 12
 [v LORAWAN_TxDone@timeOnAir timeOnAir `ui  1 p 2 83 ]
 "462
 } 0
-"193 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/sw_timer.c
+"193 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/sw_timer.c
 [v _SwTimerReadValue SwTimerReadValue `(ul  1 e 4 0 ]
 {
 [v SwTimerReadValue@timerId timerId `uc  1 a 1 wreg ]
@@ -3045,17 +3100,17 @@ MCAST_MSG_ERROR 12
 [v SwTimerIsRunning@timerId timerId `uc  1 a 1 0 ]
 "216
 } 0
-"1116 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/radio_driver_SX1276.c
+"1116 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/radio_driver_SX1276.c
 [v _RADIO_GetStatus RADIO_GetStatus `(uc  1 e 1 0 ]
 {
 "1119
 } 0
-"915 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan.c
+"915 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan.c
 [v _LORAWAN_EnterContinuousReceive LORAWAN_EnterContinuousReceive `(v  1 e 1 0 ]
 {
 "932
 } 0
-"73 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\main.c
+"73 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\main.c
 [v _RxData RxData `(v  1 e 1 0 ]
 {
 [v RxData@pData pData `*.39uc  1 p 2 0 ]
@@ -3063,7 +3118,7 @@ MCAST_MSG_ERROR 12
 [v RxData@status status `E6285  1 p 1 3 ]
 "74
 } 0
-"1097 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan.c
+"1097 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan.c
 [v _ResetParametersForUnconfirmedTransmission ResetParametersForUnconfirmedTransmission `(v  1 e 1 0 ]
 {
 "1102
@@ -3073,7 +3128,7 @@ MCAST_MSG_ERROR 12
 {
 "1095
 } 0
-"1134 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/radio_driver_SX1276.c
+"1134 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/radio_driver_SX1276.c
 [v _RADIO_ReleaseData RADIO_ReleaseData `(v  1 e 1 0 ]
 {
 "1137
@@ -3089,7 +3144,7 @@ MCAST_MSG_ERROR 12
 [v RADIO_ReceiveStart@rxWindowSize rxWindowSize `ui  1 p 2 73 ]
 "948
 } 0
-"2019 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan.c
+"2019 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan.c
 [v _ConfigureRadioRx ConfigureRadioRx `(v  1 s 1 ConfigureRadioRx ]
 {
 [v ConfigureRadioRx@dataRate dataRate `uc  1 a 1 wreg ]
@@ -3099,69 +3154,69 @@ MCAST_MSG_ERROR 12
 [v ConfigureRadioRx@dataRate dataRate `uc  1 a 1 23 ]
 "2024
 } 0
-"48 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/interrupt_manager_lora_addons.c
+"48 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/interrupt_manager_lora_addons.c
 [v _INTERRUPT_GetDioStatus INTERRUPT_GetDioStatus `(uc  1 e 1 0 ]
 {
 "50
 [v INTERRUPT_GetDioStatus@a a `uc  1 a 1 0 ]
 "56
 } 0
-"304 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\acuadori.c
+"304 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\acuadori.c
 [v _lightSensAcquisition lightSensAcquisition `(v  1 e 1 0 ]
 {
 "316
 } 0
-"24 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\rn2483APP.c
+"37 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\rn2483APP.c
 [v _rn2483_delaysec rn2483_delaysec `(v  1 e 1 0 ]
 {
-"26
+"39
 [v rn2483_delaysec@counter counter `ui  1 a 2 3 ]
-"24
+"37
 [v rn2483_delaysec@length length `ui  1 p 2 0 ]
-"35
+"48
 } 0
-"319 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\acuadori.c
+"319 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\acuadori.c
 [v _leafSensAcquisition leafSensAcquisition `(v  1 e 1 0 ]
 {
 "323
 } 0
-"300 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\rn2483APP.c
+"313 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\rn2483APP.c
 [v _acquisitionData acquisitionData `(v  1 e 1 0 ]
 {
 [v acquisitionData@GPIO GPIO `uc  1 a 1 wreg ]
 [v acquisitionData@GPIO GPIO `uc  1 a 1 wreg ]
 [v acquisitionData@string string `*.39uc  1 p 2 75 ]
-"302
+"315
 [v acquisitionData@GPIO GPIO `uc  1 a 1 77 ]
-"304
+"317
 } 0
-"287
+"300
 [v _GPIOAverageRead GPIOAverageRead `(ui  1 e 2 0 ]
 {
 [v GPIOAverageRead@GPIO GPIO `uc  1 a 1 wreg ]
-"291
+"304
 [v GPIOAverageRead@i i `ui  1 a 2 19 ]
-"289
+"302
 [v GPIOAverageRead@finalValue finalValue `um  1 a 3 21 ]
-"287
+"300
 [v GPIOAverageRead@GPIO GPIO `uc  1 a 1 wreg ]
-"289
+"302
 [v GPIOAverageRead@GPIO GPIO `uc  1 a 1 18 ]
-"296
+"309
 } 0
-"308
+"321
 [v _GPIOAnalogRead GPIOAnalogRead `(ui  1 e 2 0 ]
 {
 [v GPIOAnalogRead@GPIO GPIO `uc  1 a 1 wreg ]
-"310
+"323
 [v GPIOAnalogRead@result result `ui  1 a 2 10 ]
-"308
+"321
 [v GPIOAnalogRead@GPIO GPIO `uc  1 a 1 wreg ]
-"312
+"325
 [v GPIOAnalogRead@GPIO GPIO `uc  1 a 1 12 ]
-"315
+"328
 } 0
-"110 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/adc.c
+"110 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/adc.c
 [v _ADC_GetConversion ADC_GetConversion `(ui  1 e 2 0 ]
 {
 [v ADC_GetConversion@channel channel `E5859  1 a 1 wreg ]
@@ -3173,17 +3228,17 @@ MCAST_MSG_ERROR 12
 [v ADC_GetConversion@channel channel `E5859  1 a 1 7 ]
 "129
 } 0
-"325 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\acuadori.c
+"325 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\acuadori.c
 [v _impedenceAcquisition impedenceAcquisition `(v  1 e 1 0 ]
 {
 "330
 } 0
-"257 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\rn2483APP.c
+"270 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\rn2483APP.c
 [v _uint16ToString uint16ToString `(v  1 e 1 0 ]
 {
 [v uint16ToString@value value `ui  1 p 2 69 ]
 [v uint16ToString@output output `*.39uc  1 p 2 71 ]
-"280
+"293
 } 0
 "7 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\lwdiv.c
 [v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
@@ -3197,11 +3252,11 @@ MCAST_MSG_ERROR 12
 [v ___lwdiv@divisor divisor `ui  1 p 2 2 ]
 "30
 } 0
-"154 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\acuadori.c
+"154 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\acuadori.c
 [v _sinGenStart sinGenStart `(v  1 e 1 0 ]
 {
 "202
-[v sinGenStart@i_5307 i `i  1 a 2 8 ]
+[v sinGenStart@i_5414 i `i  1 a 2 8 ]
 "194
 [v sinGenStart@t t `uc  1 a 1 13 ]
 "167
@@ -3210,7 +3265,7 @@ MCAST_MSG_ERROR 12
 [v sinGenStart@d d `ui  1 a 2 10 ]
 "233
 } 0
-"38 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\I2C.c
+"38 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\I2C.c
 [v _i2c_stop i2c_stop `(v  1 e 1 0 ]
 {
 "47
@@ -3234,15 +3289,15 @@ MCAST_MSG_ERROR 12
 [v i2c_usdelay@time time `ui  1 p 2 0 ]
 "159
 } 0
-"173 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\rn2483APP.c
+"186 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\rn2483APP.c
 [v _GPIODigitalRead GPIODigitalRead `(uc  1 e 1 0 ]
 {
 [v GPIODigitalRead@GPIO GPIO `uc  1 a 1 wreg ]
 [v GPIODigitalRead@GPIO GPIO `uc  1 a 1 wreg ]
 [v GPIODigitalRead@GPIO GPIO `uc  1 a 1 0 ]
-"212
+"225
 } 0
-"134 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\I2C.c
+"134 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\I2C.c
 [v _i2c_sendData i2c_sendData `(uc  1 e 1 0 ]
 {
 [v i2c_sendData@data data `ui  1 p 2 4 ]
@@ -3265,7 +3320,7 @@ MCAST_MSG_ERROR 12
 {
 "132
 } 0
-"104 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/tmr5.c
+"104 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/tmr5.c
 [v _TMR5_StopTimer TMR5_StopTimer `(v  1 e 1 0 ]
 {
 "110
@@ -3275,7 +3330,7 @@ MCAST_MSG_ERROR 12
 {
 "102
 } 0
-"101 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/tmr3.c
+"101 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/tmr3.c
 [v _TMR3_StopTimer TMR3_StopTimer `(v  1 e 1 0 ]
 {
 "105
@@ -3285,7 +3340,7 @@ MCAST_MSG_ERROR 12
 {
 "99
 } 0
-"435 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\acuadori.c
+"435 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\acuadori.c
 [v _averageMeasure averageMeasure `(ui  1 e 2 0 ]
 {
 "437
@@ -3306,21 +3361,21 @@ MCAST_MSG_ERROR 12
 [v ___ltdiv@divisor divisor `um  1 p 3 3 ]
 "30
 } 0
-"363 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\rn2483APP.c
+"376 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\rn2483APP.c
 [v _adaptString adaptString `(uc  1 e 1 0 ]
 {
-"367
+"380
 [v adaptString@i i `uc  1 a 1 7 ]
-"364
+"377
 [v adaptString@deleteElem deleteElem `uc  1 a 1 6 ]
-"365
+"378
 [v adaptString@flag flag `uc  1 a 1 5 ]
-"363
+"376
 [v adaptString@string string `*.39uc  1 p 2 0 ]
 [v adaptString@length length `uc  1 p 1 2 ]
-"381
+"394
 } 0
-"486 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan.c
+"486 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan.c
 [v _LORAWAN_SetUplinkCounter LORAWAN_SetUplinkCounter `(v  1 e 1 0 ]
 {
 [v LORAWAN_SetUplinkCounter@ctr ctr `ul  1 p 4 0 ]
@@ -3331,12 +3386,12 @@ MCAST_MSG_ERROR 12
 {
 "494
 } 0
-"50 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/mcc.c
+"50 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
 "64
 } 0
-"66 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/tmr5.c
+"66 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/tmr5.c
 [v _TMR5_Initialize TMR5_Initialize `(v  1 e 1 0 ]
 {
 "95
@@ -3347,7 +3402,7 @@ MCAST_MSG_ERROR 12
 [v TMR5_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
 "181
 } 0
-"64 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/tmr3.c
+"64 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/tmr3.c
 [v _TMR3_Initialize TMR3_Initialize `(v  1 e 1 0 ]
 {
 "93
@@ -3358,48 +3413,48 @@ MCAST_MSG_ERROR 12
 [v TMR3_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
 "176
 } 0
-"64 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/tmr1.c
+"64 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/tmr1.c
 [v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
 {
 "93
 } 0
-"65 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/spi2.c
+"65 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/spi2.c
 [v _SPI2_Initialize SPI2_Initialize `(v  1 e 1 0 ]
 {
 "77
 } 0
-"57 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/pin_manager.c
+"57 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
 "109
 } 0
-"66 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/mcc.c
+"66 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
 "74
 } 0
-"72 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan_init.c
+"72 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan_init.c
 [v _LORAWAN_PlatformInit LORAWAN_PlatformInit `(v  1 e 1 0 ]
 {
 "82
 } 0
-"54 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/tmr_lora_addons.c
+"54 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/tmr_lora_addons.c
 [v _TMR_ISR_Lora_Init TMR_ISR_Lora_Init `(v  1 e 1 0 ]
 {
 "57
 } 0
-"182 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/tmr1.c
+"182 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/tmr1.c
 [v _TMR1_SetInterruptHandler TMR1_SetInterruptHandler `(v  1 e 1 0 ]
 {
 [v TMR1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
 "184
 } 0
-"135 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/sw_timer.c
+"135 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/sw_timer.c
 [v _SystemTimerInit SystemTimerInit `(v  1 e 1 0 ]
 {
 "138
 } 0
-"67 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan_init.c
+"67 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan_init.c
 [v _DIO5_ISR_Lora_Init DIO5_ISR_Lora_Init `(v  1 e 1 0 ]
 {
 "70
@@ -3419,13 +3474,13 @@ MCAST_MSG_ERROR 12
 {
 "57
 } 0
-"139 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/pin_manager.c
+"139 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/pin_manager.c
 [v _IOCB4_SetInterruptHandler IOCB4_SetInterruptHandler `(v  1 e 1 0 ]
 {
 [v IOCB4_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
 "141
 } 0
-"49 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan_init.c
+"49 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan_init.c
 [v _DIO1_ISR_Lora_Init DIO1_ISR_Lora_Init `(v  1 e 1 0 ]
 {
 "52
@@ -3435,12 +3490,12 @@ MCAST_MSG_ERROR 12
 {
 "47
 } 0
-"52 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/interrupt_manager.c
+"52 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
 {
 "61
 } 0
-"86 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/ext_int.c
+"86 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/ext_int.c
 [v _EXT_INT_Initialize EXT_INT_Initialize `(v  1 e 1 0 ]
 {
 "106
@@ -3457,7 +3512,7 @@ MCAST_MSG_ERROR 12
 [v INT1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
 "53
 } 0
-"65 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/eusart2.c
+"65 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/eusart2.c
 [v _EUSART2_Initialize EUSART2_Initialize `(v  1 e 1 0 ]
 {
 "91
@@ -3480,12 +3535,12 @@ MCAST_MSG_ERROR 12
 [v EUSART2_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
 "166
 } 0
-"60 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/adc.c
+"60 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/adc.c
 [v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
 {
 "81
 } 0
-"337 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan.c
+"337 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan.c
 [v _LORAWAN_SetDeviceEui LORAWAN_SetDeviceEui `(v  1 e 1 0 ]
 {
 [v LORAWAN_SetDeviceEui@deviceEuiNew deviceEuiNew `*.39uc  1 p 2 11 ]
@@ -3526,7 +3581,7 @@ MCAST_MSG_ERROR 12
 [v UpdateJoinInProgress@state state `uc  1 a 1 0 ]
 "2043
 } 0
-"920 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
+"920 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
 [v _SelectChannelForTransmission SelectChannelForTransmission `(E6118  1 e 1 0 ]
 {
 [v SelectChannelForTransmission@transmissionType transmissionType `uc  1 a 1 wreg ]
@@ -3571,7 +3626,7 @@ MCAST_MSG_ERROR 12
 [v ConfigureRadioTx@dataRate dataRate `uc  1 a 1 23 ]
 "1275
 } 0
-"1464 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/radio_driver_SX1276.c
+"1464 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/radio_driver_SX1276.c
 [v _RADIO_SetOutputPower RADIO_SetOutputPower `(v  1 e 1 0 ]
 {
 [v RADIO_SetOutputPower@power power `c  1 a 1 wreg ]
@@ -3598,7 +3653,7 @@ MCAST_MSG_ERROR 12
 [v RADIO_SetCRC@crc crc `uc  1 a 1 0 ]
 "1477
 } 0
-"864 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
+"864 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
 [v _ConfigureRadio ConfigureRadio `(v  1 e 1 0 ]
 {
 [v ConfigureRadio@dataRate dataRate `uc  1 a 1 wreg ]
@@ -3608,7 +3663,7 @@ MCAST_MSG_ERROR 12
 [v ConfigureRadio@dataRate dataRate `uc  1 a 1 18 ]
 "882
 } 0
-"1434 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/radio_driver_SX1276.c
+"1434 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/radio_driver_SX1276.c
 [v _RADIO_SetSpreadingFactor RADIO_SetSpreadingFactor `(v  1 e 1 0 ]
 {
 [v RADIO_SetSpreadingFactor@spreadingFactor spreadingFactor `E5863  1 a 1 wreg ]
@@ -3714,7 +3769,7 @@ MCAST_MSG_ERROR 12
 [v RADIO_WriteFSKBitRate@bitRate bitRate `ul  1 p 4 13 ]
 "328
 } 0
-"1806 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan.c
+"1806 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan.c
 [v _PrepareJoinRequestFrame PrepareJoinRequestFrame `(uc  1 s 1 PrepareJoinRequestFrame ]
 {
 "1810
@@ -3752,7 +3807,7 @@ MCAST_MSG_ERROR 12
 [v ___lwmod@divisor divisor `ui  1 p 2 66 ]
 "25
 } 0
-"2194 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan.c
+"2194 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan.c
 [v _ComputeMic ComputeMic `(ul  1 s 4 ComputeMic ]
 {
 "2196
@@ -3763,7 +3818,7 @@ MCAST_MSG_ERROR 12
 [v ComputeMic@bufferLength bufferLength `uc  1 p 1 108 ]
 "2203
 } 0
-"41 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan_aes_cmac.c
+"41 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan_aes_cmac.c
 [v _AESCmac AESCmac `(v  1 e 1 0 ]
 {
 "46
@@ -3819,7 +3874,7 @@ MCAST_MSG_ERROR 12
 [v FillSubKey@size size `uc  1 p 1 4 ]
 "179
 } 0
-"34 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan_aes.c
+"34 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan_aes.c
 [v _AESEncodeLoRa AESEncodeLoRa `(v  1 e 1 0 ]
 {
 "36
@@ -3829,7 +3884,7 @@ MCAST_MSG_ERROR 12
 [v AESEncodeLoRa@key key `*.39uc  1 p 2 32 ]
 "39
 } 0
-"248 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/AES.c
+"248 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/AES.c
 [v _AESEncode AESEncode `(v  1 e 1 0 ]
 {
 "279
@@ -3859,7 +3914,7 @@ MCAST_MSG_ERROR 12
 [v EncKeySchedule@key key `*.39uc  1 p 2 0 ]
 "365
 } 0
-"124 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
+"124 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
 [v _LORAWAN_Init LORAWAN_Init `(v  1 e 1 0 ]
 {
 [v LORAWAN_Init@RxPayload RxPayload `*.37(v  1 p 2 74 ]
@@ -3872,12 +3927,12 @@ MCAST_MSG_ERROR 12
 [v srand@x x `ui  1 p 2 18 ]
 "9
 } 0
-"952 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
+"952 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
 [v _SetCallbackSoftwareTimers SetCallbackSoftwareTimers `(v  1 s 1 SetCallbackSoftwareTimers ]
 {
 "964
 } 0
-"1367 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/radio_driver_SX1276.c
+"1367 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/radio_driver_SX1276.c
 [v _RADIO_ReadRandom RADIO_ReadRandom `(ui  1 e 2 0 ]
 {
 "1370
@@ -3886,7 +3941,7 @@ MCAST_MSG_ERROR 12
 [v RADIO_ReadRandom@i i `uc  1 a 1 17 ]
 "1390
 } 0
-"149 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
+"149 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
 [v _LORAWAN_Reset LORAWAN_Reset `(v  1 e 1 0 ]
 {
 [v LORAWAN_Reset@ismBandNew ismBandNew `E6149  1 a 1 wreg ]
@@ -3895,19 +3950,19 @@ MCAST_MSG_ERROR 12
 [v LORAWAN_Reset@ismBandNew ismBandNew `E6149  1 a 1 73 ]
 "234
 } 0
-"1063 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan.c
+"1063 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan.c
 [v _UpdateMinMaxChDataRate UpdateMinMaxChDataRate `(v  1 e 1 0 ]
 {
 "1065
 [v UpdateMinMaxChDataRate@i i `uc  1 a 1 1 ]
 "1082
 } 0
-"966 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
+"966 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
 [v _StopAllSoftwareTimers StopAllSoftwareTimers `(v  1 s 1 StopAllSoftwareTimers ]
 {
 "978
 } 0
-"522 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/radio_driver_SX1276.c
+"522 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/radio_driver_SX1276.c
 [v _RADIO_SetLoRaSyncWord RADIO_SetLoRaSyncWord `(v  1 e 1 0 ]
 {
 [v RADIO_SetLoRaSyncWord@syncWord syncWord `uc  1 a 1 wreg ]
@@ -3923,7 +3978,7 @@ MCAST_MSG_ERROR 12
 [v RADIO_Init@frequency frequency `ul  1 p 4 27 ]
 "520
 } 0
-"180 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/sw_timer.c
+"180 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/sw_timer.c
 [v _SwTimerSetCallback SwTimerSetCallback `(v  1 e 1 0 ]
 {
 [v SwTimerSetCallback@timerId timerId `uc  1 a 1 wreg ]
@@ -3934,7 +3989,7 @@ MCAST_MSG_ERROR 12
 [v SwTimerSetCallback@timerId timerId `uc  1 a 1 3 ]
 "184
 } 0
-"147 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/radio_driver_SX1276.c
+"147 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/radio_driver_SX1276.c
 [v _RADIO_WriteMode RADIO_WriteMode `(v  1 s 1 RADIO_WriteMode ]
 {
 [v RADIO_WriteMode@newMode newMode `E6591  1 a 1 wreg ]
@@ -3966,12 +4021,12 @@ MCAST_MSG_ERROR 12
 [v RADIO_RegisterRead@reg reg `uc  1 a 1 2 ]
 "143
 } 0
-"95 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/radio_driver_hal.c
+"95 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/radio_driver_hal.c
 [v _HALDIO5PinValue HALDIO5PinValue `(uc  1 e 1 0 ]
 {
 "98
 } 0
-"262 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/radio_driver_SX1276.c
+"262 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/radio_driver_SX1276.c
 [v _RADIO_WriteFrequency RADIO_WriteFrequency `(v  1 s 1 RADIO_WriteFrequency ]
 {
 "264
@@ -3991,7 +4046,7 @@ MCAST_MSG_ERROR 12
 [v ___llmod@divisor divisor `ul  1 p 4 4 ]
 "25
 } 0
-"126 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/radio_driver_SX1276.c
+"126 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/radio_driver_SX1276.c
 [v _RADIO_RegisterWrite RADIO_RegisterWrite `(v  1 e 1 0 ]
 {
 [v RADIO_RegisterWrite@reg reg `uc  1 a 1 wreg ]
@@ -4001,7 +4056,7 @@ MCAST_MSG_ERROR 12
 [v RADIO_RegisterWrite@reg reg `uc  1 a 1 3 ]
 "132
 } 0
-"73 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/radio_driver_hal.c
+"73 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/radio_driver_hal.c
 [v _HALSPISend HALSPISend `(uc  1 e 1 0 ]
 {
 [v HALSPISend@data data `uc  1 a 1 wreg ]
@@ -4010,7 +4065,7 @@ MCAST_MSG_ERROR 12
 [v HALSPISend@data data `uc  1 a 1 1 ]
 "76
 } 0
-"79 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/spi2.c
+"79 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/spi2.c
 [v _SPI2_Exchange8bit SPI2_Exchange8bit `(uc  1 e 1 0 ]
 {
 [v SPI2_Exchange8bit@data data `uc  1 a 1 wreg ]
@@ -4019,7 +4074,7 @@ MCAST_MSG_ERROR 12
 [v SPI2_Exchange8bit@data data `uc  1 a 1 0 ]
 "91
 } 0
-"68 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/radio_driver_hal.c
+"68 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/radio_driver_hal.c
 [v _HALSPICSDeassert HALSPICSDeassert `(v  1 e 1 0 ]
 {
 "71
@@ -4029,18 +4084,18 @@ MCAST_MSG_ERROR 12
 {
 "66
 } 0
-"249 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/radio_driver_SX1276.c
+"249 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/radio_driver_SX1276.c
 [v _RADIO_Reset RADIO_Reset `(v  1 s 1 RADIO_Reset ]
 {
 "259
 } 0
-"145 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/sw_timer.c
+"145 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/sw_timer.c
 [v _SystemBlockingWaitMs SystemBlockingWaitMs `(v  1 e 1 0 ]
 {
 [v SystemBlockingWaitMs@ms ms `ul  1 p 4 0 ]
 "152
 } 0
-"55 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/radio_driver_hal.c
+"55 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/radio_driver_hal.c
 [v _HALResetPinOutputValue HALResetPinOutputValue `(v  1 e 1 0 ]
 {
 [v HALResetPinOutputValue@value value `uc  1 a 1 wreg ]
@@ -4059,7 +4114,7 @@ MCAST_MSG_ERROR 12
 {
 "53
 } 0
-"755 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan.c
+"755 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan.c
 [v _LORAWAN_LinkCheckConfigure LORAWAN_LinkCheckConfigure `(v  1 e 1 0 ]
 {
 "757
@@ -4090,7 +4145,7 @@ MCAST_MSG_ERROR 12
 [v ___lldiv@divisor divisor `ul  1 p 4 4 ]
 "30
 } 0
-"233 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/sw_timer.c
+"233 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/sw_timer.c
 [v _SwTimerStop SwTimerStop `(v  1 e 1 0 ]
 {
 [v SwTimerStop@timerId timerId `uc  1 a 1 wreg ]
@@ -4132,13 +4187,13 @@ MCAST_MSG_ERROR 12
 [v TMR_SwapTimer@retVal retVal `ui  1 s 2 retVal ]
 "133
 } 0
-"124 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/tmr1.c
+"124 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/tmr1.c
 [v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
 {
 [v TMR1_WriteTimer@timerVal timerVal `ui  1 p 2 0 ]
 "144
 } 0
-"287 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/sw_timer.c
+"287 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/sw_timer.c
 [v _SwTimersInterrupt SwTimersInterrupt `(ul  1 e 4 0 ]
 {
 "291
@@ -4158,7 +4213,7 @@ MCAST_MSG_ERROR 12
 [v TMR_GetDeltaTime@tmrVal tmrVal `ui  1 s 2 tmrVal ]
 "110
 } 0
-"108 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/tmr1.c
+"108 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/tmr1.c
 [v _TMR1_ReadTimer TMR1_ReadTimer `(ui  1 e 2 0 ]
 {
 "110
@@ -4169,7 +4224,7 @@ MCAST_MSG_ERROR 12
 [v TMR1_ReadTimer@readValHigh readValHigh `uc  1 a 1 6 ]
 "122
 } 0
-"186 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/sw_timer.c
+"186 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/sw_timer.c
 [v _SwTimerSetTimeout SwTimerSetTimeout `(v  1 e 1 0 ]
 {
 [v SwTimerSetTimeout@timerId timerId `uc  1 a 1 wreg ]
@@ -4179,7 +4234,7 @@ MCAST_MSG_ERROR 12
 [v SwTimerSetTimeout@timerId timerId `uc  1 a 1 21 ]
 "191
 } 0
-"980 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
+"980 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
 [v _InitDefault868Channels InitDefault868Channels `(v  1 s 1 InitDefault868Channels ]
 {
 "982
@@ -4219,64 +4274,64 @@ MCAST_MSG_ERROR 12
 [v memcpy@n n `ui  1 p 2 4 ]
 "41
 } 0
-"938 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
+"938 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/lorawan_eu.c
 [v _CreateAllSoftwareTimers CreateAllSoftwareTimers `(v  1 s 1 CreateAllSoftwareTimers ]
 {
 "950
 } 0
-"154 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/sw_timer.c
+"154 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/sw_timer.c
 [v _SwTimerCreate SwTimerCreate `(uc  1 e 1 0 ]
 {
 "156
 [v SwTimerCreate@retVal retVal `uc  1 a 1 0 ]
 "178
 } 0
-"319 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\rn2483APP.c
+"332 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\rn2483APP.c
 [v _GPIOInit GPIOInit `(v  1 e 1 0 ]
 {
-"361
+"374
 } 0
-"85
+"98
 [v _GPIOSet GPIOSet `(v  1 e 1 0 ]
 {
 [v GPIOSet@GPIO GPIO `uc  1 a 1 wreg ]
 [v GPIOSet@GPIO GPIO `uc  1 a 1 wreg ]
 [v GPIOSet@mode mode `uc  1 p 1 0 ]
 [v GPIOSet@GPIO GPIO `uc  1 a 1 1 ]
-"125
+"138
 } 0
-"132
+"145
 [v _GPIODigitalWrite GPIODigitalWrite `(v  1 e 1 0 ]
 {
 [v GPIODigitalWrite@GPIO GPIO `uc  1 a 1 wreg ]
 [v GPIODigitalWrite@GPIO GPIO `uc  1 a 1 wreg ]
 [v GPIODigitalWrite@digOut digOut `uc  1 p 1 0 ]
 [v GPIODigitalWrite@GPIO GPIO `uc  1 a 1 1 ]
-"171
+"184
 } 0
-"41
+"54
 [v _GPIOAnalogMode GPIOAnalogMode `(v  1 e 1 0 ]
 {
 [v GPIOAnalogMode@GPIO GPIO `uc  1 a 1 wreg ]
 [v GPIOAnalogMode@GPIO GPIO `uc  1 a 1 wreg ]
 [v GPIOAnalogMode@mode mode `uc  1 p 1 0 ]
 [v GPIOAnalogMode@GPIO GPIO `uc  1 a 1 1 ]
-"78
+"91
 } 0
-"214
+"227
 [v _GPIODigitalToogle GPIODigitalToogle `(v  1 e 1 0 ]
 {
 [v GPIODigitalToogle@GPIO GPIO `uc  1 a 1 wreg ]
 [v GPIODigitalToogle@GPIO GPIO `uc  1 a 1 wreg ]
 [v GPIODigitalToogle@GPIO GPIO `uc  1 a 1 0 ]
-"253
+"266
 } 0
-"63 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/interrupt_manager.c
+"63 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
 {
 "105
 } 0
-"165 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/tmr5.c
+"165 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/tmr5.c
 [v _TMR5_ISR TMR5_ISR `(v  1 e 1 0 ]
 {
 "176
@@ -4292,7 +4347,7 @@ MCAST_MSG_ERROR 12
 {
 "186
 } 0
-"17 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\tmrAPP.c
+"17 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\tmrAPP.c
 [v _timerTick timerTick `(v  1 e 1 0 ]
 {
 "19
@@ -4344,7 +4399,7 @@ MCAST_MSG_ERROR 12
 [v ___lbmod@dividend dividend `uc  1 a 1 1 ]
 "18
 } 0
-"160 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/tmr3.c
+"160 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/tmr3.c
 [v _TMR3_ISR TMR3_ISR `(v  1 e 1 0 ]
 {
 "171
@@ -4360,7 +4415,7 @@ MCAST_MSG_ERROR 12
 {
 "181
 } 0
-"161 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/tmr1.c
+"161 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/tmr1.c
 [v _TMR1_ISR TMR1_ISR `(v  1 e 1 0 ]
 {
 "171
@@ -4375,24 +4430,24 @@ MCAST_MSG_ERROR 12
 {
 "189
 } 0
-"59 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/tmr_lora_addons.c
+"59 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/tmr_lora_addons.c
 [v _TMR_ISR_lora TMR_ISR_lora `(v  1 e 1 0 ]
 {
 "70
 } 0
-"112 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/sw_timer.c
+"112 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/sw_timer.c
 [v i2_TMR_SwapTimer TMR_SwapTimer `(ui  1 e 2 0 ]
 {
 [v i2TMR_SwapTimer@timerVal timerVal `ui  1 p 2 8 ]
 "133
 } 0
-"124 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/tmr1.c
+"124 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/tmr1.c
 [v i2_TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
 {
 [v i2TMR1_WriteTimer@timerVal timerVal `ui  1 p 2 0 ]
 "144
 } 0
-"287 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/sw_timer.c
+"287 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/sw_timer.c
 [v i2_SwTimersInterrupt SwTimersInterrupt `(ul  1 e 4 0 ]
 {
 [v i2SwTimersInterrupt@ticksToNextTimerEvent SwTimersInterrupt `ul  1 a 4 36 ]
@@ -4405,7 +4460,7 @@ MCAST_MSG_ERROR 12
 {
 "110
 } 0
-"108 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/tmr1.c
+"108 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/tmr1.c
 [v i2_TMR1_ReadTimer TMR1_ReadTimer `(ui  1 e 2 0 ]
 {
 [v i2TMR1_ReadTimer@readVal TMR1_ReadTimer `ui  1 a 2 4 ]
@@ -4413,7 +4468,7 @@ MCAST_MSG_ERROR 12
 [v i2TMR1_ReadTimer@readValHigh TMR1_ReadTimer `uc  1 a 1 6 ]
 "122
 } 0
-"111 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/pin_manager.c
+"111 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
 {
 "120
@@ -4423,17 +4478,17 @@ MCAST_MSG_ERROR 12
 {
 "134
 } 0
-"73 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/interrupt_manager_lora_addons.c
+"73 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/interrupt_manager_lora_addons.c
 [v _DIO2_ISR_Lora DIO2_ISR_Lora `(v  1 e 1 0 ]
 {
 "76
 } 0
-"146 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/pin_manager.c
+"146 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/pin_manager.c
 [v _IOCB4_DefaultInterruptHandler IOCB4_DefaultInterruptHandler `(v  1 e 1 0 ]
 {
 "149
 } 0
-"59 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/ext_int.c
+"59 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/ext_int.c
 [v _INT2_ISR INT2_ISR `(v  1 e 1 0 ]
 {
 "65
@@ -4443,12 +4498,12 @@ MCAST_MSG_ERROR 12
 {
 "75
 } 0
-"68 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/interrupt_manager_lora_addons.c
+"68 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/interrupt_manager_lora_addons.c
 [v _DIO1_ISR_Lora DIO1_ISR_Lora `(v  1 e 1 0 ]
 {
 "71
 } 0
-"81 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/ext_int.c
+"81 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/ext_int.c
 [v _INT2_DefaultInterruptHandler INT2_DefaultInterruptHandler `(v  1 e 1 0 ]
 {
 "84
@@ -4463,17 +4518,17 @@ MCAST_MSG_ERROR 12
 {
 "49
 } 0
-"63 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/LoRaWAN/interrupt_manager_lora_addons.c
+"63 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/LoRaWAN/interrupt_manager_lora_addons.c
 [v _DIO0_ISR_Lora DIO0_ISR_Lora `(v  1 e 1 0 ]
 {
 "66
 } 0
-"55 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/ext_int.c
+"55 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/ext_int.c
 [v _INT1_DefaultInterruptHandler INT1_DefaultInterruptHandler `(v  1 e 1 0 ]
 {
 "58
 } 0
-"136 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07.X\mcc_generated_files/adc.c
+"136 D:\Borse_di_Ricerca\Acuadori\MPLAB_progetti\EnnesiMote\My1_1_21-07_lowPower.X\mcc_generated_files/adc.c
 [v _ADC_ISR ADC_ISR `(v  1 e 1 0 ]
 {
 "140

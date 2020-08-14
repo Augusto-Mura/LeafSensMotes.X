@@ -13,6 +13,19 @@
 
 
 
+void enableClockPeripherals (void){
+    PMD0bits.TMR3MD = PER_ON;
+    PMD2bits.ADCMD  = PER_ON;
+    TMR3_Initialize();
+    ADC_Initialize();
+}
+
+
+void disableClockPeripherals (void){
+    PMD0bits.TMR3MD = PER_OFF;
+    PMD2bits.ADCMD  = PER_OFF;
+}
+
 void rn2483_delayms(uint16_t length)
 {
     uint16_t counter;

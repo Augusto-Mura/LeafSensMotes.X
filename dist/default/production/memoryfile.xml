@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <executable name="dist/default/production\LeafSensMotes.X.production.hex">
+  <executable name="dist/default/production\My1_1_21-07_lowPower.X.production.hex">
     <memory name="program">
       <units>bytes</units>
       <length>65536</length>
-      <used>43572</used>
-      <free>21964</free>
+      <used>43770</used>
+      <free>21766</free>
     </memory>
     <memory name="data">
       <units>bytes</units>

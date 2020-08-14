@@ -37,12 +37,12 @@
          <string>class com.microchip.mcc.mcu8.modules.extint.EXTINT</string>
       </entry>
       <entry>
-         <string>LORAWAN</string>
-         <string>class com.microchip.mcc.LoRaWAN.LORAWAN</string>
-      </entry>
-      <entry>
          <string>EUSART2</string>
          <string>class com.microchip.mcc.mcu8.modules.eusart.EUSART</string>
+      </entry>
+      <entry>
+         <string>LORAWAN</string>
+         <string>class com.microchip.mcc.LoRaWAN.LORAWAN</string>
       </entry>
       <entry>
          <string>TMR5</string>
@@ -936,7 +936,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="TMR5" registerAlias="TMRH" settingAlias="TMRH"/>
-         <value>0</value>
+         <value>254</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="LORAWAN" name="dataNA915Up%64%data_rate_max"/>
@@ -1128,7 +1128,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="TMR5" registerAlias="TCON"/>
-         <value>181</value>
+         <value>53</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="LATB" settingAlias="LATB4"/>
@@ -1644,7 +1644,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TMR5" name="reloadValue"/>
-         <value>0</value>
+         <value>65036</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="MSSP2" registerAlias="BCLI" settingAlias="priority"/>
@@ -2364,7 +2364,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="TMR5" registerAlias="TMRL"/>
-         <value>0</value>
+         <value>12</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="LORAWAN" name="dataEU433%2%data_rate_max"/>
@@ -2639,12 +2639,12 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ADC" registerAlias="ADI" settingAlias="priority"/>
-         <value>1</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="EUSART2" name="DT2"/>
          <value>disabled</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ADC" registerAlias="ADI" settingAlias="priority"/>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="LORAWAN" name="dataNA915Up%20%active"/>
@@ -3016,7 +3016,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TMR5" name="timerPeriodMin"/>
-         <value>0.000244141</value>
+         <value>0.000002</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="LORAWAN" name="dataNA915Up%34%data_rate_min"/>
@@ -3116,7 +3116,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TMR5" name="tckiPin"/>
-         <value>enabled</value>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="WPUB" settingAlias="WPUB3" alias="set"/>
@@ -3691,12 +3691,12 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="clockFreq"/>
-         <value>16000000</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="EUSART2" registerAlias="RCSTA" settingAlias="SREN" alias="disabled"/>
          <value>0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="clockFreq"/>
+         <value>16000000</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="LORAWAN" name="dataNA915Up%44%data_rate_max"/>
@@ -3876,7 +3876,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TMR5" name="timerPeriodMax"/>
-         <value>16</value>
+         <value>0.131072</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="LATB" settingAlias="LATB4" alias="clear"/>
@@ -4144,7 +4144,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="TMR5" registerAlias="TMRL" settingAlias="TMRL"/>
-         <value>0</value>
+         <value>12</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TMR3" name="timerClockActual"/>
@@ -4348,7 +4348,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TMR5" name="timerClockActual"/>
-         <value>0.0625</value>
+         <value>1000</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="LORAWAN" name="dataNA915Up%13%active"/>
@@ -5024,7 +5024,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TMR5" name="timerPeriodActual"/>
-         <value>16</value>
+         <value>0.001</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON1" settingAlias="ADNREF" alias="VSS"/>
@@ -5404,7 +5404,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="TMR5" registerAlias="TMRH"/>
-         <value>0</value>
+         <value>254</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="TRISC" settingAlias="TRISC7"/>
@@ -6503,12 +6503,12 @@
          <value>disabled</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="AN7"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="EUSART2" registerAlias="TXSTA" settingAlias="TRMT" alias="TSR_empty"/>
          <value>1</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="AN7"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="AN6"/>
@@ -6644,7 +6644,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="TMR5" registerAlias="TCON" settingAlias="TMRCS"/>
-         <value>External</value>
+         <value>FOSC/4</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="TMR3" registerAlias="TCON" settingAlias="TMRCS"/>
@@ -7740,7 +7740,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TMR5" name="timerPeriod"/>
-         <value>16</value>
+         <value>0.001</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="samplingFrequency"/>
@@ -7769,12 +7769,12 @@
    </tokenMap>
    <generatedFileHashHistoryMap class="java.util.HashMap">
       <entry>
-         <file>mcc_generated_files\eusart2.c</file>
-         <hash>a6ee2a52858567b1c95094ef684729f42904d65f77742a3d3f8d738c64d11279</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\ext_int.c</file>
          <hash>8ec9fb3263ba657689bb24c03fbfb694fba4dee4433596e8d82f91a5ff5c17e6</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\eusart2.c</file>
+         <hash>a6ee2a52858567b1c95094ef684729f42904d65f77742a3d3f8d738c64d11279</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\LoRaWAN\pin_manager_lora_addons.h</file>
@@ -7809,12 +7809,12 @@
          <hash>7b305b5ef00325fcccc5320f5974136268241ffcb56e73dbaee71f4230ffec30</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\device_config.h</file>
-         <hash>a547754f1064b81c6c71829b3e6a68c879fd16350d08dc27a72439b905efce06</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\tmr5.h</file>
          <hash>4a1514c2c756d8f792a16a4f32c031475a907017471360fb8d44534c5acbd536</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\device_config.h</file>
+         <hash>a547754f1064b81c6c71829b3e6a68c879fd16350d08dc27a72439b905efce06</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\tmr1.h</file>
@@ -7822,7 +7822,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\tmr5.c</file>
-         <hash>7f0a0db63c1234550c045cd4b03eb63a3925d3d4f588eeb257c30cfdbeb297f1</hash>
+         <hash>29d9231770ca9c0f205599e4d355522dd158160458edfb0d591d2cf08c0898fa</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\tmr3.h</file>
@@ -7845,12 +7845,12 @@
          <hash>74fe92edcf9d1e360876ce0fdfccfa07b047d57f6c82f43365cb64b98cd2a5a5</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\pin_manager.c</file>
-         <hash>b3c3b88a8d6b7aac27ef691c4b9e84689d933a909f21f45033dae91a08529466</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\LoRaWAN\mcc_lora_config.h</file>
          <hash>2a0e3852c7b93fc09e744c021a7e5ab31219e20cf2481fc0ab7aba750c72cda5</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\pin_manager.c</file>
+         <hash>b3c3b88a8d6b7aac27ef691c4b9e84689d933a909f21f45033dae91a08529466</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\LoRaWAN\interrupt_manager_lora_addons.h</file>

@@ -5,7 +5,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _PORTE `Vuc ~T0 @X0 0 e@3972 ]
 "51 I2C.h
 [v _resetSDA `(v ~T0 @X0 0 ef ]
-"59 rn2483APP.h
+"65 rn2483APP.h
 [v _GPIODigitalRead `(uc ~T0 @X0 0 ef1`uc ]
 "49 I2C.h
 [v _setSDA `(v ~T0 @X0 0 ef ]
@@ -25,7 +25,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 "183 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18.h
 [v __delay `JF5818 ~T0 @X0 0 e ]
 [p i __delay ]
-"58 rn2483APP.h
+"64 rn2483APP.h
 [v _GPIODigitalWrite `(v ~T0 @X0 0 ef2`uc`uc ]
 [; ;xc.h: 18: extern const char __xc8_OPTIM_SPEED;
 [; ;xc.h: 20: extern double __fpnormalize(double);
@@ -6631,23 +6631,25 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;tmr3.h: 364: void TMR3_SetInterruptHandler(void (* InterruptHandler)(void));
 [; ;tmr3.h: 382: extern void (*TMR3_InterruptHandler)(void);
 [; ;tmr3.h: 400: void TMR3ISRClock(void);
-[; ;rn2483APP.h: 54: void GPIOInit(void);
-[; ;rn2483APP.h: 55: void GPIOAnalogMode(uint8_t GPIO, uint8_t mode);
-[; ;rn2483APP.h: 56: void GPIOSet(uint8_t GPIO, uint8_t mode);
-[; ;rn2483APP.h: 57: uint16_t GPIOAnalogRead(uint8_t GPIO);
-[; ;rn2483APP.h: 58: void GPIODigitalWrite(uint8_t GPIO, uint8_t digOut);
-[; ;rn2483APP.h: 59: uint8_t GPIODigitalRead(uint8_t GPIO);
-[; ;rn2483APP.h: 60: void GPIODigitalToogle(uint8_t GPIO);
-[; ;rn2483APP.h: 61: void acquisitionData(uint8_t GPIO, uint8_t *string);
-[; ;rn2483APP.h: 62: void uint16ToString(uint16_t value, uint8_t *output);
-[; ;rn2483APP.h: 63: void rn2483_delayms(uint16_t length);
-[; ;rn2483APP.h: 64: void rn2483_delaysec(uint16_t length);
-[; ;rn2483APP.h: 65: uint8_t adaptString(uint8_t *string, uint8_t length);
-[; ;rn2483APP.h: 66: uint16_t GPIOAverageRead(uint8_t GPIO);
-[; ;rn2483APP.h: 67: uint8_t isJoined(void);
-[; ;rn2483APP.h: 68: uint8_t rn2483_GoToIdle(void);
-[; ;rn2483APP.h: 69: void rn2483_IdleInitialization(void);
-[; ;rn2483APP.h: 70: void resetAllChannels(void);
+[; ;rn2483APP.h: 58: void enableClockPeripherals (void);
+[; ;rn2483APP.h: 59: void disableClockPeripherals (void);
+[; ;rn2483APP.h: 60: void GPIOInit(void);
+[; ;rn2483APP.h: 61: void GPIOAnalogMode(uint8_t GPIO, uint8_t mode);
+[; ;rn2483APP.h: 62: void GPIOSet(uint8_t GPIO, uint8_t mode);
+[; ;rn2483APP.h: 63: uint16_t GPIOAnalogRead(uint8_t GPIO);
+[; ;rn2483APP.h: 64: void GPIODigitalWrite(uint8_t GPIO, uint8_t digOut);
+[; ;rn2483APP.h: 65: uint8_t GPIODigitalRead(uint8_t GPIO);
+[; ;rn2483APP.h: 66: void GPIODigitalToogle(uint8_t GPIO);
+[; ;rn2483APP.h: 67: void acquisitionData(uint8_t GPIO, uint8_t *string);
+[; ;rn2483APP.h: 68: void uint16ToString(uint16_t value, uint8_t *output);
+[; ;rn2483APP.h: 69: void rn2483_delayms(uint16_t length);
+[; ;rn2483APP.h: 70: void rn2483_delaysec(uint16_t length);
+[; ;rn2483APP.h: 71: uint8_t adaptString(uint8_t *string, uint8_t length);
+[; ;rn2483APP.h: 72: uint16_t GPIOAverageRead(uint8_t GPIO);
+[; ;rn2483APP.h: 73: uint8_t isJoined(void);
+[; ;rn2483APP.h: 74: uint8_t rn2483_GoToIdle(void);
+[; ;rn2483APP.h: 75: void rn2483_IdleInitialization(void);
+[; ;rn2483APP.h: 76: void resetAllChannels(void);
 [; ;I2C.h: 42: void i2c_start();
 [; ;I2C.h: 43: void i2c_stop(void);
 [; ;I2C.h: 44: void i2c_sclStop(void);

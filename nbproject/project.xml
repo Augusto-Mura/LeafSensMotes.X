@@ -3,6 +3,8 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
+            <name>My1_1_21-07_lowPower</name>
+            <name>My1_1_21-07</name>
             <name>LeafSensMotes</name>
             <name>LoraMotesREV</name>
             <name>RN2483</name>
@@ -21,6 +23,10 @@
             <confList>
                 <confElem>
                     <name>default</name>
+                    <type>2</type>
+                </confElem>
+                <confElem>
+                    <name>NewConfiguration</name>
                     <type>2</type>
                 </confElem>
             </confList>

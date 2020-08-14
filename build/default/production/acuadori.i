@@ -9717,7 +9717,9 @@ typedef int16_t intptr_t;
 
 typedef uint16_t uintptr_t;
 
-# 54 "rn2483APP.h"
+# 58 "rn2483APP.h"
+void enableClockPeripherals (void);
+void disableClockPeripherals (void);
 void GPIOInit(void);
 void GPIOAnalogMode(uint8_t GPIO, uint8_t mode);
 void GPIOSet(uint8_t GPIO, uint8_t mode);
@@ -11090,30 +11092,7 @@ strncat(sensorsString, "C", 1);
 strncat(sensorsString, stringValue, stringValueLength);
 sensorsStringLength += 1 + stringValueLength;
 
-
-GPIODigitalWrite(0x04, 1);
-GPIODigitalWrite(0x00, 1);
-clip = 2;
-rn2483_delaysec(10);
-tempSensAcquisition();
-strncat(sensorsString, "T", 1);
-strncat(sensorsString, stringValue, stringValueLength);
-sensorsStringLength += 1 + stringValueLength;
-
-
-lightSensAcquisition();
-strncat(sensorsString, "L", 1);
-strncat(sensorsString, stringValue, stringValueLength);
-sensorsStringLength += 1 + stringValueLength;
-
-
-impedenceAcquisition();
-
-strncat(sensorsString, "C", 1);
-strncat(sensorsString, stringValue, stringValueLength);
-sensorsStringLength += 1 + stringValueLength;
-
-
+# 109
 GPIODigitalWrite(0x16, 1);
 upCnt = LORAWAN_GetUplinkCounter();
 sendValue();

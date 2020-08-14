@@ -9689,7 +9689,9 @@ typedef int16_t intptr_t;
 
 typedef uint16_t uintptr_t;
 
-# 54 "rn2483APP.h"
+# 58 "rn2483APP.h"
+void enableClockPeripherals (void);
+void disableClockPeripherals (void);
 void GPIOInit(void);
 void GPIOAnalogMode(uint8_t GPIO, uint8_t mode);
 void GPIOSet(uint8_t GPIO, uint8_t mode);
@@ -10929,6 +10931,19 @@ void SYSTEM_Initialize(void);
 void OSCILLATOR_Initialize(void);
 
 # 16 "rn2483APP.c"
+void enableClockPeripherals (void){
+PMD0bits.TMR3MD = 0;
+PMD2bits.ADCMD = 0;
+TMR3_Initialize();
+ADC_Initialize();
+}
+
+
+void disableClockPeripherals (void){
+PMD0bits.TMR3MD = 1;
+PMD2bits.ADCMD = 1;
+}
+
 void rn2483_delayms(uint16_t length)
 {
 uint16_t counter;
@@ -10950,7 +10965,7 @@ length--;
 
 }
 
-# 41
+# 54
 void GPIOAnalogMode(uint8_t GPIO, uint8_t mode)
 {
 switch(GPIO){
@@ -10990,7 +11005,7 @@ break;
 }
 }
 
-# 85
+# 98
 void GPIOSet(uint8_t GPIO, uint8_t mode)
 {
 switch(GPIO){
@@ -11033,7 +11048,7 @@ break;
 }
 }
 
-# 132
+# 145
 void GPIODigitalWrite(uint8_t GPIO, uint8_t digOut){
 switch(GPIO){
 case 0x00:
@@ -11163,7 +11178,7 @@ void uint16ToString(uint16_t value, uint8_t *output)
 {
 uint16_t position = 0;
 
-# 271
+# 284
 output[position + 4] = '0' + (value % 10);
 value /= 10;
 output[position + 3] = '0' + (value % 10);
@@ -11175,7 +11190,7 @@ value /= 10;
 output[position] = '0' + (value % 10);
 }
 
-# 287
+# 300
 uint16_t GPIOAverageRead(uint8_t GPIO)
 {
 uint24_t finalValue = 0;
@@ -11210,7 +11225,7 @@ return result;
 
 void GPIOInit(){
 
-# 332
+# 345
 GPIOSet(0x00, 0);
 GPIOSet(0x01, 1);
 GPIOSet(0x02, 1);
@@ -11291,7 +11306,7 @@ INTCONbits.RBIE = 0;
 
 PIE1bits.TMR1IE = 0;
 
-# 417
+# 430
 asm(" sleep");
 __nop();
 
@@ -11303,7 +11318,7 @@ INTCON3bits.INT1IE = 1;
 INTCON3bits.INT2IE = 1;
 INTCONbits.RBIE = 1;
 
-# 435
+# 448
 }
 
 void resetAllChannels(void){

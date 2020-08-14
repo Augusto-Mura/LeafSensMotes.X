@@ -3,11 +3,10 @@ Microchip MPLAB XC8 Compiler V2.05 ()
 Linker command line:
 
 -W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v2.05\pic\dat\en_msgs.txt \
-  -cs -h+dist/default/production\LeafSensMotes.X.production.sym \
-  --cmf=dist/default/production\LeafSensMotes.X.production.cmf -z \
-  -Q18LF46K22 -oC:\Users\loren\AppData\Local\Temp\s3pk.2 \
-  --defsym=__MPLAB_BUILD=1 \
-  -Mdist/default/production/LeafSensMotes.X.production.map -E1 -ver=XC8 \
+  -cs -h+dist/default/production\My1_1_21-07.X.production.sym \
+  --cmf=dist/default/production\My1_1_21-07.X.production.cmf -z -Q18LF46K22 \
+  -oC:\Users\loren\AppData\Local\Temp\sms4.2 --defsym=__MPLAB_BUILD=1 \
+  -Mdist/default/production/My1_1_21-07.X.production.map -E1 -ver=XC8 \
   --acfsm=1493 -ASTACK=08D6h-0F37h -pstack=STACK -ACODE=00h-0FFFFh \
   -ACONST=00h-0FFFFh -ASMALLCONST=01000h-010FFhx240 \
   -AMEDIUMCONST=01000h-0FFFFh -ACOMRAM=01h-05Fh -AABS1=00h-0F37h \
@@ -27,8 +26,8 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\loren\AppData\Local\Temp\s3pk.o \
-  dist/default/production\LeafSensMotes.X.production.o 
+  C:\Users\loren\AppData\Local\Temp\sms4.o \
+  dist/default/production\My1_1_21-07.X.production.o 
 
 Object code version is 3.11
 
@@ -40,13 +39,13 @@ Call graph: (short form)
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\loren\AppData\Local\Temp\s3pk.o
+C:\Users\loren\AppData\Local\Temp\sms4.o
                 stack                               8D6      8D6      662      8D6       2
                 init                                 A4       A4        8        4       0
                 reset_vec                             0        0        4        0       0
                 idloc                            200000   200000        8   200000       0
                 config                           300000   300000        E   300000       0
-dist/default/production\LeafSensMotes.X.production.o
+dist/default/production\My1_1_21-07.X.production.o
                 intcode                               8        8       9C        4       0
                 temp                                 46       46        C        1       1
                 mediumconst                        FE06     FE06      1FA     7F03       0

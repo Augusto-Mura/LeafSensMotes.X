@@ -1,4 +1,27 @@
 Version 3.2 HI-TECH Software Intermediate Code
+"401 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18lf46k22.h
+[s S17 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S17 . TMR1MD TMR2MD TMR3MD TMR4MD TMR5MD TMR6MD UART1MD UART2MD ]
+"411
+[s S18 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S18 . . SPI1MD SPI2MD ]
+"400
+[u S16 `S17 1 `S18 1 ]
+[n S16 . . . ]
+"417
+[v _PMD0bits `VS16 ~T0 @X0 0 e@3903 ]
+"298
+[s S12 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S12 . ADCMD CMP1MD CMP2MD CTMUMD ]
+"297
+[u S11 `S12 1 ]
+[n S11 . . ]
+"305
+[v _PMD2bits `VS11 ~T0 @X0 0 e@3901 ]
+"94 mcc_generated_files/tmr3.h
+[v _TMR3_Initialize `(v ~T0 @X0 0 ef ]
+"135 mcc_generated_files/adc.h
+[v _ADC_Initialize `(v ~T0 @X0 0 ef ]
 [v F5818 `(v ~T0 @X0 1 tf1`ul ]
 "183 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18.h
 [v __delay `JF5818 ~T0 @X0 0 e ]
@@ -35,13 +58,13 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _PORTD `Vuc ~T0 @X0 0 e@3971 ]
 "6835
 [v _PORTC `Vuc ~T0 @X0 0 e@3970 ]
-"57 rn2483APP.h
+"63 rn2483APP.h
 [v _GPIOAnalogRead `(ui ~T0 @X0 0 ef1`uc ]
-"312 rn2483APP.c
-[c E5899 29 30 31 .. ]
-[n E5899 . channel_CTMU channel_DAC channel_FVRBuf2  ]
+"325 rn2483APP.c
+[c E5903 29 30 31 .. ]
+[n E5903 . channel_CTMU channel_DAC channel_FVRBuf2  ]
 "287 mcc_generated_files/adc.h
-[v _ADC_GetConversion `(ui ~T0 @X0 0 ef1`E5899 ]
+[v _ADC_GetConversion `(ui ~T0 @X0 0 ef1`E5903 ]
 "1217 mcc_generated_files/LoRaWAN/lorawan.h
 [v _LORAWAN_GetStatus `(ul ~T0 @X0 0 ef ]
 "15961 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18lf46k22.h
@@ -87,11 +110,11 @@ Version 3.2 HI-TECH Software Intermediate Code
 "50 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18.h
 [v ___nop `(v ~T0 @X0 0 ef ]
 [p i ___nop ]
-"440 rn2483APP.c
-[c E6310 0 1 2 3 4 5 6 7 8 9 10 11 12 .. ]
-[n E6310 . OK NETWORK_NOT_JOINED MAC_STATE_NOT_READY_FOR_TRANSMISSION INVALID_PARAMETER KEYS_NOT_INITIALIZED SILENT_IMMEDIATELY_ACTIVE FRAME_COUNTER_ERROR_REJOIN_NEEDED INVALID_BUFFER_LENGTH MAC_PAUSED NO_CHANNELS_FOUND INVALID_CLASS MCAST_PARAM_ERROR MCAST_MSG_ERROR  ]
+"453 rn2483APP.c
+[c E6314 0 1 2 3 4 5 6 7 8 9 10 11 12 .. ]
+[n E6314 . OK NETWORK_NOT_JOINED MAC_STATE_NOT_READY_FOR_TRANSMISSION INVALID_PARAMETER KEYS_NOT_INITIALIZED SILENT_IMMEDIATELY_ACTIVE FRAME_COUNTER_ERROR_REJOIN_NEEDED INVALID_BUFFER_LENGTH MAC_PAUSED NO_CHANNELS_FOUND INVALID_CLASS MCAST_PARAM_ERROR MCAST_MSG_ERROR  ]
 "1322 mcc_generated_files/LoRaWAN/lorawan.h
-[v _LORAWAN_SetChannelIdStatus `(E6310 ~T0 @X0 0 ef2`uc`uc ]
+[v _LORAWAN_SetChannelIdStatus `(E6314 ~T0 @X0 0 ef2`uc`uc ]
 [; ;xc.h: 18: extern const char __xc8_OPTIM_SPEED;
 [; ;xc.h: 20: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
@@ -6683,23 +6706,25 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;stdint.h: 282: typedef uint32_t uintmax_t;
 [; ;stdint.h: 289: typedef int16_t intptr_t;
 [; ;stdint.h: 294: typedef uint16_t uintptr_t;
-[; ;rn2483APP.h: 54: void GPIOInit(void);
-[; ;rn2483APP.h: 55: void GPIOAnalogMode(uint8_t GPIO, uint8_t mode);
-[; ;rn2483APP.h: 56: void GPIOSet(uint8_t GPIO, uint8_t mode);
-[; ;rn2483APP.h: 57: uint16_t GPIOAnalogRead(uint8_t GPIO);
-[; ;rn2483APP.h: 58: void GPIODigitalWrite(uint8_t GPIO, uint8_t digOut);
-[; ;rn2483APP.h: 59: uint8_t GPIODigitalRead(uint8_t GPIO);
-[; ;rn2483APP.h: 60: void GPIODigitalToogle(uint8_t GPIO);
-[; ;rn2483APP.h: 61: void acquisitionData(uint8_t GPIO, uint8_t *string);
-[; ;rn2483APP.h: 62: void uint16ToString(uint16_t value, uint8_t *output);
-[; ;rn2483APP.h: 63: void rn2483_delayms(uint16_t length);
-[; ;rn2483APP.h: 64: void rn2483_delaysec(uint16_t length);
-[; ;rn2483APP.h: 65: uint8_t adaptString(uint8_t *string, uint8_t length);
-[; ;rn2483APP.h: 66: uint16_t GPIOAverageRead(uint8_t GPIO);
-[; ;rn2483APP.h: 67: uint8_t isJoined(void);
-[; ;rn2483APP.h: 68: uint8_t rn2483_GoToIdle(void);
-[; ;rn2483APP.h: 69: void rn2483_IdleInitialization(void);
-[; ;rn2483APP.h: 70: void resetAllChannels(void);
+[; ;rn2483APP.h: 58: void enableClockPeripherals (void);
+[; ;rn2483APP.h: 59: void disableClockPeripherals (void);
+[; ;rn2483APP.h: 60: void GPIOInit(void);
+[; ;rn2483APP.h: 61: void GPIOAnalogMode(uint8_t GPIO, uint8_t mode);
+[; ;rn2483APP.h: 62: void GPIOSet(uint8_t GPIO, uint8_t mode);
+[; ;rn2483APP.h: 63: uint16_t GPIOAnalogRead(uint8_t GPIO);
+[; ;rn2483APP.h: 64: void GPIODigitalWrite(uint8_t GPIO, uint8_t digOut);
+[; ;rn2483APP.h: 65: uint8_t GPIODigitalRead(uint8_t GPIO);
+[; ;rn2483APP.h: 66: void GPIODigitalToogle(uint8_t GPIO);
+[; ;rn2483APP.h: 67: void acquisitionData(uint8_t GPIO, uint8_t *string);
+[; ;rn2483APP.h: 68: void uint16ToString(uint16_t value, uint8_t *output);
+[; ;rn2483APP.h: 69: void rn2483_delayms(uint16_t length);
+[; ;rn2483APP.h: 70: void rn2483_delaysec(uint16_t length);
+[; ;rn2483APP.h: 71: uint8_t adaptString(uint8_t *string, uint8_t length);
+[; ;rn2483APP.h: 72: uint16_t GPIOAverageRead(uint8_t GPIO);
+[; ;rn2483APP.h: 73: uint8_t isJoined(void);
+[; ;rn2483APP.h: 74: uint8_t rn2483_GoToIdle(void);
+[; ;rn2483APP.h: 75: void rn2483_IdleInitialization(void);
+[; ;rn2483APP.h: 76: void resetAllChannels(void);
 [; ;stdbool.h: 15: typedef unsigned char bool;
 [; ;adc.h: 72: typedef uint16_t adc_result_t;
 [; ;adc.h: 77: typedef struct
@@ -7414,1269 +7439,1307 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;mcc.h: 84: void SYSTEM_Initialize(void);
 [; ;mcc.h: 97: void OSCILLATOR_Initialize(void);
 "16 rn2483APP.c
-[v _rn2483_delayms `(v ~T0 @X0 1 ef1`ui ]
-"17
+[v _enableClockPeripherals `(v ~T0 @X0 1 ef ]
 {
-[; ;rn2483APP.c: 16: void rn2483_delayms(uint16_t length)
-[; ;rn2483APP.c: 17: {
-[e :U _rn2483_delayms ]
-"16
-[v _length `ui ~T0 @X0 1 r1 ]
-"17
+[; ;rn2483APP.c: 16: void enableClockPeripherals (void){
+[e :U _enableClockPeripherals ]
 [f ]
+[; ;rn2483APP.c: 17: PMD0bits.TMR3MD = 0;
+"17
+[e = . . _PMD0bits 0 2 -> -> 0 `i `uc ]
+[; ;rn2483APP.c: 18: PMD2bits.ADCMD = 0;
 "18
-[v _counter `ui ~T0 @X0 1 a ]
-[; ;rn2483APP.c: 18: uint16_t counter;
-[; ;rn2483APP.c: 19: for(counter = 0; counter < length; counter++)
+[e = . . _PMD2bits 0 0 -> -> 0 `i `uc ]
+[; ;rn2483APP.c: 19: TMR3_Initialize();
 "19
-{
-[e = _counter -> -> 0 `i `ui ]
-[e $U 886  ]
+[e ( _TMR3_Initialize ..  ]
+[; ;rn2483APP.c: 20: ADC_Initialize();
 "20
-[e :U 883 ]
-[; ;rn2483APP.c: 20: {
-{
-[; ;rn2483APP.c: 21: _delay((unsigned long)((1)*(16000000/4000.0)));
+[e ( _ADC_Initialize ..  ]
+[; ;rn2483APP.c: 21: }
 "21
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-"22
-}
-"19
-[e ++ _counter -> -> 1 `i `ui ]
-[e :U 886 ]
-[e $ < _counter _length 883  ]
-[e :U 884 ]
-"22
-}
-[; ;rn2483APP.c: 22: }
-[; ;rn2483APP.c: 23: }
-"23
 [e :UE 882 ]
 }
 "24
-[v _rn2483_delaysec `(v ~T0 @X0 1 ef1`ui ]
-"25
+[v _disableClockPeripherals `(v ~T0 @X0 1 ef ]
 {
-[; ;rn2483APP.c: 24: void rn2483_delaysec(uint16_t length)
-[; ;rn2483APP.c: 25: {
-[e :U _rn2483_delaysec ]
-"24
-[v _length `ui ~T0 @X0 1 r1 ]
-"25
+[; ;rn2483APP.c: 24: void disableClockPeripherals (void){
+[e :U _disableClockPeripherals ]
 [f ]
+[; ;rn2483APP.c: 25: PMD0bits.TMR3MD = 1;
+"25
+[e = . . _PMD0bits 0 2 -> -> 1 `i `uc ]
+[; ;rn2483APP.c: 26: PMD2bits.ADCMD = 1;
 "26
-[v _counter `ui ~T0 @X0 1 a ]
-[; ;rn2483APP.c: 26: uint16_t counter;
-[; ;rn2483APP.c: 27: while(length){
+[e = . . _PMD2bits 0 0 -> -> 1 `i `uc ]
+[; ;rn2483APP.c: 27: }
 "27
-[e $U 888  ]
-[e :U 889 ]
+[e :UE 883 ]
+}
+"29
+[v _rn2483_delayms `(v ~T0 @X0 1 ef1`ui ]
+"30
 {
-[; ;rn2483APP.c: 28: for(counter = 0; counter < 1000; counter++)
-"28
+[; ;rn2483APP.c: 29: void rn2483_delayms(uint16_t length)
+[; ;rn2483APP.c: 30: {
+[e :U _rn2483_delayms ]
+"29
+[v _length `ui ~T0 @X0 1 r1 ]
+"30
+[f ]
+"31
+[v _counter `ui ~T0 @X0 1 a ]
+[; ;rn2483APP.c: 31: uint16_t counter;
+[; ;rn2483APP.c: 32: for(counter = 0; counter < length; counter++)
+"32
 {
 [e = _counter -> -> 0 `i `ui ]
-[e $ < _counter -> -> 1000 `i `ui 891  ]
-[e $U 892  ]
-"29
-[e :U 891 ]
-[; ;rn2483APP.c: 29: {
-{
-[; ;rn2483APP.c: 30: _delay((unsigned long)((1)*(16000000/4000.0)));
-"30
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-"31
-}
-"28
-[e ++ _counter -> -> 1 `i `ui ]
-[e $ < _counter -> -> 1000 `i `ui 891  ]
-[e :U 892 ]
-"31
-}
-[; ;rn2483APP.c: 31: }
-[; ;rn2483APP.c: 32: length--;
-"32
-[e -- _length -> -> 1 `i `ui ]
+[e $U 888  ]
 "33
-}
-[e :U 888 ]
-"27
-[e $ != _length -> -> 0 `i `ui 889  ]
-[e :U 890 ]
-[; ;rn2483APP.c: 33: }
-[; ;rn2483APP.c: 35: }
+[e :U 885 ]
+[; ;rn2483APP.c: 33: {
+{
+[; ;rn2483APP.c: 34: _delay((unsigned long)((1)*(16000000/4000.0)));
+"34
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
 "35
-[e :UE 887 ]
 }
-"41
-[v _GPIOAnalogMode `(v ~T0 @X0 1 ef2`uc`uc ]
-"42
+"32
+[e ++ _counter -> -> 1 `i `ui ]
+[e :U 888 ]
+[e $ < _counter _length 885  ]
+[e :U 886 ]
+"35
+}
+[; ;rn2483APP.c: 35: }
+[; ;rn2483APP.c: 36: }
+"36
+[e :UE 884 ]
+}
+"37
+[v _rn2483_delaysec `(v ~T0 @X0 1 ef1`ui ]
+"38
 {
-[; ;rn2483APP.c: 41: void GPIOAnalogMode(uint8_t GPIO, uint8_t mode)
+[; ;rn2483APP.c: 37: void rn2483_delaysec(uint16_t length)
+[; ;rn2483APP.c: 38: {
+[e :U _rn2483_delaysec ]
+"37
+[v _length `ui ~T0 @X0 1 r1 ]
+"38
+[f ]
+"39
+[v _counter `ui ~T0 @X0 1 a ]
+[; ;rn2483APP.c: 39: uint16_t counter;
+[; ;rn2483APP.c: 40: while(length){
+"40
+[e $U 890  ]
+[e :U 891 ]
+{
+[; ;rn2483APP.c: 41: for(counter = 0; counter < 1000; counter++)
+"41
+{
+[e = _counter -> -> 0 `i `ui ]
+[e $ < _counter -> -> 1000 `i `ui 893  ]
+[e $U 894  ]
+"42
+[e :U 893 ]
 [; ;rn2483APP.c: 42: {
-[e :U _GPIOAnalogMode ]
-"41
-[v _GPIO `uc ~T0 @X0 1 r1 ]
-[v _mode `uc ~T0 @X0 1 r2 ]
-"42
-[f ]
-[; ;rn2483APP.c: 43: switch(GPIO){
-"43
-[e $U 896  ]
 {
-[; ;rn2483APP.c: 44: case 0x00:
+[; ;rn2483APP.c: 43: _delay((unsigned long)((1)*(16000000/4000.0)));
+"43
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
 "44
-[e :U 897 ]
-[; ;rn2483APP.c: 45: mode? ANSELA |= 0x1 : ANSELA &= ~(0x1);
+}
+"41
+[e ++ _counter -> -> 1 `i `ui ]
+[e $ < _counter -> -> 1000 `i `ui 893  ]
+[e :U 894 ]
+"44
+}
+[; ;rn2483APP.c: 44: }
+[; ;rn2483APP.c: 45: length--;
 "45
-[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _ANSELA -> -> 1 `i `uc `i -> =& _ANSELA -> ~ -> 1 `i `uc `i ]
-[; ;rn2483APP.c: 46: break;
+[e -- _length -> -> 1 `i `ui ]
 "46
-[e $U 895  ]
-[; ;rn2483APP.c: 47: case 0x01:
-"47
-[e :U 898 ]
-[; ;rn2483APP.c: 48: mode? ANSELA |= 0x2 : ANSELA &= ~(0x2);
+}
+[e :U 890 ]
+"40
+[e $ != _length -> -> 0 `i `ui 891  ]
+[e :U 892 ]
+[; ;rn2483APP.c: 46: }
+[; ;rn2483APP.c: 48: }
 "48
-[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _ANSELA -> -> 2 `i `uc `i -> =& _ANSELA -> ~ -> 2 `i `uc `i ]
-[; ;rn2483APP.c: 49: break;
-"49
-[e $U 895  ]
-[; ;rn2483APP.c: 50: case 0x02:
-"50
-[e :U 899 ]
-[; ;rn2483APP.c: 51: mode? ANSELA |= 0x4 : ANSELA &= ~(0x4);
-"51
-[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _ANSELA -> -> 4 `i `uc `i -> =& _ANSELA -> ~ -> 4 `i `uc `i ]
-[; ;rn2483APP.c: 52: break;
-"52
-[e $U 895  ]
-[; ;rn2483APP.c: 53: case 0x03:
-"53
-[e :U 900 ]
-[; ;rn2483APP.c: 54: mode? ANSELA |= 0x8 : ANSELA &= ~(0x8);
+[e :UE 889 ]
+}
 "54
-[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _ANSELA -> -> 8 `i `uc `i -> =& _ANSELA -> ~ -> 8 `i `uc `i ]
-[; ;rn2483APP.c: 55: break;
+[v _GPIOAnalogMode `(v ~T0 @X0 1 ef2`uc`uc ]
 "55
-[e $U 895  ]
-[; ;rn2483APP.c: 56: case 0x04:
-"56
-[e :U 901 ]
-[; ;rn2483APP.c: 57: mode? ANSELA |= 0x20 : ANSELA &= ~(0x20);
-"57
-[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _ANSELA -> -> 32 `i `uc `i -> =& _ANSELA -> ~ -> 32 `i `uc `i ]
-[; ;rn2483APP.c: 58: break;
-"58
-[e $U 895  ]
-[; ;rn2483APP.c: 59: case 0x05:
-"59
-[e :U 902 ]
-[; ;rn2483APP.c: 60: mode? ANSELE |= 0x1 : ANSELE &= ~(0x1);
-"60
-[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _ANSELE -> -> 1 `i `uc `i -> =& _ANSELE -> ~ -> 1 `i `uc `i ]
-[; ;rn2483APP.c: 61: break;
-"61
-[e $U 895  ]
-[; ;rn2483APP.c: 62: case 0x06:
-"62
-[e :U 903 ]
-[; ;rn2483APP.c: 63: mode? ANSELE |= 0x2 : ANSELE &= ~(0x2);
-"63
-[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _ANSELE -> -> 2 `i `uc `i -> =& _ANSELE -> ~ -> 2 `i `uc `i ]
-[; ;rn2483APP.c: 64: break;
-"64
-[e $U 895  ]
-[; ;rn2483APP.c: 65: case 0x16:
-"65
-[e :U 904 ]
-[; ;rn2483APP.c: 66: mode? ANSELD |= 0x4 : ANSELD &= ~(0x4);
-"66
-[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _ANSELD -> -> 4 `i `uc `i -> =& _ANSELD -> ~ -> 4 `i `uc `i ]
-[; ;rn2483APP.c: 67: break;
-"67
-[e $U 895  ]
-[; ;rn2483APP.c: 68: case 0x07:
-"68
-[e :U 905 ]
-[; ;rn2483APP.c: 69: mode? ANSELE |= 0x4 : ANSELE &= ~(0x4);
-"69
-[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _ANSELE -> -> 4 `i `uc `i -> =& _ANSELE -> ~ -> 4 `i `uc `i ]
-[; ;rn2483APP.c: 70: break;
-"70
-[e $U 895  ]
-[; ;rn2483APP.c: 71: case 0x11:
-"71
-[e :U 906 ]
-[; ;rn2483APP.c: 72: mode? ANSELC |= 0x20 : ANSELC &= ~(0x20);
-"72
-[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _ANSELC -> -> 32 `i `uc `i -> =& _ANSELC -> ~ -> 32 `i `uc `i ]
-[; ;rn2483APP.c: 73: break;
-"73
-[e $U 895  ]
-[; ;rn2483APP.c: 74: case 0x19:
-"74
-[e :U 907 ]
-[; ;rn2483APP.c: 75: mode? ANSELD |= 0x20 : ANSELD &= ~(0x20);
-"75
-[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _ANSELD -> -> 32 `i `uc `i -> =& _ANSELD -> ~ -> 32 `i `uc `i ]
-[; ;rn2483APP.c: 76: break;
-"76
-[e $U 895  ]
-"77
-}
-[; ;rn2483APP.c: 77: }
-[e $U 895  ]
-"43
-[e :U 896 ]
-[e [\ _GPIO , $ -> -> 0 `i `uc 897
- , $ -> -> 1 `i `uc 898
- , $ -> -> 2 `i `uc 899
- , $ -> -> 3 `i `uc 900
- , $ -> -> 4 `i `uc 901
- , $ -> -> 5 `i `uc 902
- , $ -> -> 6 `i `uc 903
- , $ -> -> 22 `i `uc 904
- , $ -> -> 7 `i `uc 905
- , $ -> -> 17 `i `uc 906
- , $ -> -> 25 `i `uc 907
- 895 ]
-"77
-[e :U 895 ]
-[; ;rn2483APP.c: 78: }
-"78
-[e :UE 894 ]
-}
-"85
-[v _GPIOSet `(v ~T0 @X0 1 ef2`uc`uc ]
-"86
 {
-[; ;rn2483APP.c: 85: void GPIOSet(uint8_t GPIO, uint8_t mode)
-[; ;rn2483APP.c: 86: {
-[e :U _GPIOSet ]
-"85
+[; ;rn2483APP.c: 54: void GPIOAnalogMode(uint8_t GPIO, uint8_t mode)
+[; ;rn2483APP.c: 55: {
+[e :U _GPIOAnalogMode ]
+"54
 [v _GPIO `uc ~T0 @X0 1 r1 ]
 [v _mode `uc ~T0 @X0 1 r2 ]
-"86
+"55
 [f ]
-[; ;rn2483APP.c: 87: switch(GPIO){
-"87
-[e $U 910  ]
+[; ;rn2483APP.c: 56: switch(GPIO){
+"56
+[e $U 898  ]
 {
-[; ;rn2483APP.c: 88: case 0x00:
-"88
-[e :U 911 ]
-[; ;rn2483APP.c: 89: mode? TRISA |= (0x1) : TRISA &= ~(0x1);
-"89
-[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _TRISA -> -> 1 `i `uc `i -> =& _TRISA -> ~ -> 1 `i `uc `i ]
-[; ;rn2483APP.c: 90: break;
-"90
-[e $U 909  ]
-[; ;rn2483APP.c: 91: case 0x01:
-"91
-[e :U 912 ]
-[; ;rn2483APP.c: 92: mode? TRISA |= (0x2) : TRISA &= ~(0x2);
-"92
-[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _TRISA -> -> 2 `i `uc `i -> =& _TRISA -> ~ -> 2 `i `uc `i ]
-[; ;rn2483APP.c: 93: break;
-"93
-[e $U 909  ]
-[; ;rn2483APP.c: 94: case 0x02:
-"94
-[e :U 913 ]
-[; ;rn2483APP.c: 95: mode? TRISA |= (0x4) : TRISA &= ~(0x4);
-"95
-[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _TRISA -> -> 4 `i `uc `i -> =& _TRISA -> ~ -> 4 `i `uc `i ]
-[; ;rn2483APP.c: 96: break;
-"96
-[e $U 909  ]
-[; ;rn2483APP.c: 97: case 0x03:
-"97
-[e :U 914 ]
-[; ;rn2483APP.c: 98: mode? TRISA |= (0x8) : TRISA &= ~(0x8);
-"98
-[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _TRISA -> -> 8 `i `uc `i -> =& _TRISA -> ~ -> 8 `i `uc `i ]
-[; ;rn2483APP.c: 99: break;
-"99
-[e $U 909  ]
-[; ;rn2483APP.c: 100: case 0xFF:
-"100
-[e :U 915 ]
-[; ;rn2483APP.c: 101: mode? TRISA |= (0x10) : TRISA &= ~(0x10);
-"101
-[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _TRISA -> -> 16 `i `uc `i -> =& _TRISA -> ~ -> 16 `i `uc `i ]
-[; ;rn2483APP.c: 102: break;
-"102
-[e $U 909  ]
-[; ;rn2483APP.c: 103: case 0x04:
-"103
-[e :U 916 ]
-[; ;rn2483APP.c: 104: mode? TRISA |= (0x20) : TRISA &= ~(0x20);
-"104
-[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _TRISA -> -> 32 `i `uc `i -> =& _TRISA -> ~ -> 32 `i `uc `i ]
-[; ;rn2483APP.c: 105: break;
-"105
-[e $U 909  ]
-[; ;rn2483APP.c: 106: case 0x05:
-"106
-[e :U 917 ]
-[; ;rn2483APP.c: 107: mode? TRISE |= (0x1) : TRISE &= ~(0x1);
-"107
-[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _TRISE -> -> 1 `i `uc `i -> =& _TRISE -> ~ -> 1 `i `uc `i ]
-[; ;rn2483APP.c: 108: break;
-"108
-[e $U 909  ]
-[; ;rn2483APP.c: 109: case 0x06:
-"109
-[e :U 918 ]
-[; ;rn2483APP.c: 110: mode? TRISE |= (0x2) : TRISE &= ~(0x2);
-"110
-[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _TRISE -> -> 2 `i `uc `i -> =& _TRISE -> ~ -> 2 `i `uc `i ]
-[; ;rn2483APP.c: 111: break;
-"111
-[e $U 909  ]
-[; ;rn2483APP.c: 112: case 0x16:
-"112
-[e :U 919 ]
-[; ;rn2483APP.c: 113: mode? TRISD |= (0x4) : TRISD &= ~(0x4);
-"113
-[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _TRISD -> -> 4 `i `uc `i -> =& _TRISD -> ~ -> 4 `i `uc `i ]
-[; ;rn2483APP.c: 114: break;
-"114
-[e $U 909  ]
-[; ;rn2483APP.c: 115: case 0x07:
-"115
-[e :U 920 ]
-[; ;rn2483APP.c: 116: mode? TRISE |= (0x4) : TRISE &= ~(0x4);
-"116
-[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _TRISE -> -> 4 `i `uc `i -> =& _TRISE -> ~ -> 4 `i `uc `i ]
-[; ;rn2483APP.c: 117: break;
-"117
-[e $U 909  ]
-[; ;rn2483APP.c: 118: case 0x11:
-"118
-[e :U 921 ]
-[; ;rn2483APP.c: 119: mode? TRISC |= (0x20) : TRISC &= ~(0x20);
-"119
-[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _TRISC -> -> 32 `i `uc `i -> =& _TRISC -> ~ -> 32 `i `uc `i ]
-[; ;rn2483APP.c: 120: break;
-"120
-[e $U 909  ]
-[; ;rn2483APP.c: 121: case 0x19:
-"121
-[e :U 922 ]
-[; ;rn2483APP.c: 122: mode? TRISD |= (0x20) : TRISD &= ~(0x20);
-"122
-[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _TRISD -> -> 32 `i `uc `i -> =& _TRISD -> ~ -> 32 `i `uc `i ]
-[; ;rn2483APP.c: 123: break;
-"123
-[e $U 909  ]
-"124
-}
-[; ;rn2483APP.c: 124: }
-[e $U 909  ]
+[; ;rn2483APP.c: 57: case 0x00:
+"57
+[e :U 899 ]
+[; ;rn2483APP.c: 58: mode? ANSELA |= 0x1 : ANSELA &= ~(0x1);
+"58
+[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _ANSELA -> -> 1 `i `uc `i -> =& _ANSELA -> ~ -> 1 `i `uc `i ]
+[; ;rn2483APP.c: 59: break;
+"59
+[e $U 897  ]
+[; ;rn2483APP.c: 60: case 0x01:
+"60
+[e :U 900 ]
+[; ;rn2483APP.c: 61: mode? ANSELA |= 0x2 : ANSELA &= ~(0x2);
+"61
+[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _ANSELA -> -> 2 `i `uc `i -> =& _ANSELA -> ~ -> 2 `i `uc `i ]
+[; ;rn2483APP.c: 62: break;
+"62
+[e $U 897  ]
+[; ;rn2483APP.c: 63: case 0x02:
+"63
+[e :U 901 ]
+[; ;rn2483APP.c: 64: mode? ANSELA |= 0x4 : ANSELA &= ~(0x4);
+"64
+[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _ANSELA -> -> 4 `i `uc `i -> =& _ANSELA -> ~ -> 4 `i `uc `i ]
+[; ;rn2483APP.c: 65: break;
+"65
+[e $U 897  ]
+[; ;rn2483APP.c: 66: case 0x03:
+"66
+[e :U 902 ]
+[; ;rn2483APP.c: 67: mode? ANSELA |= 0x8 : ANSELA &= ~(0x8);
+"67
+[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _ANSELA -> -> 8 `i `uc `i -> =& _ANSELA -> ~ -> 8 `i `uc `i ]
+[; ;rn2483APP.c: 68: break;
+"68
+[e $U 897  ]
+[; ;rn2483APP.c: 69: case 0x04:
+"69
+[e :U 903 ]
+[; ;rn2483APP.c: 70: mode? ANSELA |= 0x20 : ANSELA &= ~(0x20);
+"70
+[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _ANSELA -> -> 32 `i `uc `i -> =& _ANSELA -> ~ -> 32 `i `uc `i ]
+[; ;rn2483APP.c: 71: break;
+"71
+[e $U 897  ]
+[; ;rn2483APP.c: 72: case 0x05:
+"72
+[e :U 904 ]
+[; ;rn2483APP.c: 73: mode? ANSELE |= 0x1 : ANSELE &= ~(0x1);
+"73
+[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _ANSELE -> -> 1 `i `uc `i -> =& _ANSELE -> ~ -> 1 `i `uc `i ]
+[; ;rn2483APP.c: 74: break;
+"74
+[e $U 897  ]
+[; ;rn2483APP.c: 75: case 0x06:
+"75
+[e :U 905 ]
+[; ;rn2483APP.c: 76: mode? ANSELE |= 0x2 : ANSELE &= ~(0x2);
+"76
+[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _ANSELE -> -> 2 `i `uc `i -> =& _ANSELE -> ~ -> 2 `i `uc `i ]
+[; ;rn2483APP.c: 77: break;
+"77
+[e $U 897  ]
+[; ;rn2483APP.c: 78: case 0x16:
+"78
+[e :U 906 ]
+[; ;rn2483APP.c: 79: mode? ANSELD |= 0x4 : ANSELD &= ~(0x4);
+"79
+[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _ANSELD -> -> 4 `i `uc `i -> =& _ANSELD -> ~ -> 4 `i `uc `i ]
+[; ;rn2483APP.c: 80: break;
+"80
+[e $U 897  ]
+[; ;rn2483APP.c: 81: case 0x07:
+"81
+[e :U 907 ]
+[; ;rn2483APP.c: 82: mode? ANSELE |= 0x4 : ANSELE &= ~(0x4);
+"82
+[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _ANSELE -> -> 4 `i `uc `i -> =& _ANSELE -> ~ -> 4 `i `uc `i ]
+[; ;rn2483APP.c: 83: break;
+"83
+[e $U 897  ]
+[; ;rn2483APP.c: 84: case 0x11:
+"84
+[e :U 908 ]
+[; ;rn2483APP.c: 85: mode? ANSELC |= 0x20 : ANSELC &= ~(0x20);
+"85
+[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _ANSELC -> -> 32 `i `uc `i -> =& _ANSELC -> ~ -> 32 `i `uc `i ]
+[; ;rn2483APP.c: 86: break;
+"86
+[e $U 897  ]
+[; ;rn2483APP.c: 87: case 0x19:
 "87
-[e :U 910 ]
-[e [\ _GPIO , $ -> -> 0 `i `uc 911
- , $ -> -> 1 `i `uc 912
- , $ -> -> 2 `i `uc 913
- , $ -> -> 3 `i `uc 914
- , $ -> -> 255 `i `uc 915
- , $ -> -> 4 `i `uc 916
- , $ -> -> 5 `i `uc 917
- , $ -> -> 6 `i `uc 918
- , $ -> -> 22 `i `uc 919
- , $ -> -> 7 `i `uc 920
- , $ -> -> 17 `i `uc 921
- , $ -> -> 25 `i `uc 922
- 909 ]
-"124
 [e :U 909 ]
-[; ;rn2483APP.c: 125: }
-"125
-[e :UE 908 ]
+[; ;rn2483APP.c: 88: mode? ANSELD |= 0x20 : ANSELD &= ~(0x20);
+"88
+[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _ANSELD -> -> 32 `i `uc `i -> =& _ANSELD -> ~ -> 32 `i `uc `i ]
+[; ;rn2483APP.c: 89: break;
+"89
+[e $U 897  ]
+"90
 }
+[; ;rn2483APP.c: 90: }
+[e $U 897  ]
+"56
+[e :U 898 ]
+[e [\ _GPIO , $ -> -> 0 `i `uc 899
+ , $ -> -> 1 `i `uc 900
+ , $ -> -> 2 `i `uc 901
+ , $ -> -> 3 `i `uc 902
+ , $ -> -> 4 `i `uc 903
+ , $ -> -> 5 `i `uc 904
+ , $ -> -> 6 `i `uc 905
+ , $ -> -> 22 `i `uc 906
+ , $ -> -> 7 `i `uc 907
+ , $ -> -> 17 `i `uc 908
+ , $ -> -> 25 `i `uc 909
+ 897 ]
+"90
+[e :U 897 ]
+[; ;rn2483APP.c: 91: }
+"91
+[e :UE 896 ]
+}
+"98
+[v _GPIOSet `(v ~T0 @X0 1 ef2`uc`uc ]
+"99
+{
+[; ;rn2483APP.c: 98: void GPIOSet(uint8_t GPIO, uint8_t mode)
+[; ;rn2483APP.c: 99: {
+[e :U _GPIOSet ]
+"98
+[v _GPIO `uc ~T0 @X0 1 r1 ]
+[v _mode `uc ~T0 @X0 1 r2 ]
+"99
+[f ]
+[; ;rn2483APP.c: 100: switch(GPIO){
+"100
+[e $U 912  ]
+{
+[; ;rn2483APP.c: 101: case 0x00:
+"101
+[e :U 913 ]
+[; ;rn2483APP.c: 102: mode? TRISA |= (0x1) : TRISA &= ~(0x1);
+"102
+[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _TRISA -> -> 1 `i `uc `i -> =& _TRISA -> ~ -> 1 `i `uc `i ]
+[; ;rn2483APP.c: 103: break;
+"103
+[e $U 911  ]
+[; ;rn2483APP.c: 104: case 0x01:
+"104
+[e :U 914 ]
+[; ;rn2483APP.c: 105: mode? TRISA |= (0x2) : TRISA &= ~(0x2);
+"105
+[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _TRISA -> -> 2 `i `uc `i -> =& _TRISA -> ~ -> 2 `i `uc `i ]
+[; ;rn2483APP.c: 106: break;
+"106
+[e $U 911  ]
+[; ;rn2483APP.c: 107: case 0x02:
+"107
+[e :U 915 ]
+[; ;rn2483APP.c: 108: mode? TRISA |= (0x4) : TRISA &= ~(0x4);
+"108
+[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _TRISA -> -> 4 `i `uc `i -> =& _TRISA -> ~ -> 4 `i `uc `i ]
+[; ;rn2483APP.c: 109: break;
+"109
+[e $U 911  ]
+[; ;rn2483APP.c: 110: case 0x03:
+"110
+[e :U 916 ]
+[; ;rn2483APP.c: 111: mode? TRISA |= (0x8) : TRISA &= ~(0x8);
+"111
+[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _TRISA -> -> 8 `i `uc `i -> =& _TRISA -> ~ -> 8 `i `uc `i ]
+[; ;rn2483APP.c: 112: break;
+"112
+[e $U 911  ]
+[; ;rn2483APP.c: 113: case 0xFF:
+"113
+[e :U 917 ]
+[; ;rn2483APP.c: 114: mode? TRISA |= (0x10) : TRISA &= ~(0x10);
+"114
+[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _TRISA -> -> 16 `i `uc `i -> =& _TRISA -> ~ -> 16 `i `uc `i ]
+[; ;rn2483APP.c: 115: break;
+"115
+[e $U 911  ]
+[; ;rn2483APP.c: 116: case 0x04:
+"116
+[e :U 918 ]
+[; ;rn2483APP.c: 117: mode? TRISA |= (0x20) : TRISA &= ~(0x20);
+"117
+[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _TRISA -> -> 32 `i `uc `i -> =& _TRISA -> ~ -> 32 `i `uc `i ]
+[; ;rn2483APP.c: 118: break;
+"118
+[e $U 911  ]
+[; ;rn2483APP.c: 119: case 0x05:
+"119
+[e :U 919 ]
+[; ;rn2483APP.c: 120: mode? TRISE |= (0x1) : TRISE &= ~(0x1);
+"120
+[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _TRISE -> -> 1 `i `uc `i -> =& _TRISE -> ~ -> 1 `i `uc `i ]
+[; ;rn2483APP.c: 121: break;
+"121
+[e $U 911  ]
+[; ;rn2483APP.c: 122: case 0x06:
+"122
+[e :U 920 ]
+[; ;rn2483APP.c: 123: mode? TRISE |= (0x2) : TRISE &= ~(0x2);
+"123
+[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _TRISE -> -> 2 `i `uc `i -> =& _TRISE -> ~ -> 2 `i `uc `i ]
+[; ;rn2483APP.c: 124: break;
+"124
+[e $U 911  ]
+[; ;rn2483APP.c: 125: case 0x16:
+"125
+[e :U 921 ]
+[; ;rn2483APP.c: 126: mode? TRISD |= (0x4) : TRISD &= ~(0x4);
+"126
+[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _TRISD -> -> 4 `i `uc `i -> =& _TRISD -> ~ -> 4 `i `uc `i ]
+[; ;rn2483APP.c: 127: break;
+"127
+[e $U 911  ]
+[; ;rn2483APP.c: 128: case 0x07:
+"128
+[e :U 922 ]
+[; ;rn2483APP.c: 129: mode? TRISE |= (0x4) : TRISE &= ~(0x4);
+"129
+[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _TRISE -> -> 4 `i `uc `i -> =& _TRISE -> ~ -> 4 `i `uc `i ]
+[; ;rn2483APP.c: 130: break;
+"130
+[e $U 911  ]
+[; ;rn2483APP.c: 131: case 0x11:
+"131
+[e :U 923 ]
+[; ;rn2483APP.c: 132: mode? TRISC |= (0x20) : TRISC &= ~(0x20);
 "132
+[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _TRISC -> -> 32 `i `uc `i -> =& _TRISC -> ~ -> 32 `i `uc `i ]
+[; ;rn2483APP.c: 133: break;
+"133
+[e $U 911  ]
+[; ;rn2483APP.c: 134: case 0x19:
+"134
+[e :U 924 ]
+[; ;rn2483APP.c: 135: mode? TRISD |= (0x20) : TRISD &= ~(0x20);
+"135
+[e ? != -> _mode `i -> -> -> 0 `i `uc `i : -> =| _TRISD -> -> 32 `i `uc `i -> =& _TRISD -> ~ -> 32 `i `uc `i ]
+[; ;rn2483APP.c: 136: break;
+"136
+[e $U 911  ]
+"137
+}
+[; ;rn2483APP.c: 137: }
+[e $U 911  ]
+"100
+[e :U 912 ]
+[e [\ _GPIO , $ -> -> 0 `i `uc 913
+ , $ -> -> 1 `i `uc 914
+ , $ -> -> 2 `i `uc 915
+ , $ -> -> 3 `i `uc 916
+ , $ -> -> 255 `i `uc 917
+ , $ -> -> 4 `i `uc 918
+ , $ -> -> 5 `i `uc 919
+ , $ -> -> 6 `i `uc 920
+ , $ -> -> 22 `i `uc 921
+ , $ -> -> 7 `i `uc 922
+ , $ -> -> 17 `i `uc 923
+ , $ -> -> 25 `i `uc 924
+ 911 ]
+"137
+[e :U 911 ]
+[; ;rn2483APP.c: 138: }
+"138
+[e :UE 910 ]
+}
+"145
 [v _GPIODigitalWrite `(v ~T0 @X0 1 ef2`uc`uc ]
 {
-[; ;rn2483APP.c: 132: void GPIODigitalWrite(uint8_t GPIO, uint8_t digOut){
+[; ;rn2483APP.c: 145: void GPIODigitalWrite(uint8_t GPIO, uint8_t digOut){
 [e :U _GPIODigitalWrite ]
 [v _GPIO `uc ~T0 @X0 1 r1 ]
 [v _digOut `uc ~T0 @X0 1 r2 ]
 [f ]
-[; ;rn2483APP.c: 133: switch(GPIO){
-"133
-[e $U 925  ]
-{
-[; ;rn2483APP.c: 134: case 0x00:
-"134
-[e :U 926 ]
-[; ;rn2483APP.c: 135: digOut? LATA |= 0x1 : LATA &= ~0x1;
-"135
-[e ? != -> _digOut `i -> -> -> 0 `i `uc `i : -> =| _LATA -> -> 1 `i `uc `i -> =& _LATA -> ~ -> 1 `i `uc `i ]
-[; ;rn2483APP.c: 136: break;
-"136
-[e $U 924  ]
-[; ;rn2483APP.c: 137: case 0x01:
-"137
-[e :U 927 ]
-[; ;rn2483APP.c: 138: digOut? LATA |= 0x2 : LATA &= ~0x2;
-"138
-[e ? != -> _digOut `i -> -> -> 0 `i `uc `i : -> =| _LATA -> -> 2 `i `uc `i -> =& _LATA -> ~ -> 2 `i `uc `i ]
-[; ;rn2483APP.c: 139: break;
-"139
-[e $U 924  ]
-[; ;rn2483APP.c: 140: case 0x02:
-"140
-[e :U 928 ]
-[; ;rn2483APP.c: 141: digOut? LATA |= 0x4 : LATA &= ~0x4;
-"141
-[e ? != -> _digOut `i -> -> -> 0 `i `uc `i : -> =| _LATA -> -> 4 `i `uc `i -> =& _LATA -> ~ -> 4 `i `uc `i ]
-[; ;rn2483APP.c: 142: break;
-"142
-[e $U 924  ]
-[; ;rn2483APP.c: 143: case 0x03:
-"143
-[e :U 929 ]
-[; ;rn2483APP.c: 144: digOut? LATA |= 0x8 : LATA &= ~0x8;
-"144
-[e ? != -> _digOut `i -> -> -> 0 `i `uc `i : -> =| _LATA -> -> 8 `i `uc `i -> =& _LATA -> ~ -> 8 `i `uc `i ]
-[; ;rn2483APP.c: 145: break;
-"145
-[e $U 924  ]
-[; ;rn2483APP.c: 146: case 0xFF:
+[; ;rn2483APP.c: 146: switch(GPIO){
 "146
-[e :U 930 ]
-[; ;rn2483APP.c: 147: digOut? LATA |= 0x10 : LATA &= ~0x10;
+[e $U 927  ]
+{
+[; ;rn2483APP.c: 147: case 0x00:
 "147
-[e ? != -> _digOut `i -> -> -> 0 `i `uc `i : -> =| _LATA -> -> 16 `i `uc `i -> =& _LATA -> ~ -> 16 `i `uc `i ]
-[; ;rn2483APP.c: 148: break;
+[e :U 928 ]
+[; ;rn2483APP.c: 148: digOut? LATA |= 0x1 : LATA &= ~0x1;
 "148
-[e $U 924  ]
-[; ;rn2483APP.c: 149: case 0x04:
+[e ? != -> _digOut `i -> -> -> 0 `i `uc `i : -> =| _LATA -> -> 1 `i `uc `i -> =& _LATA -> ~ -> 1 `i `uc `i ]
+[; ;rn2483APP.c: 149: break;
 "149
-[e :U 931 ]
-[; ;rn2483APP.c: 150: digOut? LATA |= 0x20 : LATA &= ~0x20;
+[e $U 926  ]
+[; ;rn2483APP.c: 150: case 0x01:
 "150
-[e ? != -> _digOut `i -> -> -> 0 `i `uc `i : -> =| _LATA -> -> 32 `i `uc `i -> =& _LATA -> ~ -> 32 `i `uc `i ]
-[; ;rn2483APP.c: 151: break;
+[e :U 929 ]
+[; ;rn2483APP.c: 151: digOut? LATA |= 0x2 : LATA &= ~0x2;
 "151
-[e $U 924  ]
-[; ;rn2483APP.c: 152: case 0x05:
+[e ? != -> _digOut `i -> -> -> 0 `i `uc `i : -> =| _LATA -> -> 2 `i `uc `i -> =& _LATA -> ~ -> 2 `i `uc `i ]
+[; ;rn2483APP.c: 152: break;
 "152
-[e :U 932 ]
-[; ;rn2483APP.c: 153: digOut? LATE |= 0x1 : LATE &= ~0x1;
+[e $U 926  ]
+[; ;rn2483APP.c: 153: case 0x02:
 "153
-[e ? != -> _digOut `i -> -> -> 0 `i `uc `i : -> =| _LATE -> -> 1 `i `uc `i -> =& _LATE -> ~ -> 1 `i `uc `i ]
-[; ;rn2483APP.c: 154: break;
+[e :U 930 ]
+[; ;rn2483APP.c: 154: digOut? LATA |= 0x4 : LATA &= ~0x4;
 "154
-[e $U 924  ]
-[; ;rn2483APP.c: 155: case 0x06:
+[e ? != -> _digOut `i -> -> -> 0 `i `uc `i : -> =| _LATA -> -> 4 `i `uc `i -> =& _LATA -> ~ -> 4 `i `uc `i ]
+[; ;rn2483APP.c: 155: break;
 "155
-[e :U 933 ]
-[; ;rn2483APP.c: 156: digOut? LATE |= 0x2 : LATE &= ~0x2;
+[e $U 926  ]
+[; ;rn2483APP.c: 156: case 0x03:
 "156
-[e ? != -> _digOut `i -> -> -> 0 `i `uc `i : -> =| _LATE -> -> 2 `i `uc `i -> =& _LATE -> ~ -> 2 `i `uc `i ]
-[; ;rn2483APP.c: 157: break;
+[e :U 931 ]
+[; ;rn2483APP.c: 157: digOut? LATA |= 0x8 : LATA &= ~0x8;
 "157
-[e $U 924  ]
-[; ;rn2483APP.c: 158: case 0x16:
+[e ? != -> _digOut `i -> -> -> 0 `i `uc `i : -> =| _LATA -> -> 8 `i `uc `i -> =& _LATA -> ~ -> 8 `i `uc `i ]
+[; ;rn2483APP.c: 158: break;
 "158
-[e :U 934 ]
-[; ;rn2483APP.c: 159: digOut? LATD |= 0x4 : LATD &= ~0x4;
+[e $U 926  ]
+[; ;rn2483APP.c: 159: case 0xFF:
 "159
-[e ? != -> _digOut `i -> -> -> 0 `i `uc `i : -> =| _LATD -> -> 4 `i `uc `i -> =& _LATD -> ~ -> 4 `i `uc `i ]
-[; ;rn2483APP.c: 160: break;
+[e :U 932 ]
+[; ;rn2483APP.c: 160: digOut? LATA |= 0x10 : LATA &= ~0x10;
 "160
-[e $U 924  ]
-[; ;rn2483APP.c: 161: case 0x07:
+[e ? != -> _digOut `i -> -> -> 0 `i `uc `i : -> =| _LATA -> -> 16 `i `uc `i -> =& _LATA -> ~ -> 16 `i `uc `i ]
+[; ;rn2483APP.c: 161: break;
 "161
-[e :U 935 ]
-[; ;rn2483APP.c: 162: digOut? LATE |= 0x4 : LATE &= ~0x4;
+[e $U 926  ]
+[; ;rn2483APP.c: 162: case 0x04:
 "162
-[e ? != -> _digOut `i -> -> -> 0 `i `uc `i : -> =| _LATE -> -> 4 `i `uc `i -> =& _LATE -> ~ -> 4 `i `uc `i ]
-[; ;rn2483APP.c: 163: break;
+[e :U 933 ]
+[; ;rn2483APP.c: 163: digOut? LATA |= 0x20 : LATA &= ~0x20;
 "163
-[e $U 924  ]
-[; ;rn2483APP.c: 164: case 0x11:
+[e ? != -> _digOut `i -> -> -> 0 `i `uc `i : -> =| _LATA -> -> 32 `i `uc `i -> =& _LATA -> ~ -> 32 `i `uc `i ]
+[; ;rn2483APP.c: 164: break;
 "164
-[e :U 936 ]
-[; ;rn2483APP.c: 165: digOut? LATC |= 0x20 : LATC &= ~0x20;
+[e $U 926  ]
+[; ;rn2483APP.c: 165: case 0x05:
 "165
-[e ? != -> _digOut `i -> -> -> 0 `i `uc `i : -> =| _LATC -> -> 32 `i `uc `i -> =& _LATC -> ~ -> 32 `i `uc `i ]
-[; ;rn2483APP.c: 166: break;
+[e :U 934 ]
+[; ;rn2483APP.c: 166: digOut? LATE |= 0x1 : LATE &= ~0x1;
 "166
-[e $U 924  ]
-[; ;rn2483APP.c: 167: case 0x19:
+[e ? != -> _digOut `i -> -> -> 0 `i `uc `i : -> =| _LATE -> -> 1 `i `uc `i -> =& _LATE -> ~ -> 1 `i `uc `i ]
+[; ;rn2483APP.c: 167: break;
 "167
-[e :U 937 ]
-[; ;rn2483APP.c: 168: digOut? LATD |= 0x20 : LATD &= ~0x20;
+[e $U 926  ]
+[; ;rn2483APP.c: 168: case 0x06:
 "168
-[e ? != -> _digOut `i -> -> -> 0 `i `uc `i : -> =| _LATD -> -> 32 `i `uc `i -> =& _LATD -> ~ -> 32 `i `uc `i ]
-[; ;rn2483APP.c: 169: break;
+[e :U 935 ]
+[; ;rn2483APP.c: 169: digOut? LATE |= 0x2 : LATE &= ~0x2;
 "169
-[e $U 924  ]
+[e ? != -> _digOut `i -> -> -> 0 `i `uc `i : -> =| _LATE -> -> 2 `i `uc `i -> =& _LATE -> ~ -> 2 `i `uc `i ]
+[; ;rn2483APP.c: 170: break;
 "170
-}
-[; ;rn2483APP.c: 170: }
-[e $U 924  ]
-"133
-[e :U 925 ]
-[e [\ _GPIO , $ -> -> 0 `i `uc 926
- , $ -> -> 1 `i `uc 927
- , $ -> -> 2 `i `uc 928
- , $ -> -> 3 `i `uc 929
- , $ -> -> 255 `i `uc 930
- , $ -> -> 4 `i `uc 931
- , $ -> -> 5 `i `uc 932
- , $ -> -> 6 `i `uc 933
- , $ -> -> 22 `i `uc 934
- , $ -> -> 7 `i `uc 935
- , $ -> -> 17 `i `uc 936
- , $ -> -> 25 `i `uc 937
- 924 ]
-"170
-[e :U 924 ]
-[; ;rn2483APP.c: 171: }
+[e $U 926  ]
+[; ;rn2483APP.c: 171: case 0x16:
 "171
-[e :UE 923 ]
-}
+[e :U 936 ]
+[; ;rn2483APP.c: 172: digOut? LATD |= 0x4 : LATD &= ~0x4;
+"172
+[e ? != -> _digOut `i -> -> -> 0 `i `uc `i : -> =| _LATD -> -> 4 `i `uc `i -> =& _LATD -> ~ -> 4 `i `uc `i ]
+[; ;rn2483APP.c: 173: break;
 "173
+[e $U 926  ]
+[; ;rn2483APP.c: 174: case 0x07:
+"174
+[e :U 937 ]
+[; ;rn2483APP.c: 175: digOut? LATE |= 0x4 : LATE &= ~0x4;
+"175
+[e ? != -> _digOut `i -> -> -> 0 `i `uc `i : -> =| _LATE -> -> 4 `i `uc `i -> =& _LATE -> ~ -> 4 `i `uc `i ]
+[; ;rn2483APP.c: 176: break;
+"176
+[e $U 926  ]
+[; ;rn2483APP.c: 177: case 0x11:
+"177
+[e :U 938 ]
+[; ;rn2483APP.c: 178: digOut? LATC |= 0x20 : LATC &= ~0x20;
+"178
+[e ? != -> _digOut `i -> -> -> 0 `i `uc `i : -> =| _LATC -> -> 32 `i `uc `i -> =& _LATC -> ~ -> 32 `i `uc `i ]
+[; ;rn2483APP.c: 179: break;
+"179
+[e $U 926  ]
+[; ;rn2483APP.c: 180: case 0x19:
+"180
+[e :U 939 ]
+[; ;rn2483APP.c: 181: digOut? LATD |= 0x20 : LATD &= ~0x20;
+"181
+[e ? != -> _digOut `i -> -> -> 0 `i `uc `i : -> =| _LATD -> -> 32 `i `uc `i -> =& _LATD -> ~ -> 32 `i `uc `i ]
+[; ;rn2483APP.c: 182: break;
+"182
+[e $U 926  ]
+"183
+}
+[; ;rn2483APP.c: 183: }
+[e $U 926  ]
+"146
+[e :U 927 ]
+[e [\ _GPIO , $ -> -> 0 `i `uc 928
+ , $ -> -> 1 `i `uc 929
+ , $ -> -> 2 `i `uc 930
+ , $ -> -> 3 `i `uc 931
+ , $ -> -> 255 `i `uc 932
+ , $ -> -> 4 `i `uc 933
+ , $ -> -> 5 `i `uc 934
+ , $ -> -> 6 `i `uc 935
+ , $ -> -> 22 `i `uc 936
+ , $ -> -> 7 `i `uc 937
+ , $ -> -> 17 `i `uc 938
+ , $ -> -> 25 `i `uc 939
+ 926 ]
+"183
+[e :U 926 ]
+[; ;rn2483APP.c: 184: }
+"184
+[e :UE 925 ]
+}
+"186
 [v _GPIODigitalRead `(uc ~T0 @X0 1 ef1`uc ]
 {
-[; ;rn2483APP.c: 173: uint8_t GPIODigitalRead(uint8_t GPIO){
+[; ;rn2483APP.c: 186: uint8_t GPIODigitalRead(uint8_t GPIO){
 [e :U _GPIODigitalRead ]
 [v _GPIO `uc ~T0 @X0 1 r1 ]
 [f ]
-[; ;rn2483APP.c: 174: switch(GPIO){
-"174
-[e $U 940  ]
-{
-[; ;rn2483APP.c: 175: case 0x00:
-"175
-[e :U 941 ]
-[; ;rn2483APP.c: 176: return ((PORTA & 0x1) >> 0x0);
-"176
-[e ) -> >> & -> _PORTA `i -> 1 `i -> 0 `i `uc ]
-[e $UE 938  ]
-[; ;rn2483APP.c: 177: break;
-"177
-[e $U 939  ]
-[; ;rn2483APP.c: 178: case 0x01:
-"178
-[e :U 942 ]
-[; ;rn2483APP.c: 179: return ((PORTA & 0x2) >> 0x1);
-"179
-[e ) -> >> & -> _PORTA `i -> 2 `i -> 1 `i `uc ]
-[e $UE 938  ]
-[; ;rn2483APP.c: 180: break;
-"180
-[e $U 939  ]
-[; ;rn2483APP.c: 181: case 0x02:
-"181
-[e :U 943 ]
-[; ;rn2483APP.c: 182: return ((PORTA & 0x4) >> 0x2);
-"182
-[e ) -> >> & -> _PORTA `i -> 4 `i -> 2 `i `uc ]
-[e $UE 938  ]
-[; ;rn2483APP.c: 183: break;
-"183
-[e $U 939  ]
-[; ;rn2483APP.c: 184: case 0x03:
-"184
-[e :U 944 ]
-[; ;rn2483APP.c: 185: return ((PORTA & 0x8) >> 0x3);
-"185
-[e ) -> >> & -> _PORTA `i -> 8 `i -> 3 `i `uc ]
-[e $UE 938  ]
-[; ;rn2483APP.c: 186: break;
-"186
-[e $U 939  ]
-[; ;rn2483APP.c: 187: case 0xFF:
+[; ;rn2483APP.c: 187: switch(GPIO){
 "187
-[e :U 945 ]
-[; ;rn2483APP.c: 188: return ((PORTA & 0x10) >> 0x4);
+[e $U 942  ]
+{
+[; ;rn2483APP.c: 188: case 0x00:
 "188
-[e ) -> >> & -> _PORTA `i -> 16 `i -> 4 `i `uc ]
-[e $UE 938  ]
-[; ;rn2483APP.c: 189: break;
+[e :U 943 ]
+[; ;rn2483APP.c: 189: return ((PORTA & 0x1) >> 0x0);
 "189
-[e $U 939  ]
-[; ;rn2483APP.c: 190: case 0x04:
+[e ) -> >> & -> _PORTA `i -> 1 `i -> 0 `i `uc ]
+[e $UE 940  ]
+[; ;rn2483APP.c: 190: break;
 "190
-[e :U 946 ]
-[; ;rn2483APP.c: 191: return ((PORTA & 0x20) >> 0x5);
+[e $U 941  ]
+[; ;rn2483APP.c: 191: case 0x01:
 "191
-[e ) -> >> & -> _PORTA `i -> 32 `i -> 5 `i `uc ]
-[e $UE 938  ]
-[; ;rn2483APP.c: 192: break;
+[e :U 944 ]
+[; ;rn2483APP.c: 192: return ((PORTA & 0x2) >> 0x1);
 "192
-[e $U 939  ]
-[; ;rn2483APP.c: 193: case 0x05:
+[e ) -> >> & -> _PORTA `i -> 2 `i -> 1 `i `uc ]
+[e $UE 940  ]
+[; ;rn2483APP.c: 193: break;
 "193
-[e :U 947 ]
-[; ;rn2483APP.c: 194: return ((PORTE & 0x1) >> 0x0);
+[e $U 941  ]
+[; ;rn2483APP.c: 194: case 0x02:
 "194
-[e ) -> >> & -> _PORTE `i -> 1 `i -> 0 `i `uc ]
-[e $UE 938  ]
-[; ;rn2483APP.c: 195: break;
+[e :U 945 ]
+[; ;rn2483APP.c: 195: return ((PORTA & 0x4) >> 0x2);
 "195
-[e $U 939  ]
-[; ;rn2483APP.c: 196: case 0x06:
+[e ) -> >> & -> _PORTA `i -> 4 `i -> 2 `i `uc ]
+[e $UE 940  ]
+[; ;rn2483APP.c: 196: break;
 "196
-[e :U 948 ]
-[; ;rn2483APP.c: 197: return ((PORTE & 0x2) >> 0x1);
+[e $U 941  ]
+[; ;rn2483APP.c: 197: case 0x03:
 "197
-[e ) -> >> & -> _PORTE `i -> 2 `i -> 1 `i `uc ]
-[e $UE 938  ]
-[; ;rn2483APP.c: 198: break;
+[e :U 946 ]
+[; ;rn2483APP.c: 198: return ((PORTA & 0x8) >> 0x3);
 "198
-[e $U 939  ]
-[; ;rn2483APP.c: 199: case 0x16:
+[e ) -> >> & -> _PORTA `i -> 8 `i -> 3 `i `uc ]
+[e $UE 940  ]
+[; ;rn2483APP.c: 199: break;
 "199
-[e :U 949 ]
-[; ;rn2483APP.c: 200: return ((PORTD & 0x4) >> 0x2);
+[e $U 941  ]
+[; ;rn2483APP.c: 200: case 0xFF:
 "200
-[e ) -> >> & -> _PORTD `i -> 4 `i -> 2 `i `uc ]
-[e $UE 938  ]
-[; ;rn2483APP.c: 201: break;
+[e :U 947 ]
+[; ;rn2483APP.c: 201: return ((PORTA & 0x10) >> 0x4);
 "201
-[e $U 939  ]
-[; ;rn2483APP.c: 202: case 0x07:
+[e ) -> >> & -> _PORTA `i -> 16 `i -> 4 `i `uc ]
+[e $UE 940  ]
+[; ;rn2483APP.c: 202: break;
 "202
-[e :U 950 ]
-[; ;rn2483APP.c: 203: return ((PORTE & 0x4) >> 0x2);
+[e $U 941  ]
+[; ;rn2483APP.c: 203: case 0x04:
 "203
-[e ) -> >> & -> _PORTE `i -> 4 `i -> 2 `i `uc ]
-[e $UE 938  ]
-[; ;rn2483APP.c: 204: break;
+[e :U 948 ]
+[; ;rn2483APP.c: 204: return ((PORTA & 0x20) >> 0x5);
 "204
-[e $U 939  ]
-[; ;rn2483APP.c: 205: case 0x11:
+[e ) -> >> & -> _PORTA `i -> 32 `i -> 5 `i `uc ]
+[e $UE 940  ]
+[; ;rn2483APP.c: 205: break;
 "205
-[e :U 951 ]
-[; ;rn2483APP.c: 206: return ((PORTC & 0x20) >> 0x5);
+[e $U 941  ]
+[; ;rn2483APP.c: 206: case 0x05:
 "206
-[e ) -> >> & -> _PORTC `i -> 32 `i -> 5 `i `uc ]
-[e $UE 938  ]
-[; ;rn2483APP.c: 207: break;
+[e :U 949 ]
+[; ;rn2483APP.c: 207: return ((PORTE & 0x1) >> 0x0);
 "207
-[e $U 939  ]
-[; ;rn2483APP.c: 208: case 0x19:
+[e ) -> >> & -> _PORTE `i -> 1 `i -> 0 `i `uc ]
+[e $UE 940  ]
+[; ;rn2483APP.c: 208: break;
 "208
-[e :U 952 ]
-[; ;rn2483APP.c: 209: return ((PORTD & 0x20) >> 0x5);
+[e $U 941  ]
+[; ;rn2483APP.c: 209: case 0x06:
 "209
-[e ) -> >> & -> _PORTD `i -> 32 `i -> 5 `i `uc ]
-[e $UE 938  ]
-[; ;rn2483APP.c: 210: break;
+[e :U 950 ]
+[; ;rn2483APP.c: 210: return ((PORTE & 0x2) >> 0x1);
 "210
-[e $U 939  ]
+[e ) -> >> & -> _PORTE `i -> 2 `i -> 1 `i `uc ]
+[e $UE 940  ]
+[; ;rn2483APP.c: 211: break;
 "211
-}
-[; ;rn2483APP.c: 211: }
-[e $U 939  ]
-"174
-[e :U 940 ]
-[e [\ _GPIO , $ -> -> 0 `i `uc 941
- , $ -> -> 1 `i `uc 942
- , $ -> -> 2 `i `uc 943
- , $ -> -> 3 `i `uc 944
- , $ -> -> 255 `i `uc 945
- , $ -> -> 4 `i `uc 946
- , $ -> -> 5 `i `uc 947
- , $ -> -> 6 `i `uc 948
- , $ -> -> 22 `i `uc 949
- , $ -> -> 7 `i `uc 950
- , $ -> -> 17 `i `uc 951
- , $ -> -> 25 `i `uc 952
- 939 ]
-"211
-[e :U 939 ]
-[; ;rn2483APP.c: 212: }
+[e $U 941  ]
+[; ;rn2483APP.c: 212: case 0x16:
 "212
-[e :UE 938 ]
-}
+[e :U 951 ]
+[; ;rn2483APP.c: 213: return ((PORTD & 0x4) >> 0x2);
+"213
+[e ) -> >> & -> _PORTD `i -> 4 `i -> 2 `i `uc ]
+[e $UE 940  ]
+[; ;rn2483APP.c: 214: break;
 "214
+[e $U 941  ]
+[; ;rn2483APP.c: 215: case 0x07:
+"215
+[e :U 952 ]
+[; ;rn2483APP.c: 216: return ((PORTE & 0x4) >> 0x2);
+"216
+[e ) -> >> & -> _PORTE `i -> 4 `i -> 2 `i `uc ]
+[e $UE 940  ]
+[; ;rn2483APP.c: 217: break;
+"217
+[e $U 941  ]
+[; ;rn2483APP.c: 218: case 0x11:
+"218
+[e :U 953 ]
+[; ;rn2483APP.c: 219: return ((PORTC & 0x20) >> 0x5);
+"219
+[e ) -> >> & -> _PORTC `i -> 32 `i -> 5 `i `uc ]
+[e $UE 940  ]
+[; ;rn2483APP.c: 220: break;
+"220
+[e $U 941  ]
+[; ;rn2483APP.c: 221: case 0x19:
+"221
+[e :U 954 ]
+[; ;rn2483APP.c: 222: return ((PORTD & 0x20) >> 0x5);
+"222
+[e ) -> >> & -> _PORTD `i -> 32 `i -> 5 `i `uc ]
+[e $UE 940  ]
+[; ;rn2483APP.c: 223: break;
+"223
+[e $U 941  ]
+"224
+}
+[; ;rn2483APP.c: 224: }
+[e $U 941  ]
+"187
+[e :U 942 ]
+[e [\ _GPIO , $ -> -> 0 `i `uc 943
+ , $ -> -> 1 `i `uc 944
+ , $ -> -> 2 `i `uc 945
+ , $ -> -> 3 `i `uc 946
+ , $ -> -> 255 `i `uc 947
+ , $ -> -> 4 `i `uc 948
+ , $ -> -> 5 `i `uc 949
+ , $ -> -> 6 `i `uc 950
+ , $ -> -> 22 `i `uc 951
+ , $ -> -> 7 `i `uc 952
+ , $ -> -> 17 `i `uc 953
+ , $ -> -> 25 `i `uc 954
+ 941 ]
+"224
+[e :U 941 ]
+[; ;rn2483APP.c: 225: }
+"225
+[e :UE 940 ]
+}
+"227
 [v _GPIODigitalToogle `(v ~T0 @X0 1 ef1`uc ]
 {
-[; ;rn2483APP.c: 214: void GPIODigitalToogle(uint8_t GPIO){
+[; ;rn2483APP.c: 227: void GPIODigitalToogle(uint8_t GPIO){
 [e :U _GPIODigitalToogle ]
 [v _GPIO `uc ~T0 @X0 1 r1 ]
 [f ]
-[; ;rn2483APP.c: 215: switch(GPIO){
-"215
-[e $U 955  ]
-{
-[; ;rn2483APP.c: 216: case 0x00:
-"216
-[e :U 956 ]
-[; ;rn2483APP.c: 217: LATA ^= 0x1;
-"217
-[e =^ _LATA -> -> 1 `i `uc ]
-[; ;rn2483APP.c: 218: break;
-"218
-[e $U 954  ]
-[; ;rn2483APP.c: 219: case 0x01:
-"219
-[e :U 957 ]
-[; ;rn2483APP.c: 220: LATA ^= 0x2;
-"220
-[e =^ _LATA -> -> 2 `i `uc ]
-[; ;rn2483APP.c: 221: break;
-"221
-[e $U 954  ]
-[; ;rn2483APP.c: 222: case 0x02:
-"222
-[e :U 958 ]
-[; ;rn2483APP.c: 223: LATA ^= 0x4;
-"223
-[e =^ _LATA -> -> 4 `i `uc ]
-[; ;rn2483APP.c: 224: break;
-"224
-[e $U 954  ]
-[; ;rn2483APP.c: 225: case 0x03:
-"225
-[e :U 959 ]
-[; ;rn2483APP.c: 226: LATA ^= 0x8;
-"226
-[e =^ _LATA -> -> 8 `i `uc ]
-[; ;rn2483APP.c: 227: break;
-"227
-[e $U 954  ]
-[; ;rn2483APP.c: 228: case 0xFF:
+[; ;rn2483APP.c: 228: switch(GPIO){
 "228
-[e :U 960 ]
-[; ;rn2483APP.c: 229: LATA ^= 0x10;
-"229
-[e =^ _LATA -> -> 16 `i `uc ]
-[; ;rn2483APP.c: 230: break;
-"230
-[e $U 954  ]
-[; ;rn2483APP.c: 231: case 0x04:
-"231
-[e :U 961 ]
-[; ;rn2483APP.c: 232: LATA ^= 0x20;
-"232
-[e =^ _LATA -> -> 32 `i `uc ]
-[; ;rn2483APP.c: 233: break;
-"233
-[e $U 954  ]
-[; ;rn2483APP.c: 234: case 0x05:
-"234
-[e :U 962 ]
-[; ;rn2483APP.c: 235: LATE ^= 0x1;
-"235
-[e =^ _LATE -> -> 1 `i `uc ]
-[; ;rn2483APP.c: 236: break;
-"236
-[e $U 954  ]
-[; ;rn2483APP.c: 237: case 0x06:
-"237
-[e :U 963 ]
-[; ;rn2483APP.c: 238: LATE ^= 0x2;
-"238
-[e =^ _LATE -> -> 2 `i `uc ]
-[; ;rn2483APP.c: 239: break;
-"239
-[e $U 954  ]
-[; ;rn2483APP.c: 240: case 0x16:
-"240
-[e :U 964 ]
-[; ;rn2483APP.c: 241: LATD ^= 0x4;
-"241
-[e =^ _LATD -> -> 4 `i `uc ]
-[; ;rn2483APP.c: 242: break;
-"242
-[e $U 954  ]
-[; ;rn2483APP.c: 243: case 0x07:
-"243
-[e :U 965 ]
-[; ;rn2483APP.c: 244: LATE ^= 0x4;
-"244
-[e =^ _LATE -> -> 4 `i `uc ]
-[; ;rn2483APP.c: 245: break;
-"245
-[e $U 954  ]
-[; ;rn2483APP.c: 246: case 0x11:
-"246
-[e :U 966 ]
-[; ;rn2483APP.c: 247: LATC ^= 0x20;
-"247
-[e =^ _LATC -> -> 32 `i `uc ]
-[; ;rn2483APP.c: 248: break;
-"248
-[e $U 954  ]
-[; ;rn2483APP.c: 249: case 0x19:
-"249
-[e :U 967 ]
-[; ;rn2483APP.c: 250: LATD ^= 0x20;
-"250
-[e =^ _LATD -> -> 32 `i `uc ]
-[; ;rn2483APP.c: 251: break;
-"251
-[e $U 954  ]
-"252
-}
-[; ;rn2483APP.c: 252: }
-[e $U 954  ]
-"215
-[e :U 955 ]
-[e [\ _GPIO , $ -> -> 0 `i `uc 956
- , $ -> -> 1 `i `uc 957
- , $ -> -> 2 `i `uc 958
- , $ -> -> 3 `i `uc 959
- , $ -> -> 255 `i `uc 960
- , $ -> -> 4 `i `uc 961
- , $ -> -> 5 `i `uc 962
- , $ -> -> 6 `i `uc 963
- , $ -> -> 22 `i `uc 964
- , $ -> -> 7 `i `uc 965
- , $ -> -> 17 `i `uc 966
- , $ -> -> 25 `i `uc 967
- 954 ]
-"252
-[e :U 954 ]
-[; ;rn2483APP.c: 253: }
-"253
-[e :UE 953 ]
-}
-"257
-[v _uint16ToString `(v ~T0 @X0 1 ef2`ui`*uc ]
-"258
+[e $U 957  ]
 {
-[; ;rn2483APP.c: 257: void uint16ToString(uint16_t value, uint8_t *output)
-[; ;rn2483APP.c: 258: {
-[e :U _uint16ToString ]
+[; ;rn2483APP.c: 229: case 0x00:
+"229
+[e :U 958 ]
+[; ;rn2483APP.c: 230: LATA ^= 0x1;
+"230
+[e =^ _LATA -> -> 1 `i `uc ]
+[; ;rn2483APP.c: 231: break;
+"231
+[e $U 956  ]
+[; ;rn2483APP.c: 232: case 0x01:
+"232
+[e :U 959 ]
+[; ;rn2483APP.c: 233: LATA ^= 0x2;
+"233
+[e =^ _LATA -> -> 2 `i `uc ]
+[; ;rn2483APP.c: 234: break;
+"234
+[e $U 956  ]
+[; ;rn2483APP.c: 235: case 0x02:
+"235
+[e :U 960 ]
+[; ;rn2483APP.c: 236: LATA ^= 0x4;
+"236
+[e =^ _LATA -> -> 4 `i `uc ]
+[; ;rn2483APP.c: 237: break;
+"237
+[e $U 956  ]
+[; ;rn2483APP.c: 238: case 0x03:
+"238
+[e :U 961 ]
+[; ;rn2483APP.c: 239: LATA ^= 0x8;
+"239
+[e =^ _LATA -> -> 8 `i `uc ]
+[; ;rn2483APP.c: 240: break;
+"240
+[e $U 956  ]
+[; ;rn2483APP.c: 241: case 0xFF:
+"241
+[e :U 962 ]
+[; ;rn2483APP.c: 242: LATA ^= 0x10;
+"242
+[e =^ _LATA -> -> 16 `i `uc ]
+[; ;rn2483APP.c: 243: break;
+"243
+[e $U 956  ]
+[; ;rn2483APP.c: 244: case 0x04:
+"244
+[e :U 963 ]
+[; ;rn2483APP.c: 245: LATA ^= 0x20;
+"245
+[e =^ _LATA -> -> 32 `i `uc ]
+[; ;rn2483APP.c: 246: break;
+"246
+[e $U 956  ]
+[; ;rn2483APP.c: 247: case 0x05:
+"247
+[e :U 964 ]
+[; ;rn2483APP.c: 248: LATE ^= 0x1;
+"248
+[e =^ _LATE -> -> 1 `i `uc ]
+[; ;rn2483APP.c: 249: break;
+"249
+[e $U 956  ]
+[; ;rn2483APP.c: 250: case 0x06:
+"250
+[e :U 965 ]
+[; ;rn2483APP.c: 251: LATE ^= 0x2;
+"251
+[e =^ _LATE -> -> 2 `i `uc ]
+[; ;rn2483APP.c: 252: break;
+"252
+[e $U 956  ]
+[; ;rn2483APP.c: 253: case 0x16:
+"253
+[e :U 966 ]
+[; ;rn2483APP.c: 254: LATD ^= 0x4;
+"254
+[e =^ _LATD -> -> 4 `i `uc ]
+[; ;rn2483APP.c: 255: break;
+"255
+[e $U 956  ]
+[; ;rn2483APP.c: 256: case 0x07:
+"256
+[e :U 967 ]
+[; ;rn2483APP.c: 257: LATE ^= 0x4;
 "257
+[e =^ _LATE -> -> 4 `i `uc ]
+[; ;rn2483APP.c: 258: break;
+"258
+[e $U 956  ]
+[; ;rn2483APP.c: 259: case 0x11:
+"259
+[e :U 968 ]
+[; ;rn2483APP.c: 260: LATC ^= 0x20;
+"260
+[e =^ _LATC -> -> 32 `i `uc ]
+[; ;rn2483APP.c: 261: break;
+"261
+[e $U 956  ]
+[; ;rn2483APP.c: 262: case 0x19:
+"262
+[e :U 969 ]
+[; ;rn2483APP.c: 263: LATD ^= 0x20;
+"263
+[e =^ _LATD -> -> 32 `i `uc ]
+[; ;rn2483APP.c: 264: break;
+"264
+[e $U 956  ]
+"265
+}
+[; ;rn2483APP.c: 265: }
+[e $U 956  ]
+"228
+[e :U 957 ]
+[e [\ _GPIO , $ -> -> 0 `i `uc 958
+ , $ -> -> 1 `i `uc 959
+ , $ -> -> 2 `i `uc 960
+ , $ -> -> 3 `i `uc 961
+ , $ -> -> 255 `i `uc 962
+ , $ -> -> 4 `i `uc 963
+ , $ -> -> 5 `i `uc 964
+ , $ -> -> 6 `i `uc 965
+ , $ -> -> 22 `i `uc 966
+ , $ -> -> 7 `i `uc 967
+ , $ -> -> 17 `i `uc 968
+ , $ -> -> 25 `i `uc 969
+ 956 ]
+"265
+[e :U 956 ]
+[; ;rn2483APP.c: 266: }
+"266
+[e :UE 955 ]
+}
+"270
+[v _uint16ToString `(v ~T0 @X0 1 ef2`ui`*uc ]
+"271
+{
+[; ;rn2483APP.c: 270: void uint16ToString(uint16_t value, uint8_t *output)
+[; ;rn2483APP.c: 271: {
+[e :U _uint16ToString ]
+"270
 [v _value `ui ~T0 @X0 1 r1 ]
 [v _output `*uc ~T0 @X0 1 r2 ]
-"258
-[f ]
-"259
-[v _position `ui ~T0 @X0 1 a ]
-[; ;rn2483APP.c: 259: uint16_t position = 0;
-[e = _position -> -> 0 `i `ui ]
-[; ;rn2483APP.c: 271: output[position + 4] = '0' + (value % 10);
 "271
-[e = *U + _output * -> + _position -> -> 4 `i `ui `ux -> -> # *U _output `ui `ux -> + -> 48 `ui % _value -> -> 10 `i `ui `uc ]
-[; ;rn2483APP.c: 272: value /= 10;
-"272
-[e =/ _value -> -> 10 `uc `ui ]
-[; ;rn2483APP.c: 273: output[position + 3] = '0' + (value % 10);
-"273
-[e = *U + _output * -> + _position -> -> 3 `i `ui `ux -> -> # *U _output `ui `ux -> + -> 48 `ui % _value -> -> 10 `i `ui `uc ]
-[; ;rn2483APP.c: 274: value /= 10;
-"274
-[e =/ _value -> -> 10 `uc `ui ]
-[; ;rn2483APP.c: 275: output[position + 2] = '0' + (value % 10);
-"275
-[e = *U + _output * -> + _position -> -> 2 `i `ui `ux -> -> # *U _output `ui `ux -> + -> 48 `ui % _value -> -> 10 `i `ui `uc ]
-[; ;rn2483APP.c: 276: value /= 10;
-"276
-[e =/ _value -> -> 10 `uc `ui ]
-[; ;rn2483APP.c: 277: output[position + 1] = '0' + (value % 10);
-"277
-[e = *U + _output * -> + _position -> -> 1 `i `ui `ux -> -> # *U _output `ui `ux -> + -> 48 `ui % _value -> -> 10 `i `ui `uc ]
-[; ;rn2483APP.c: 278: value /= 10;
-"278
-[e =/ _value -> -> 10 `uc `ui ]
-[; ;rn2483APP.c: 279: output[position] = '0' + (value % 10);
-"279
-[e = *U + _output * -> _position `ux -> -> # *U _output `ui `ux -> + -> 48 `ui % _value -> -> 10 `i `ui `uc ]
-[; ;rn2483APP.c: 280: }
-"280
-[e :UE 968 ]
-}
-"287
-[v _GPIOAverageRead `(ui ~T0 @X0 1 ef1`uc ]
-"288
-{
-[; ;rn2483APP.c: 287: uint16_t GPIOAverageRead(uint8_t GPIO)
-[; ;rn2483APP.c: 288: {
-[e :U _GPIOAverageRead ]
-"287
-[v _GPIO `uc ~T0 @X0 1 r1 ]
-"288
 [f ]
+"272
+[v _position `ui ~T0 @X0 1 a ]
+[; ;rn2483APP.c: 272: uint16_t position = 0;
+[e = _position -> -> 0 `i `ui ]
+[; ;rn2483APP.c: 284: output[position + 4] = '0' + (value % 10);
+"284
+[e = *U + _output * -> + _position -> -> 4 `i `ui `ux -> -> # *U _output `ui `ux -> + -> 48 `ui % _value -> -> 10 `i `ui `uc ]
+[; ;rn2483APP.c: 285: value /= 10;
+"285
+[e =/ _value -> -> 10 `uc `ui ]
+[; ;rn2483APP.c: 286: output[position + 3] = '0' + (value % 10);
+"286
+[e = *U + _output * -> + _position -> -> 3 `i `ui `ux -> -> # *U _output `ui `ux -> + -> 48 `ui % _value -> -> 10 `i `ui `uc ]
+[; ;rn2483APP.c: 287: value /= 10;
+"287
+[e =/ _value -> -> 10 `uc `ui ]
+[; ;rn2483APP.c: 288: output[position + 2] = '0' + (value % 10);
+"288
+[e = *U + _output * -> + _position -> -> 2 `i `ui `ux -> -> # *U _output `ui `ux -> + -> 48 `ui % _value -> -> 10 `i `ui `uc ]
+[; ;rn2483APP.c: 289: value /= 10;
 "289
-[v _finalValue `um ~T0 @X0 1 a ]
-[; ;rn2483APP.c: 289: uint24_t finalValue = 0;
-[e = _finalValue -> -> -> 0 `i `m `um ]
-[; ;rn2483APP.c: 291: for(uint16_t i=0; i<(1000); i++){
+[e =/ _value -> -> 10 `uc `ui ]
+[; ;rn2483APP.c: 290: output[position + 1] = '0' + (value % 10);
+"290
+[e = *U + _output * -> + _position -> -> 1 `i `ui `ux -> -> # *U _output `ui `ux -> + -> 48 `ui % _value -> -> 10 `i `ui `uc ]
+[; ;rn2483APP.c: 291: value /= 10;
 "291
+[e =/ _value -> -> 10 `uc `ui ]
+[; ;rn2483APP.c: 292: output[position] = '0' + (value % 10);
+"292
+[e = *U + _output * -> _position `ux -> -> # *U _output `ui `ux -> + -> 48 `ui % _value -> -> 10 `i `ui `uc ]
+[; ;rn2483APP.c: 293: }
+"293
+[e :UE 970 ]
+}
+"300
+[v _GPIOAverageRead `(ui ~T0 @X0 1 ef1`uc ]
+"301
+{
+[; ;rn2483APP.c: 300: uint16_t GPIOAverageRead(uint8_t GPIO)
+[; ;rn2483APP.c: 301: {
+[e :U _GPIOAverageRead ]
+"300
+[v _GPIO `uc ~T0 @X0 1 r1 ]
+"301
+[f ]
+"302
+[v _finalValue `um ~T0 @X0 1 a ]
+[; ;rn2483APP.c: 302: uint24_t finalValue = 0;
+[e = _finalValue -> -> -> 0 `i `m `um ]
+[; ;rn2483APP.c: 304: for(uint16_t i=0; i<(1000); i++){
+"304
 {
 [v _i `ui ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `ui ]
-[e $ < _i -> -> 1000 `i `ui 970  ]
-[e $U 971  ]
-[e :U 970 ]
+[e $ < _i -> -> 1000 `i `ui 972  ]
+[e $U 973  ]
+[e :U 972 ]
 {
-[; ;rn2483APP.c: 292: finalValue += GPIOAnalogRead(GPIO);
-"292
+[; ;rn2483APP.c: 305: finalValue += GPIOAnalogRead(GPIO);
+"305
 [e =+ _finalValue -> ( _GPIOAnalogRead (1 _GPIO `um ]
-"293
+"306
 }
-"291
+"304
 [e ++ _i -> -> 1 `i `ui ]
-[e $ < _i -> -> 1000 `i `ui 970  ]
-[e :U 971 ]
-"293
+[e $ < _i -> -> 1000 `i `ui 972  ]
+[e :U 973 ]
+"306
 }
-[; ;rn2483APP.c: 293: }
-[; ;rn2483APP.c: 294: finalValue/= 1000;
-"294
+[; ;rn2483APP.c: 306: }
+[; ;rn2483APP.c: 307: finalValue/= 1000;
+"307
 [e =/ _finalValue -> -> 1000 `us `um ]
-[; ;rn2483APP.c: 295: return finalValue;
-"295
+[; ;rn2483APP.c: 308: return finalValue;
+"308
 [e ) -> _finalValue `ui ]
-[e $UE 969  ]
-[; ;rn2483APP.c: 296: }
-"296
-[e :UE 969 ]
+[e $UE 971  ]
+[; ;rn2483APP.c: 309: }
+"309
+[e :UE 971 ]
 }
-"300
+"313
 [v _acquisitionData `(v ~T0 @X0 1 ef2`uc`*uc ]
-"301
+"314
 {
-[; ;rn2483APP.c: 300: void acquisitionData(uint8_t GPIO, uint8_t *string)
-[; ;rn2483APP.c: 301: {
+[; ;rn2483APP.c: 313: void acquisitionData(uint8_t GPIO, uint8_t *string)
+[; ;rn2483APP.c: 314: {
 [e :U _acquisitionData ]
-"300
+"313
 [v _GPIO `uc ~T0 @X0 1 r1 ]
 [v _string `*uc ~T0 @X0 1 r2 ]
-"301
-[f ]
-[; ;rn2483APP.c: 302: uint16ToString(GPIOAverageRead(GPIO), string);
-"302
-[e ( _uint16ToString (2 , ( _GPIOAverageRead (1 _GPIO _string ]
-[; ;rn2483APP.c: 304: }
-"304
-[e :UE 973 ]
-}
-"308
-[v _GPIOAnalogRead `(ui ~T0 @X0 1 ef1`uc ]
-"309
-{
-[; ;rn2483APP.c: 308: uint16_t GPIOAnalogRead(uint8_t GPIO)
-[; ;rn2483APP.c: 309: {
-[e :U _GPIOAnalogRead ]
-"308
-[v _GPIO `uc ~T0 @X0 1 r1 ]
-"309
-[f ]
-"310
-[v _result `ui ~T0 @X0 1 a ]
-[; ;rn2483APP.c: 310: adc_result_t result;
-[; ;rn2483APP.c: 312: result = ADC_GetConversion(GPIO);
-"312
-[e = _result ( _ADC_GetConversion (1 -> _GPIO `E5899 ]
-[; ;rn2483APP.c: 314: return result;
 "314
-[e ) _result ]
-[e $UE 974  ]
-[; ;rn2483APP.c: 315: }
-"315
-[e :UE 974 ]
-}
-"319
-[v _GPIOInit `(v ~T0 @X0 1 ef ]
-{
-[; ;rn2483APP.c: 319: void GPIOInit(){
-[e :U _GPIOInit ]
 [f ]
-[; ;rn2483APP.c: 332: GPIOSet(0x00, 0);
-"332
-[e ( _GPIOSet (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
-[; ;rn2483APP.c: 333: GPIOSet(0x01, 1);
-"333
-[e ( _GPIOSet (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
-[; ;rn2483APP.c: 334: GPIOSet(0x02, 1);
-"334
-[e ( _GPIOSet (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
-[; ;rn2483APP.c: 335: GPIOSet(0x03, 1);
-"335
-[e ( _GPIOSet (2 , -> -> 3 `i `uc -> -> 1 `i `uc ]
-[; ;rn2483APP.c: 336: GPIOSet(0xFF, 0);
-"336
-[e ( _GPIOSet (2 , -> -> 255 `i `uc -> -> 0 `i `uc ]
-[; ;rn2483APP.c: 337: GPIOSet(0x04, 0);
-"337
-[e ( _GPIOSet (2 , -> -> 4 `i `uc -> -> 0 `i `uc ]
-[; ;rn2483APP.c: 338: GPIOSet(0x05, 0);
-"338
-[e ( _GPIOSet (2 , -> -> 5 `i `uc -> -> 0 `i `uc ]
-[; ;rn2483APP.c: 339: GPIOSet(0x06, 0);
-"339
-[e ( _GPIOSet (2 , -> -> 6 `i `uc -> -> 0 `i `uc ]
-[; ;rn2483APP.c: 340: GPIOSet(0x16, 0);
-"340
-[e ( _GPIOSet (2 , -> -> 22 `i `uc -> -> 0 `i `uc ]
-[; ;rn2483APP.c: 341: GPIOSet(0x11, 0);
-"341
-[e ( _GPIOSet (2 , -> -> 17 `i `uc -> -> 0 `i `uc ]
-[; ;rn2483APP.c: 342: GPIOSet(0x19, 0);
-"342
-[e ( _GPIOSet (2 , -> -> 25 `i `uc -> -> 0 `i `uc ]
-[; ;rn2483APP.c: 345: GPIOAnalogMode(0x00, 0);
-"345
-[e ( _GPIOAnalogMode (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
-[; ;rn2483APP.c: 346: GPIOAnalogMode(0x01, 1);
-"346
-[e ( _GPIOAnalogMode (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
-[; ;rn2483APP.c: 347: GPIOAnalogMode(0x02, 1);
-"347
-[e ( _GPIOAnalogMode (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
-[; ;rn2483APP.c: 348: GPIOAnalogMode(0x03, 1);
-"348
-[e ( _GPIOAnalogMode (2 , -> -> 3 `i `uc -> -> 1 `i `uc ]
-[; ;rn2483APP.c: 349: GPIOAnalogMode(0xFF, 0);
-"349
-[e ( _GPIOAnalogMode (2 , -> -> 255 `i `uc -> -> 0 `i `uc ]
-[; ;rn2483APP.c: 350: GPIOAnalogMode(0x04, 0);
-"350
-[e ( _GPIOAnalogMode (2 , -> -> 4 `i `uc -> -> 0 `i `uc ]
-[; ;rn2483APP.c: 351: GPIOAnalogMode(0x05, 0);
-"351
-[e ( _GPIOAnalogMode (2 , -> -> 5 `i `uc -> -> 0 `i `uc ]
-[; ;rn2483APP.c: 352: GPIOAnalogMode(0x06, 0);
-"352
-[e ( _GPIOAnalogMode (2 , -> -> 6 `i `uc -> -> 0 `i `uc ]
-[; ;rn2483APP.c: 353: GPIOAnalogMode(0x16, 0);
-"353
-[e ( _GPIOAnalogMode (2 , -> -> 22 `i `uc -> -> 0 `i `uc ]
-[; ;rn2483APP.c: 354: GPIOAnalogMode(0x11, 0);
-"354
-[e ( _GPIOAnalogMode (2 , -> -> 17 `i `uc -> -> 0 `i `uc ]
-[; ;rn2483APP.c: 355: GPIOAnalogMode(0x19, 0);
-"355
-[e ( _GPIOAnalogMode (2 , -> -> 25 `i `uc -> -> 0 `i `uc ]
-[; ;rn2483APP.c: 357: GPIODigitalWrite(0x00, 0);
-"357
-[e ( _GPIODigitalWrite (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
-[; ;rn2483APP.c: 358: GPIODigitalWrite(0xFF, 0);
-"358
-[e ( _GPIODigitalWrite (2 , -> -> 255 `i `uc -> -> 0 `i `uc ]
-[; ;rn2483APP.c: 359: GPIODigitalWrite(0x04, 0);
-"359
-[e ( _GPIODigitalWrite (2 , -> -> 4 `i `uc -> -> 0 `i `uc ]
-[; ;rn2483APP.c: 360: GPIODigitalWrite(0x16, 1);
-"360
-[e ( _GPIODigitalWrite (2 , -> -> 22 `i `uc -> -> 1 `i `uc ]
-[; ;rn2483APP.c: 361: }
-"361
+[; ;rn2483APP.c: 315: uint16ToString(GPIOAverageRead(GPIO), string);
+"315
+[e ( _uint16ToString (2 , ( _GPIOAverageRead (1 _GPIO _string ]
+[; ;rn2483APP.c: 317: }
+"317
 [e :UE 975 ]
 }
+"321
+[v _GPIOAnalogRead `(ui ~T0 @X0 1 ef1`uc ]
+"322
+{
+[; ;rn2483APP.c: 321: uint16_t GPIOAnalogRead(uint8_t GPIO)
+[; ;rn2483APP.c: 322: {
+[e :U _GPIOAnalogRead ]
+"321
+[v _GPIO `uc ~T0 @X0 1 r1 ]
+"322
+[f ]
+"323
+[v _result `ui ~T0 @X0 1 a ]
+[; ;rn2483APP.c: 323: adc_result_t result;
+[; ;rn2483APP.c: 325: result = ADC_GetConversion(GPIO);
+"325
+[e = _result ( _ADC_GetConversion (1 -> _GPIO `E5903 ]
+[; ;rn2483APP.c: 327: return result;
+"327
+[e ) _result ]
+[e $UE 976  ]
+[; ;rn2483APP.c: 328: }
+"328
+[e :UE 976 ]
+}
+"332
+[v _GPIOInit `(v ~T0 @X0 1 ef ]
+{
+[; ;rn2483APP.c: 332: void GPIOInit(){
+[e :U _GPIOInit ]
+[f ]
+[; ;rn2483APP.c: 345: GPIOSet(0x00, 0);
+"345
+[e ( _GPIOSet (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
+[; ;rn2483APP.c: 346: GPIOSet(0x01, 1);
+"346
+[e ( _GPIOSet (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
+[; ;rn2483APP.c: 347: GPIOSet(0x02, 1);
+"347
+[e ( _GPIOSet (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
+[; ;rn2483APP.c: 348: GPIOSet(0x03, 1);
+"348
+[e ( _GPIOSet (2 , -> -> 3 `i `uc -> -> 1 `i `uc ]
+[; ;rn2483APP.c: 349: GPIOSet(0xFF, 0);
+"349
+[e ( _GPIOSet (2 , -> -> 255 `i `uc -> -> 0 `i `uc ]
+[; ;rn2483APP.c: 350: GPIOSet(0x04, 0);
+"350
+[e ( _GPIOSet (2 , -> -> 4 `i `uc -> -> 0 `i `uc ]
+[; ;rn2483APP.c: 351: GPIOSet(0x05, 0);
+"351
+[e ( _GPIOSet (2 , -> -> 5 `i `uc -> -> 0 `i `uc ]
+[; ;rn2483APP.c: 352: GPIOSet(0x06, 0);
+"352
+[e ( _GPIOSet (2 , -> -> 6 `i `uc -> -> 0 `i `uc ]
+[; ;rn2483APP.c: 353: GPIOSet(0x16, 0);
+"353
+[e ( _GPIOSet (2 , -> -> 22 `i `uc -> -> 0 `i `uc ]
+[; ;rn2483APP.c: 354: GPIOSet(0x11, 0);
+"354
+[e ( _GPIOSet (2 , -> -> 17 `i `uc -> -> 0 `i `uc ]
+[; ;rn2483APP.c: 355: GPIOSet(0x19, 0);
+"355
+[e ( _GPIOSet (2 , -> -> 25 `i `uc -> -> 0 `i `uc ]
+[; ;rn2483APP.c: 358: GPIOAnalogMode(0x00, 0);
+"358
+[e ( _GPIOAnalogMode (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
+[; ;rn2483APP.c: 359: GPIOAnalogMode(0x01, 1);
+"359
+[e ( _GPIOAnalogMode (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
+[; ;rn2483APP.c: 360: GPIOAnalogMode(0x02, 1);
+"360
+[e ( _GPIOAnalogMode (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
+[; ;rn2483APP.c: 361: GPIOAnalogMode(0x03, 1);
+"361
+[e ( _GPIOAnalogMode (2 , -> -> 3 `i `uc -> -> 1 `i `uc ]
+[; ;rn2483APP.c: 362: GPIOAnalogMode(0xFF, 0);
+"362
+[e ( _GPIOAnalogMode (2 , -> -> 255 `i `uc -> -> 0 `i `uc ]
+[; ;rn2483APP.c: 363: GPIOAnalogMode(0x04, 0);
 "363
+[e ( _GPIOAnalogMode (2 , -> -> 4 `i `uc -> -> 0 `i `uc ]
+[; ;rn2483APP.c: 364: GPIOAnalogMode(0x05, 0);
+"364
+[e ( _GPIOAnalogMode (2 , -> -> 5 `i `uc -> -> 0 `i `uc ]
+[; ;rn2483APP.c: 365: GPIOAnalogMode(0x06, 0);
+"365
+[e ( _GPIOAnalogMode (2 , -> -> 6 `i `uc -> -> 0 `i `uc ]
+[; ;rn2483APP.c: 366: GPIOAnalogMode(0x16, 0);
+"366
+[e ( _GPIOAnalogMode (2 , -> -> 22 `i `uc -> -> 0 `i `uc ]
+[; ;rn2483APP.c: 367: GPIOAnalogMode(0x11, 0);
+"367
+[e ( _GPIOAnalogMode (2 , -> -> 17 `i `uc -> -> 0 `i `uc ]
+[; ;rn2483APP.c: 368: GPIOAnalogMode(0x19, 0);
+"368
+[e ( _GPIOAnalogMode (2 , -> -> 25 `i `uc -> -> 0 `i `uc ]
+[; ;rn2483APP.c: 370: GPIODigitalWrite(0x00, 0);
+"370
+[e ( _GPIODigitalWrite (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
+[; ;rn2483APP.c: 371: GPIODigitalWrite(0xFF, 0);
+"371
+[e ( _GPIODigitalWrite (2 , -> -> 255 `i `uc -> -> 0 `i `uc ]
+[; ;rn2483APP.c: 372: GPIODigitalWrite(0x04, 0);
+"372
+[e ( _GPIODigitalWrite (2 , -> -> 4 `i `uc -> -> 0 `i `uc ]
+[; ;rn2483APP.c: 373: GPIODigitalWrite(0x16, 1);
+"373
+[e ( _GPIODigitalWrite (2 , -> -> 22 `i `uc -> -> 1 `i `uc ]
+[; ;rn2483APP.c: 374: }
+"374
+[e :UE 977 ]
+}
+"376
 [v _adaptString `(uc ~T0 @X0 1 ef2`*uc`uc ]
 {
-[; ;rn2483APP.c: 363: uint8_t adaptString(uint8_t *string, uint8_t length){
+[; ;rn2483APP.c: 376: uint8_t adaptString(uint8_t *string, uint8_t length){
 [e :U _adaptString ]
 [v _string `*uc ~T0 @X0 1 r1 ]
 [v _length `uc ~T0 @X0 1 r2 ]
 [f ]
-"364
+"377
 [v _deleteElem `uc ~T0 @X0 1 a ]
-[; ;rn2483APP.c: 364: uint8_t deleteElem = 0;
+[; ;rn2483APP.c: 377: uint8_t deleteElem = 0;
 [e = _deleteElem -> -> 0 `i `uc ]
-"365
+"378
 [v _flag `uc ~T0 @X0 1 a ]
-[; ;rn2483APP.c: 365: bool flag = 0;
+[; ;rn2483APP.c: 378: bool flag = 0;
 [e = _flag -> -> 0 `i `uc ]
-[; ;rn2483APP.c: 367: for(uint8_t i = 0; i<length; i++){
-"367
+[; ;rn2483APP.c: 380: for(uint8_t i = 0; i<length; i++){
+"380
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
-[e $U 980  ]
-[e :U 977 ]
-{
-[; ;rn2483APP.c: 368: if(string[i]== 0x30 && !flag){
-"368
-[e $ ! && == -> *U + _string * -> _i `ux -> -> # *U _string `ui `ux `i -> 48 `i ! != -> _flag `i -> -> -> 0 `i `uc `i 981  ]
-{
-[; ;rn2483APP.c: 369: deleteElem++;
-"369
-[e ++ _deleteElem -> -> 1 `i `uc ]
-"370
-}
-[; ;rn2483APP.c: 370: }
 [e $U 982  ]
-"371
-[e :U 981 ]
-[; ;rn2483APP.c: 371: else{
+[e :U 979 ]
 {
-[; ;rn2483APP.c: 372: string[i-deleteElem] = string[i];
-"372
-[e = *U + _string * -> - -> _i `i -> _deleteElem `i `x -> -> # *U _string `i `x *U + _string * -> _i `ux -> -> # *U _string `ui `ux ]
-[; ;rn2483APP.c: 373: flag=1;
-"373
-[e = _flag -> -> 1 `i `uc ]
-"374
-}
-[e :U 982 ]
-"375
-}
-"367
-[e ++ _i -> -> 1 `i `uc ]
-[e :U 980 ]
-[e $ < -> _i `i -> _length `i 977  ]
-[e :U 978 ]
-"375
-}
-[; ;rn2483APP.c: 374: }
-[; ;rn2483APP.c: 375: }
-[; ;rn2483APP.c: 377: if (deleteElem == length){
-"377
-[e $ ! == -> _deleteElem `i -> _length `i 983  ]
-{
-[; ;rn2483APP.c: 378: return 1;
-"378
-[e ) -> -> 1 `i `uc ]
-[e $UE 976  ]
-"379
-}
-[e :U 983 ]
-[; ;rn2483APP.c: 379: }
-[; ;rn2483APP.c: 380: return length-deleteElem;
-"380
-[e ) -> - -> _length `i -> _deleteElem `i `uc ]
-[e $UE 976  ]
-[; ;rn2483APP.c: 381: }
+[; ;rn2483APP.c: 381: if(string[i]== 0x30 && !flag){
 "381
-[e :UE 976 ]
-}
+[e $ ! && == -> *U + _string * -> _i `ux -> -> # *U _string `ui `ux `i -> 48 `i ! != -> _flag `i -> -> -> 0 `i `uc `i 983  ]
+{
+[; ;rn2483APP.c: 382: deleteElem++;
+"382
+[e ++ _deleteElem -> -> 1 `i `uc ]
 "383
+}
+[; ;rn2483APP.c: 383: }
+[e $U 984  ]
+"384
+[e :U 983 ]
+[; ;rn2483APP.c: 384: else{
+{
+[; ;rn2483APP.c: 385: string[i-deleteElem] = string[i];
+"385
+[e = *U + _string * -> - -> _i `i -> _deleteElem `i `x -> -> # *U _string `i `x *U + _string * -> _i `ux -> -> # *U _string `ui `ux ]
+[; ;rn2483APP.c: 386: flag=1;
+"386
+[e = _flag -> -> 1 `i `uc ]
+"387
+}
+[e :U 984 ]
+"388
+}
+"380
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 982 ]
+[e $ < -> _i `i -> _length `i 979  ]
+[e :U 980 ]
+"388
+}
+[; ;rn2483APP.c: 387: }
+[; ;rn2483APP.c: 388: }
+[; ;rn2483APP.c: 390: if (deleteElem == length){
+"390
+[e $ ! == -> _deleteElem `i -> _length `i 985  ]
+{
+[; ;rn2483APP.c: 391: return 1;
+"391
+[e ) -> -> 1 `i `uc ]
+[e $UE 978  ]
+"392
+}
+[e :U 985 ]
+[; ;rn2483APP.c: 392: }
+[; ;rn2483APP.c: 393: return length-deleteElem;
+"393
+[e ) -> - -> _length `i -> _deleteElem `i `uc ]
+[e $UE 978  ]
+[; ;rn2483APP.c: 394: }
+"394
+[e :UE 978 ]
+}
+"396
 [v _isJoined `(uc ~T0 @X0 1 ef ]
 {
-[; ;rn2483APP.c: 383: uint8_t isJoined(){
+[; ;rn2483APP.c: 396: uint8_t isJoined(){
 [e :U _isJoined ]
 [f ]
-"384
-[v _value `ul ~T0 @X0 1 a ]
-"385
-[v _joined `uc ~T0 @X0 1 a ]
-[; ;rn2483APP.c: 384: uint32_t value;
-[; ;rn2483APP.c: 385: uint8_t joined;
-[; ;rn2483APP.c: 386: value = LORAWAN_GetStatus();
-"386
-[e = _value ( _LORAWAN_GetStatus ..  ]
-[; ;rn2483APP.c: 387: joined = value & 0x10;
-"387
-[e = _joined -> & _value -> -> -> 16 `i `l `ul `uc ]
-[; ;rn2483APP.c: 388: return joined;
-"388
-[e ) _joined ]
-[e $UE 984  ]
-[; ;rn2483APP.c: 389: }
-"389
-[e :UE 984 ]
-}
-"391
-[v _rn2483_IdleInitialization `(v ~T0 @X0 1 ef ]
-{
-[; ;rn2483APP.c: 391: void rn2483_IdleInitialization(void){
-[e :U _rn2483_IdleInitialization ]
-[f ]
-[; ;rn2483APP.c: 393: WDTCON = 0;
-"393
-[e = _WDTCON -> -> 0 `i `uc ]
-[; ;rn2483APP.c: 397: OSCCON |= 0x80;
 "397
-[e =| _OSCCON -> -> 128 `i `uc ]
-[; ;rn2483APP.c: 399: }
+[v _value `ul ~T0 @X0 1 a ]
+"398
+[v _joined `uc ~T0 @X0 1 a ]
+[; ;rn2483APP.c: 397: uint32_t value;
+[; ;rn2483APP.c: 398: uint8_t joined;
+[; ;rn2483APP.c: 399: value = LORAWAN_GetStatus();
 "399
-[e :UE 985 ]
-}
+[e = _value ( _LORAWAN_GetStatus ..  ]
+[; ;rn2483APP.c: 400: joined = value & 0x10;
+"400
+[e = _joined -> & _value -> -> -> 16 `i `l `ul `uc ]
+[; ;rn2483APP.c: 401: return joined;
 "401
-[v _rn2483_GoToIdle `(uc ~T0 @X0 1 ef ]
-{
-[; ;rn2483APP.c: 401: uint8_t rn2483_GoToIdle(void){
-[e :U _rn2483_GoToIdle ]
-[f ]
-[; ;rn2483APP.c: 406: INTCON3bits.INT1IE = 0;
-"406
-[e = . . _INTCON3bits 0 3 -> -> 0 `i `uc ]
-[; ;rn2483APP.c: 407: INTCON3bits.INT2IE = 0;
-"407
-[e = . . _INTCON3bits 0 4 -> -> 0 `i `uc ]
-[; ;rn2483APP.c: 408: INTCONbits.RBIE = 0;
-"408
-[e = . . _INTCONbits 0 3 -> -> 0 `i `uc ]
-[; ;rn2483APP.c: 410: PIE1bits.TMR1IE = 0;
-"410
-[e = . . _PIE1bits 0 0 -> -> 0 `i `uc ]
-[; ;rn2483APP.c: 417: asm(" sleep");
-"417
-[; <"  sleep ;# ">
-[; ;rn2483APP.c: 418: __nop();
-"418
-[e ( ___nop ..  ]
-[; ;rn2483APP.c: 422: PIE1bits.TMR1IE = 1;
-"422
-[e = . . _PIE1bits 0 0 -> -> 1 `i `uc ]
-[; ;rn2483APP.c: 424: INTCON3bits.INT1IE = 1;
-"424
-[e = . . _INTCON3bits 0 3 -> -> 1 `i `uc ]
-[; ;rn2483APP.c: 425: INTCON3bits.INT2IE = 1;
-"425
-[e = . . _INTCON3bits 0 4 -> -> 1 `i `uc ]
-[; ;rn2483APP.c: 426: INTCONbits.RBIE = 1;
-"426
-[e = . . _INTCONbits 0 3 -> -> 1 `i `uc ]
-[; ;rn2483APP.c: 435: }
-"435
+[e ) _joined ]
+[e $UE 986  ]
+[; ;rn2483APP.c: 402: }
+"402
 [e :UE 986 ]
 }
+"404
+[v _rn2483_IdleInitialization `(v ~T0 @X0 1 ef ]
+{
+[; ;rn2483APP.c: 404: void rn2483_IdleInitialization(void){
+[e :U _rn2483_IdleInitialization ]
+[f ]
+[; ;rn2483APP.c: 406: WDTCON = 0;
+"406
+[e = _WDTCON -> -> 0 `i `uc ]
+[; ;rn2483APP.c: 410: OSCCON |= 0x80;
+"410
+[e =| _OSCCON -> -> 128 `i `uc ]
+[; ;rn2483APP.c: 412: }
+"412
+[e :UE 987 ]
+}
+"414
+[v _rn2483_GoToIdle `(uc ~T0 @X0 1 ef ]
+{
+[; ;rn2483APP.c: 414: uint8_t rn2483_GoToIdle(void){
+[e :U _rn2483_GoToIdle ]
+[f ]
+[; ;rn2483APP.c: 419: INTCON3bits.INT1IE = 0;
+"419
+[e = . . _INTCON3bits 0 3 -> -> 0 `i `uc ]
+[; ;rn2483APP.c: 420: INTCON3bits.INT2IE = 0;
+"420
+[e = . . _INTCON3bits 0 4 -> -> 0 `i `uc ]
+[; ;rn2483APP.c: 421: INTCONbits.RBIE = 0;
+"421
+[e = . . _INTCONbits 0 3 -> -> 0 `i `uc ]
+[; ;rn2483APP.c: 423: PIE1bits.TMR1IE = 0;
+"423
+[e = . . _PIE1bits 0 0 -> -> 0 `i `uc ]
+[; ;rn2483APP.c: 430: asm(" sleep");
+"430
+[; <"  sleep ;# ">
+[; ;rn2483APP.c: 431: __nop();
+"431
+[e ( ___nop ..  ]
+[; ;rn2483APP.c: 435: PIE1bits.TMR1IE = 1;
+"435
+[e = . . _PIE1bits 0 0 -> -> 1 `i `uc ]
+[; ;rn2483APP.c: 437: INTCON3bits.INT1IE = 1;
 "437
+[e = . . _INTCON3bits 0 3 -> -> 1 `i `uc ]
+[; ;rn2483APP.c: 438: INTCON3bits.INT2IE = 1;
+"438
+[e = . . _INTCON3bits 0 4 -> -> 1 `i `uc ]
+[; ;rn2483APP.c: 439: INTCONbits.RBIE = 1;
+"439
+[e = . . _INTCONbits 0 3 -> -> 1 `i `uc ]
+[; ;rn2483APP.c: 448: }
+"448
+[e :UE 988 ]
+}
+"450
 [v _resetAllChannels `(v ~T0 @X0 1 ef ]
 {
-[; ;rn2483APP.c: 437: void resetAllChannels(void){
+[; ;rn2483APP.c: 450: void resetAllChannels(void){
 [e :U _resetAllChannels ]
 [f ]
-[; ;rn2483APP.c: 439: for(int i=0; i<4; i++){
-"439
+[; ;rn2483APP.c: 452: for(int i=0; i<4; i++){
+"452
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
-[e $ < _i -> 4 `i 988  ]
-[e $U 989  ]
-[e :U 988 ]
+[e $ < _i -> 4 `i 990  ]
+[e $U 991  ]
+[e :U 990 ]
 {
-[; ;rn2483APP.c: 440: LORAWAN_SetChannelIdStatus(i, 0);
-"440
+[; ;rn2483APP.c: 453: LORAWAN_SetChannelIdStatus(i, 0);
+"453
 [e ( _LORAWAN_SetChannelIdStatus (2 , -> _i `uc -> -> 0 `i `uc ]
-"441
+"454
 }
-"439
+"452
 [e ++ _i -> 1 `i ]
-[e $ < _i -> 4 `i 988  ]
-[e :U 989 ]
-"441
+[e $ < _i -> 4 `i 990  ]
+[e :U 991 ]
+"454
 }
-[; ;rn2483APP.c: 441: }
-[; ;rn2483APP.c: 443: for(int i=0; i<4; i++){
-"443
+[; ;rn2483APP.c: 454: }
+[; ;rn2483APP.c: 456: for(int i=0; i<4; i++){
+"456
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
-[e $ < _i -> 4 `i 991  ]
-[e $U 992  ]
-[e :U 991 ]
+[e $ < _i -> 4 `i 993  ]
+[e $U 994  ]
+[e :U 993 ]
 {
-[; ;rn2483APP.c: 444: LORAWAN_SetChannelIdStatus(i, 1);
-"444
+[; ;rn2483APP.c: 457: LORAWAN_SetChannelIdStatus(i, 1);
+"457
 [e ( _LORAWAN_SetChannelIdStatus (2 , -> _i `uc -> -> 1 `i `uc ]
-"445
+"458
 }
-"443
+"456
 [e ++ _i -> 1 `i ]
-[e $ < _i -> 4 `i 991  ]
-[e :U 992 ]
-"445
+[e $ < _i -> 4 `i 993  ]
+[e :U 994 ]
+"458
 }
-[; ;rn2483APP.c: 445: }
-[; ;rn2483APP.c: 447: }
-"447
-[e :UE 987 ]
+[; ;rn2483APP.c: 458: }
+[; ;rn2483APP.c: 460: }
+"460
+[e :UE 989 ]
 }

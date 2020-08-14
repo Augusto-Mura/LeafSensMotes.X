@@ -70,11 +70,11 @@ void TMR5_Initialize(void)
     //T5GSS T5G_pin; TMR5GE disabled; T5GTM disabled; T5GPOL low; T5GGO done; T5GSPM disabled; 
     T5GCON = 0x00;
 
-    //TMR5H 0; 
-    TMR5H = 0x00;
+    //TMR5H 254; 
+    TMR5H = 0xFE;
 
-    //TMR5L 0; 
-    TMR5L = 0x00;
+    //TMR5L 12; 
+    TMR5L = 0x0C;
 
     // Load the TMR value to reload variable
     timer5ReloadVal=TMR5;
@@ -90,8 +90,8 @@ void TMR5_Initialize(void)
     // Set Default Interrupt Handler
     TMR5_SetInterruptHandler(TMR5_InterruptTicker);
 
-    // T5CKPS 1:8; T5SOSCEN disabled; T5SYNC do_not_synchronize; TMR5CS External; TMR5ON enabled; T5RD16 disabled; 
-    T5CON = 0xB5;
+    // T5CKPS 1:8; T5SOSCEN disabled; T5SYNC do_not_synchronize; TMR5CS FOSC/4; TMR5ON enabled; T5RD16 disabled; 
+    T5CON = 0x35;
 }
 
 void TMR5_StartTimer(void)
@@ -181,8 +181,8 @@ void TMR5_SetInterruptHandler(void (* InterruptHandler)(void)){
 }
 
 void TMR5_InterruptTicker(void){
-    timerTick16();
-    timerHandler16();
+    timerTick();
+    timerHandler();
 }
 
 

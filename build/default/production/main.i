@@ -10909,7 +10909,9 @@ void SYSTEM_Initialize(void);
 # 97
 void OSCILLATOR_Initialize(void);
 
-# 54 "rn2483APP.h"
+# 58 "rn2483APP.h"
+void enableClockPeripherals (void);
+void disableClockPeripherals (void);
 void GPIOInit(void);
 void GPIOAnalogMode(uint8_t GPIO, uint8_t mode);
 void GPIOSet(uint8_t GPIO, uint8_t mode);
@@ -11100,11 +11102,12 @@ extern double fmod(double, double);
 extern double trunc(double);
 extern double round(double);
 
-# 58 "main.c"
-uint8_t appKey[16] = {0x58, 0xfd, 0xd5, 0x36, 0x9f, 0x84, 0x6d, 0xfa, 0x90,
-0x16, 0x5b, 0x5f, 0x8e, 0x4d, 0x81, 0xf8};
-uint8_t deviceEui[8] = {0xe4, 0x43, 0x5f, 0x66, 0xbf, 0x8a, 0x57, 0x6d};
+# 33 "main.c"
+uint8_t appKey[16] = {0x4d, 0x49, 0xb5, 0x62, 0x1c, 0x5f, 0xf5, 0x24, 0x78,
+0xbe, 0x95, 0x9e, 0x86, 0xd3, 0x02, 0x8e};
+uint8_t deviceEui[8] = {0xc6, 0x51, 0xf7, 0x3a, 0xe7, 0xa8, 0x6f, 0xa4};
 
+# 62
 uint8_t appEui[8] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
 
 uint8_t string[5]={0x00, 0x00, 0x00, 0x00, 0x00};
@@ -11122,8 +11125,8 @@ void RxData(uint8_t* pData, uint8_t dataLength, OpStatus_t status) {
 void RxJoinResponse(bool status) {
 
 if (status == 1){
-GPIODigitalWrite(0x11, 0);
-GPIODigitalWrite(0x19, 0);
+
+
 joined = 1;
 }
 else {
@@ -11132,21 +11135,23 @@ joined = 0;
 }
 
 
+
+
 void main(void) {
 
 SYSTEM_Initialize();
 GPIOInit();
 GPIODigitalWrite(0x19, 1);
 
-# 108
+# 110
 (INTCONbits.GIE = 1);
 
 (INTCONbits.PEIE = 1);
 
-# 116
+# 118
 LORAWAN_Init(RxData, RxJoinResponse);
 
-# 125
+# 127
 LORAWAN_SetApplicationKey(appKey);
 LORAWAN_SetApplicationEui(appEui);
 LORAWAN_SetDeviceEui(deviceEui);
@@ -11154,47 +11159,58 @@ LORAWAN_SetDeviceEui(deviceEui);
 
 LORAWAN_Join(OTAA);
 
-# 137
+
+
+
+OSCCONbits.IDLEN = 1;
+
+
+
+
 TMR5_StartTimer();
 timerReset();
 
 
 firstSend = 1;
-rn2483_IdleInitialization();
+
 while (1) {
 
-# 165
+# 170
 LORAWAN_Mainloop();
 
 
-if (isJoined() && (timer.min == 1 || firstSend)){
-GPIODigitalWrite(0x11, 1);
+if (isJoined() && (timer.hour >= 1 || firstSend)){
+GPIODigitalWrite(0x11, 0);
+GPIODigitalWrite(0x19, 0);
 
 firstSend = 0;
+enableClockPeripherals();
 acuadoriApp();
+disableClockPeripherals();
+GPIOSet(0x01, 0);
+GPIOSet(0x02, 0);
+GPIOSet(0x03, 0);
+GPIODigitalWrite(0x01, 0);
+GPIODigitalWrite(0x02, 0);
+GPIODigitalWrite(0x03, 0);
 timerReset();
 }
 
 else if (timer.sec >= 16 && !isJoined()){
 
-# 180
+# 194
 LORAWAN_Reset (ISM_EU868);
 LORAWAN_SetApplicationKey(appKey);
 LORAWAN_SetApplicationEui(appEui);
 LORAWAN_SetDeviceEui(deviceEui);
 LORAWAN_Join(OTAA);
-
+GPIODigitalToogle(0x11);
 timerReset();
 }
-else if(isJoined())
-{
 
-
-rn2483_GoToIdle();
-
-
-
-}
+asm(" sleep");
+__nop();
+__nop();
 
 }
 }

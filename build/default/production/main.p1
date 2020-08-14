@@ -5,13 +5,13 @@ Version 3.2 HI-TECH Software Intermediate Code
 "73 main.c
 [c E6285 0 1 2 3 4 5 .. ]
 [n E6285 . MAC_NOT_OK MAC_OK RADIO_NOT_OK RADIO_OK INVALID_BUFFER_LEN MCAST_RE_KEYING_NEEDED  ]
-"58 rn2483APP.h
-[v _GPIODigitalWrite `(v ~T0 @X0 0 ef2`uc`uc ]
 [p mainexit ]
 "84 mcc_generated_files/mcc.h
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"54 rn2483APP.h
+"60 rn2483APP.h
 [v _GPIOInit `(v ~T0 @X0 0 ef ]
+"64
+[v _GPIODigitalWrite `(v ~T0 @X0 0 ef2`uc`uc ]
 "16932 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18lf46k22.h
 [s S821 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S821 . RBIF INT0IF TMR0IF RBIE INT0IE TMR0IE PEIE_GIEL GIE_GIEH ]
@@ -36,32 +36,50 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _LORAWAN_SetApplicationEui `(v ~T0 @X0 0 ef1`*uc ]
 "334
 [v _LORAWAN_SetDeviceEui `(v ~T0 @X0 0 ef1`*uc ]
-"130 main.c
+"132 main.c
 [c E6293 0 1 .. ]
 [n E6293 . OTAA ABP  ]
 [c E6270 0 1 2 3 4 5 6 7 8 9 10 11 12 .. ]
 [n E6270 . OK NETWORK_NOT_JOINED MAC_STATE_NOT_READY_FOR_TRANSMISSION INVALID_PARAMETER KEYS_NOT_INITIALIZED SILENT_IMMEDIATELY_ACTIVE FRAME_COUNTER_ERROR_REJOIN_NEEDED INVALID_BUFFER_LENGTH MAC_PAUSED NO_CHANNELS_FOUND INVALID_CLASS MCAST_PARAM_ERROR MCAST_MSG_ERROR  ]
 "177 mcc_generated_files/LoRaWAN/lorawan.h
 [v _LORAWAN_Join `(E6270 ~T0 @X0 0 ef1`E6293 ]
+"16052 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18lf46k22.h
+[s S761 :2 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 ]
+[n S761 . SCS HFIOFS OSTS IRCF IDLEN ]
+"16059
+[s S762 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S762 . SCS0 SCS1 IOFS . IRCF0 IRCF1 IRCF2 ]
+"16051
+[u S760 `S761 1 `S762 1 ]
+[n S760 . . . ]
+"16069
+[v _OSCCONbits `VS760 ~T0 @X0 0 e@4051 ]
 "125 mcc_generated_files/tmr5.h
 [v _TMR5_StartTimer `(v ~T0 @X0 0 ef ]
 "49 tmrAPP.h
 [v _timerReset `(v ~T0 @X0 0 ef ]
-"69 rn2483APP.h
-[v _rn2483_IdleInitialization `(v ~T0 @X0 0 ef ]
 "1529 mcc_generated_files/LoRaWAN/lorawan.h
 [v _LORAWAN_Mainloop `(v ~T0 @X0 0 ef ]
-"67 rn2483APP.h
+"73 rn2483APP.h
 [v _isJoined `(uc ~T0 @X0 0 ef ]
+"58
+[v _enableClockPeripherals `(v ~T0 @X0 0 ef ]
 "38 acuadori.h
 [v _acuadoriApp `(v ~T0 @X0 0 ef ]
-"180 main.c
+"59 rn2483APP.h
+[v _disableClockPeripherals `(v ~T0 @X0 0 ef ]
+"62
+[v _GPIOSet `(v ~T0 @X0 0 ef2`uc`uc ]
+"194 main.c
 [c E6301 0 1 .. ]
 [n E6301 . ISM_EU868 ISM_EU433  ]
 "1429 mcc_generated_files/LoRaWAN/lorawan.h
 [v _LORAWAN_Reset `(v ~T0 @X0 0 ef1`E6301 ]
-"68 rn2483APP.h
-[v _rn2483_GoToIdle `(uc ~T0 @X0 0 ef ]
+"66 rn2483APP.h
+[v _GPIODigitalToogle `(v ~T0 @X0 0 ef1`uc ]
+"50 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18.h
+[v ___nop `(v ~T0 @X0 0 ef ]
+[p i ___nop ]
 [; ;xc.h: 18: extern const char __xc8_OPTIM_SPEED;
 [; ;xc.h: 20: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
@@ -7366,23 +7384,25 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;radio_driver_hal.h: 65: uint8_t HALDIO5PinValue(void);
 [; ;mcc.h: 84: void SYSTEM_Initialize(void);
 [; ;mcc.h: 97: void OSCILLATOR_Initialize(void);
-[; ;rn2483APP.h: 54: void GPIOInit(void);
-[; ;rn2483APP.h: 55: void GPIOAnalogMode(uint8_t GPIO, uint8_t mode);
-[; ;rn2483APP.h: 56: void GPIOSet(uint8_t GPIO, uint8_t mode);
-[; ;rn2483APP.h: 57: uint16_t GPIOAnalogRead(uint8_t GPIO);
-[; ;rn2483APP.h: 58: void GPIODigitalWrite(uint8_t GPIO, uint8_t digOut);
-[; ;rn2483APP.h: 59: uint8_t GPIODigitalRead(uint8_t GPIO);
-[; ;rn2483APP.h: 60: void GPIODigitalToogle(uint8_t GPIO);
-[; ;rn2483APP.h: 61: void acquisitionData(uint8_t GPIO, uint8_t *string);
-[; ;rn2483APP.h: 62: void uint16ToString(uint16_t value, uint8_t *output);
-[; ;rn2483APP.h: 63: void rn2483_delayms(uint16_t length);
-[; ;rn2483APP.h: 64: void rn2483_delaysec(uint16_t length);
-[; ;rn2483APP.h: 65: uint8_t adaptString(uint8_t *string, uint8_t length);
-[; ;rn2483APP.h: 66: uint16_t GPIOAverageRead(uint8_t GPIO);
-[; ;rn2483APP.h: 67: uint8_t isJoined(void);
-[; ;rn2483APP.h: 68: uint8_t rn2483_GoToIdle(void);
-[; ;rn2483APP.h: 69: void rn2483_IdleInitialization(void);
-[; ;rn2483APP.h: 70: void resetAllChannels(void);
+[; ;rn2483APP.h: 58: void enableClockPeripherals (void);
+[; ;rn2483APP.h: 59: void disableClockPeripherals (void);
+[; ;rn2483APP.h: 60: void GPIOInit(void);
+[; ;rn2483APP.h: 61: void GPIOAnalogMode(uint8_t GPIO, uint8_t mode);
+[; ;rn2483APP.h: 62: void GPIOSet(uint8_t GPIO, uint8_t mode);
+[; ;rn2483APP.h: 63: uint16_t GPIOAnalogRead(uint8_t GPIO);
+[; ;rn2483APP.h: 64: void GPIODigitalWrite(uint8_t GPIO, uint8_t digOut);
+[; ;rn2483APP.h: 65: uint8_t GPIODigitalRead(uint8_t GPIO);
+[; ;rn2483APP.h: 66: void GPIODigitalToogle(uint8_t GPIO);
+[; ;rn2483APP.h: 67: void acquisitionData(uint8_t GPIO, uint8_t *string);
+[; ;rn2483APP.h: 68: void uint16ToString(uint16_t value, uint8_t *output);
+[; ;rn2483APP.h: 69: void rn2483_delayms(uint16_t length);
+[; ;rn2483APP.h: 70: void rn2483_delaysec(uint16_t length);
+[; ;rn2483APP.h: 71: uint8_t adaptString(uint8_t *string, uint8_t length);
+[; ;rn2483APP.h: 72: uint16_t GPIOAverageRead(uint8_t GPIO);
+[; ;rn2483APP.h: 73: uint8_t isJoined(void);
+[; ;rn2483APP.h: 74: uint8_t rn2483_GoToIdle(void);
+[; ;rn2483APP.h: 75: void rn2483_IdleInitialization(void);
+[; ;rn2483APP.h: 76: void resetAllChannels(void);
 [; ;tmrAPP.h: 37: typedef struct timerStruct{
 [; ;tmrAPP.h: 38: uint16_t ms;
 [; ;tmrAPP.h: 39: uint8_t sec;
@@ -7539,46 +7559,46 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;math.h: 53: extern double fmod(double, double);
 [; ;math.h: 54: extern double trunc(double);
 [; ;math.h: 55: extern double round(double);
-"58 main.c
+"33 main.c
 [v _appKey `uc ~T0 @X0 -> 16 `i e ]
 [i _appKey
 :U ..
--> -> 88 `i `uc
--> -> 253 `i `uc
--> -> 213 `i `uc
--> -> 54 `i `uc
--> -> 159 `i `uc
--> -> 132 `i `uc
--> -> 109 `i `uc
--> -> 250 `i `uc
--> -> 144 `i `uc
-"59
--> -> 22 `i `uc
--> -> 91 `i `uc
--> -> 95 `i `uc
--> -> 142 `i `uc
 -> -> 77 `i `uc
--> -> 129 `i `uc
--> -> 248 `i `uc
+-> -> 73 `i `uc
+-> -> 181 `i `uc
+-> -> 98 `i `uc
+-> -> 28 `i `uc
+-> -> 95 `i `uc
+-> -> 245 `i `uc
+-> -> 36 `i `uc
+-> -> 120 `i `uc
+"34
+-> -> 190 `i `uc
+-> -> 149 `i `uc
+-> -> 158 `i `uc
+-> -> 134 `i `uc
+-> -> 211 `i `uc
+-> -> 2 `i `uc
+-> -> 142 `i `uc
 ..
 ]
-[; ;main.c: 58: uint8_t appKey[16] = {0x58, 0xfd, 0xd5, 0x36, 0x9f, 0x84, 0x6d, 0xfa, 0x90,
-[; ;main.c: 59: 0x16, 0x5b, 0x5f, 0x8e, 0x4d, 0x81, 0xf8};
-"60
+[; ;main.c: 33: uint8_t appKey[16] = {0x4d, 0x49, 0xb5, 0x62, 0x1c, 0x5f, 0xf5, 0x24, 0x78,
+[; ;main.c: 34: 0xbe, 0x95, 0x9e, 0x86, 0xd3, 0x02, 0x8e};
+"35
 [v _deviceEui `uc ~T0 @X0 -> 8 `i e ]
 [i _deviceEui
 :U ..
--> -> 228 `i `uc
--> -> 67 `i `uc
--> -> 95 `i `uc
--> -> 102 `i `uc
--> -> 191 `i `uc
--> -> 138 `i `uc
--> -> 87 `i `uc
--> -> 109 `i `uc
+-> -> 198 `i `uc
+-> -> 81 `i `uc
+-> -> 247 `i `uc
+-> -> 58 `i `uc
+-> -> 231 `i `uc
+-> -> 168 `i `uc
+-> -> 111 `i `uc
+-> -> 164 `i `uc
 ..
 ]
-[; ;main.c: 60: uint8_t deviceEui[8] = {0xe4, 0x43, 0x5f, 0x66, 0xbf, 0x8a, 0x57, 0x6d};
+[; ;main.c: 35: uint8_t deviceEui[8] = {0xc6, 0x51, 0xf7, 0x3a, 0xe7, 0xa8, 0x6f, 0xa4};
 "62
 [v _appEui `uc ~T0 @X0 -> 8 `i e ]
 [i _appEui
@@ -7648,12 +7668,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 "78
 [e $ ! == -> _status `i -> 1 `i 891  ]
 {
-[; ;main.c: 79: GPIODigitalWrite(0x11, 0);
-"79
-[e ( _GPIODigitalWrite (2 , -> -> 17 `i `uc -> -> 0 `i `uc ]
-[; ;main.c: 80: GPIODigitalWrite(0x19, 0);
-"80
-[e ( _GPIODigitalWrite (2 , -> -> 25 `i `uc -> -> 0 `i `uc ]
 [; ;main.c: 81: joined = 1;
 "81
 [e = _joined -> -> 1 `i `uc ]
@@ -7677,132 +7691,156 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :UE 890 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"89
+"91
 [v _main `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 89: void main(void) {
+[; ;main.c: 91: void main(void) {
 [e :U _main ]
 [f ]
-[; ;main.c: 91: SYSTEM_Initialize();
-"91
-[e ( _SYSTEM_Initialize ..  ]
-[; ;main.c: 92: GPIOInit();
-"92
-[e ( _GPIOInit ..  ]
-[; ;main.c: 93: GPIODigitalWrite(0x19, 1);
+[; ;main.c: 93: SYSTEM_Initialize();
 "93
+[e ( _SYSTEM_Initialize ..  ]
+[; ;main.c: 94: GPIOInit();
+"94
+[e ( _GPIOInit ..  ]
+[; ;main.c: 95: GPIODigitalWrite(0x19, 1);
+"95
 [e ( _GPIODigitalWrite (2 , -> -> 25 `i `uc -> -> 1 `i `uc ]
-[; ;main.c: 108: (INTCONbits.GIE = 1);
-"108
-[e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
-[; ;main.c: 110: (INTCONbits.PEIE = 1);
+[; ;main.c: 110: (INTCONbits.GIE = 1);
 "110
+[e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
+[; ;main.c: 112: (INTCONbits.PEIE = 1);
+"112
 [e = . . _INTCONbits 1 6 -> -> 1 `i `uc ]
-[; ;main.c: 116: LORAWAN_Init(RxData, RxJoinResponse);
-"116
+[; ;main.c: 118: LORAWAN_Init(RxData, RxJoinResponse);
+"118
 [e ( _LORAWAN_Init (2 , &U _RxData &U _RxJoinResponse ]
-[; ;main.c: 125: LORAWAN_SetApplicationKey(appKey);
-"125
-[e ( _LORAWAN_SetApplicationKey (1 &U _appKey ]
-[; ;main.c: 126: LORAWAN_SetApplicationEui(appEui);
-"126
-[e ( _LORAWAN_SetApplicationEui (1 &U _appEui ]
-[; ;main.c: 127: LORAWAN_SetDeviceEui(deviceEui);
+[; ;main.c: 127: LORAWAN_SetApplicationKey(appKey);
 "127
+[e ( _LORAWAN_SetApplicationKey (1 &U _appKey ]
+[; ;main.c: 128: LORAWAN_SetApplicationEui(appEui);
+"128
+[e ( _LORAWAN_SetApplicationEui (1 &U _appEui ]
+[; ;main.c: 129: LORAWAN_SetDeviceEui(deviceEui);
+"129
 [e ( _LORAWAN_SetDeviceEui (1 &U _deviceEui ]
-[; ;main.c: 130: LORAWAN_Join(OTAA);
-"130
+[; ;main.c: 132: LORAWAN_Join(OTAA);
+"132
 [e ( _LORAWAN_Join (1 . `E6293 0 ]
-[; ;main.c: 137: TMR5_StartTimer();
+[; ;main.c: 137: OSCCONbits.IDLEN = 1;
 "137
-[e ( _TMR5_StartTimer ..  ]
-[; ;main.c: 138: timerReset();
-"138
-[e ( _timerReset ..  ]
-[; ;main.c: 141: firstSend = 1;
-"141
-[e = _firstSend -> -> 1 `i `uc ]
-[; ;main.c: 142: rn2483_IdleInitialization();
+[e = . . _OSCCONbits 0 4 -> -> 1 `i `uc ]
+[; ;main.c: 142: TMR5_StartTimer();
 "142
-[e ( _rn2483_IdleInitialization ..  ]
-[; ;main.c: 143: while (1) {
+[e ( _TMR5_StartTimer ..  ]
+[; ;main.c: 143: timerReset();
 "143
+[e ( _timerReset ..  ]
+[; ;main.c: 146: firstSend = 1;
+"146
+[e = _firstSend -> -> 1 `i `uc ]
+[; ;main.c: 148: while (1) {
+"148
 [e :U 895 ]
 {
-[; ;main.c: 165: LORAWAN_Mainloop();
-"165
+[; ;main.c: 170: LORAWAN_Mainloop();
+"170
 [e ( _LORAWAN_Mainloop ..  ]
-[; ;main.c: 168: if (isJoined() && (timer.min == 1 || firstSend)){
-"168
-[e $ ! && != -> ( _isJoined ..  `i -> -> -> 0 `i `uc `i || == -> . _timer 2 `i -> 1 `i != -> _firstSend `i -> -> -> 0 `i `uc `i 897  ]
-{
-[; ;main.c: 169: GPIODigitalWrite(0x11, 1);
-"169
-[e ( _GPIODigitalWrite (2 , -> -> 17 `i `uc -> -> 1 `i `uc ]
-[; ;main.c: 171: firstSend = 0;
-"171
-[e = _firstSend -> -> 0 `i `uc ]
-[; ;main.c: 172: acuadoriApp();
-"172
-[e ( _acuadoriApp ..  ]
-[; ;main.c: 173: timerReset();
+[; ;main.c: 173: if (isJoined() && (timer.hour >= 1 || firstSend)){
 "173
-[e ( _timerReset ..  ]
+[e $ ! && != -> ( _isJoined ..  `i -> -> -> 0 `i `uc `i || >= -> . _timer 3 `i -> 1 `i != -> _firstSend `i -> -> -> 0 `i `uc `i 897  ]
+{
+[; ;main.c: 174: GPIODigitalWrite(0x11, 0);
 "174
+[e ( _GPIODigitalWrite (2 , -> -> 17 `i `uc -> -> 0 `i `uc ]
+[; ;main.c: 175: GPIODigitalWrite(0x19, 0);
+"175
+[e ( _GPIODigitalWrite (2 , -> -> 25 `i `uc -> -> 0 `i `uc ]
+[; ;main.c: 177: firstSend = 0;
+"177
+[e = _firstSend -> -> 0 `i `uc ]
+[; ;main.c: 178: enableClockPeripherals();
+"178
+[e ( _enableClockPeripherals ..  ]
+[; ;main.c: 179: acuadoriApp();
+"179
+[e ( _acuadoriApp ..  ]
+[; ;main.c: 180: disableClockPeripherals();
+"180
+[e ( _disableClockPeripherals ..  ]
+[; ;main.c: 181: GPIOSet(0x01, 0);
+"181
+[e ( _GPIOSet (2 , -> -> 1 `i `uc -> -> 0 `i `uc ]
+[; ;main.c: 182: GPIOSet(0x02, 0);
+"182
+[e ( _GPIOSet (2 , -> -> 2 `i `uc -> -> 0 `i `uc ]
+[; ;main.c: 183: GPIOSet(0x03, 0);
+"183
+[e ( _GPIOSet (2 , -> -> 3 `i `uc -> -> 0 `i `uc ]
+[; ;main.c: 184: GPIODigitalWrite(0x01, 0);
+"184
+[e ( _GPIODigitalWrite (2 , -> -> 1 `i `uc -> -> 0 `i `uc ]
+[; ;main.c: 185: GPIODigitalWrite(0x02, 0);
+"185
+[e ( _GPIODigitalWrite (2 , -> -> 2 `i `uc -> -> 0 `i `uc ]
+[; ;main.c: 186: GPIODigitalWrite(0x03, 0);
+"186
+[e ( _GPIODigitalWrite (2 , -> -> 3 `i `uc -> -> 0 `i `uc ]
+[; ;main.c: 187: timerReset();
+"187
+[e ( _timerReset ..  ]
+"188
 }
-[; ;main.c: 174: }
+[; ;main.c: 188: }
 [e $U 898  ]
-"176
+"190
 [e :U 897 ]
-[; ;main.c: 176: else if (timer.sec >= 16 && !isJoined()){
+[; ;main.c: 190: else if (timer.sec >= 16 && !isJoined()){
 [e $ ! && >= -> . _timer 1 `i -> 16 `i ! != -> ( _isJoined ..  `i -> -> -> 0 `i `uc `i 899  ]
 {
-[; ;main.c: 180: LORAWAN_Reset (ISM_EU868);
-"180
+[; ;main.c: 194: LORAWAN_Reset (ISM_EU868);
+"194
 [e ( _LORAWAN_Reset (1 . `E6301 0 ]
-[; ;main.c: 181: LORAWAN_SetApplicationKey(appKey);
-"181
+[; ;main.c: 195: LORAWAN_SetApplicationKey(appKey);
+"195
 [e ( _LORAWAN_SetApplicationKey (1 &U _appKey ]
-[; ;main.c: 182: LORAWAN_SetApplicationEui(appEui);
-"182
-[e ( _LORAWAN_SetApplicationEui (1 &U _appEui ]
-[; ;main.c: 183: LORAWAN_SetDeviceEui(deviceEui);
-"183
-[e ( _LORAWAN_SetDeviceEui (1 &U _deviceEui ]
-[; ;main.c: 184: LORAWAN_Join(OTAA);
-"184
-[e ( _LORAWAN_Join (1 . `E6293 0 ]
-[; ;main.c: 186: timerReset();
-"186
-[e ( _timerReset ..  ]
-"187
-}
-[; ;main.c: 187: }
-[e $U 900  ]
-"188
-[e :U 899 ]
-[; ;main.c: 188: else if(isJoined())
-[e $ ! != -> ( _isJoined ..  `i -> -> -> 0 `i `uc `i 901  ]
-[; ;main.c: 189: {
-"189
-{
-[; ;main.c: 192: rn2483_GoToIdle();
-"192
-[e ( _rn2483_GoToIdle ..  ]
+[; ;main.c: 196: LORAWAN_SetApplicationEui(appEui);
 "196
-}
-[e :U 901 ]
+[e ( _LORAWAN_SetApplicationEui (1 &U _appEui ]
+[; ;main.c: 197: LORAWAN_SetDeviceEui(deviceEui);
+"197
+[e ( _LORAWAN_SetDeviceEui (1 &U _deviceEui ]
+[; ;main.c: 198: LORAWAN_Join(OTAA);
 "198
-[e :U 900 ]
+[e ( _LORAWAN_Join (1 . `E6293 0 ]
+[; ;main.c: 199: GPIODigitalToogle(0x11);
+"199
+[e ( _GPIODigitalToogle (1 -> -> 17 `i `uc ]
+[; ;main.c: 200: timerReset();
+"200
+[e ( _timerReset ..  ]
+"201
+}
+[e :U 899 ]
+"203
 [e :U 898 ]
+[; ;main.c: 201: }
+[; ;main.c: 203: asm(" sleep");
+[; <"  sleep ;# ">
+[; ;main.c: 204: __nop();
+"204
+[e ( ___nop ..  ]
+[; ;main.c: 205: __nop();
+"205
+[e ( ___nop ..  ]
+"207
 }
 [e :U 894 ]
-"143
+"148
 [e $U 895  ]
 [e :U 896 ]
-[; ;main.c: 196: }
-[; ;main.c: 198: }
-[; ;main.c: 199: }
-"199
+[; ;main.c: 207: }
+[; ;main.c: 208: }
+"208
 [e :UE 893 ]
 }

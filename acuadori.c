@@ -82,7 +82,7 @@ void acuadoriApp(void)
     strncat(sensorsString, stringValue, stringValueLength);
     sensorsStringLength += 1 + stringValueLength;
     
-    // Turn on acuadori clip, B=1, A=1
+    // Turn on acuadori clip, B=1, A=1                          //commentare queste righe per versione con una molletta
     GPIODigitalWrite(GPIO5, 1);    
     GPIODigitalWrite(GPIO0, 1); 
     clip = 2;
@@ -103,7 +103,7 @@ void acuadoriApp(void)
     //leafSensAcquisition();
     strncat(sensorsString, "C", 1);
     strncat(sensorsString, stringValue, stringValueLength);
-    sensorsStringLength += 1 + stringValueLength;
+    sensorsStringLength += 1 + stringValueLength;                 //fino a qui
     
     // Turn off all the system
     GPIODigitalWrite(GPIO8, 1);

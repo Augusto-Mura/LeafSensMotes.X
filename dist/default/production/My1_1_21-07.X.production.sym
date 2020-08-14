@@ -2755,9 +2755,9 @@ bssBANK1 100 1FA BANK1 100 1
 bssBANK5 500 527 BANK5 500 1
 bssBIGRAM 528 8D5 BIGRAM 528 1
 %locals
-dist/default/production\LeafSensMotes.X.production.o
+dist/default/production\My1_1_21-07.X.production.o
 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18lf46k22.h
-C:\Users\loren\AppData\Local\Temp\s3pk.
+C:\Users\loren\AppData\Local\Temp\sms4.
 14363 787A 0 CODE 0
 14365 787A 0 CODE 0
 14368 787A 0 CODE 0
